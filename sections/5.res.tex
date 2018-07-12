@@ -216,6 +216,100 @@ For a qualitative analysis, in Figure \ref{fig:snap_solution_incompressible_Eule
 \caption{Evolution in time of the error  between the high fidelity solution of the Kelvin-Helmoltz and the reduced solution for different number of basis $k$. As error measure we consider $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{u_xr}-\mathbf{u_xr}^r\|^2 + \|\mathbf{u_yr}-\mathbf{u_yr}^r\|^2 + \|\mathbf{p}-\mathbf{p}^r\|^2}$.}
 \end{figure}
 
+\begin{figure}
+  \centering
+  \begin{subfigure}[]{0.48\linewidth}
+  \begin{tikzpicture}[scale=0.55]
+    \begin{semilogyaxis}[ylabel = $\left|\mathbf{1}^T(\mathbf{r}-\mathbf{r}^r)(t)\right|$,
+                 xlabel=$t$,
+                 label style={font=\large},
+                 legend pos=north east,
+                 legend entries={$k=200$ ,$k=300$, $k=400$,$k=500$,$k=600$},
+                 legend style={font=\large},
+                 grid=both,
+                 ticks=both,
+                 width=1.4\linewidth, 
+                 height=1.0\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+                 cycle list name=exotic]
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_200.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_300.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_400.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_500.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_600.txt};
+    \end{semilogyaxis}%  
+  \end{tikzpicture}
+  \caption{}
+  \label{mass_error_KH}
+  \end{subfigure}\hfill
+  \begin{subfigure}[]{0.48\linewidth}
+  \begin{tikzpicture}[scale=0.55]
+    \begin{semilogyaxis}[ylabel = $\left|(\mathbf{r}^{T}\mathbf{u}-\mathbf{r}^{rT}\mathbf{u}^{r})(t)\right|$,
+                 xlabel=$t$,
+                 label style={font=\large},
+                 legend pos=north east,
+%                 legend entries={$k=200$ Conv,$k=201$ Conv},
+                 legend style={font=\large},
+                 grid=both,
+                 ticks=both,
+                 width=1.4\linewidth, 
+                 height=1.0\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+                 cycle list name=exotic]
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_200.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_300.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_400.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_500.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_600.txt};
+    \end{semilogyaxis}%  
+  \end{tikzpicture}
+  \caption{}
+  \label{momentum_error_KH}
+  \end{subfigure}
+  
+  \begin{subfigure}[]{0.48\linewidth}
+  \begin{tikzpicture}[scale=0.55]
+    \begin{semilogyaxis}[ylabel = $\left| \dfrac{1}{2}\left( \mathbf{u}^{rT}\mathbf{R}^r\mathbf{u}^r-\mathbf{u}^{T}\mathbf{R}\mathbf{u}\right)\right|$,
+                 xlabel=$t$,
+                 label style={font=\large},
+                 legend pos=north east,
+%                 legend entries={$k=200$ Conv,$k=201$ Conv},
+                 legend style={font=\large},
+                 grid=both,
+                 ticks=both,
+                 width=1.4\linewidth, 
+                 height=1.0\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+                 cycle list name=exotic]
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_200.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_300.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_400.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_500.txt};
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_600.txt};
+    \end{semilogyaxis}%  
+  \end{tikzpicture}
+   \caption{}
+  \label{energy_error_KH}
+  \end{subfigure}
+\caption{Comparison between the high fidelity solution of the Kelvin-Helmholtz problem and the reduced solution of the mass (\protect\subref{mass_error_KH}), the momentum (\protect\subref{momentum_error_KH}), and the total energy (\protect\subref{energy_error_KH}).}
+\end{figure}
+
+
 \subsubsection{1D Shock problem}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% Singular values 1D problem %%%%%%%%%%%%%%

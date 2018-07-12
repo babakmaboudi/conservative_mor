@@ -1,6 +1,5 @@
-TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/1D/convective_data/mass_102_1.txt
-TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/1D/convective_data/mass_201_1.txt
-TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/1D/divergence_data/mass_102_1.txt
-TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/1D/divergence_data/mass_201_1.txt
-TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/1D/skew_symm_data/mass_102_1.txt
-TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/1D/skew_symm_data/mass_201_1.txt
+TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/KH/conserved_quantities/momentum_red_200.txt
+TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/KH/conserved_quantities/momentum_red_300.txt
+TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/KH/conserved_quantities/momentum_red_400.txt
+TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/KH/conserved_quantities/momentum_red_500.txt
+TikzFigures/paper-figure6.pdf: ./data/Compressible_Euler/KH/conserved_quantities/momentum_red_600.txt
