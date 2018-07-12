@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  12 JUL 2018 09:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  12 JUL 2018 12:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -158,37 +158,6 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/type1cm/type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen131
-\captionmargin@=\dimen132
-\captionwidth=\dimen133
-\caption@tempdima=\dimen134
-\caption@indent=\dimen135
-\caption@parindent=\dimen136
-\caption@hangindent=\dimen137
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-)
-
-Package caption Warning: Unsupported document class (or package) detected,
-(caption)                usage of the caption package is not recommended.
-See the caption package documentation for explanation.
-
-Package caption Info: \@makecaption = \long macro:#1#2->\captionstyle \ifx \@ca
-ptype \fig@type \vskip \figcapgap \fi \setbox \@tempboxa \hbox {{\floatlegendst
-yle #1\floatcounterend }\capstrut #2}\ifdim \wd \@tempboxa >\hsize {\floatlegen
-dstyle #1\floatcounterend }\capstrut #2\par \else \hbox to\hsize {\leftlegendgl
-ue \unhbox \@tempboxa \hfil }\fi \ifx \@captype \fig@type \else \vskip \tabcapg
-ap \fi .
-\c@ContinuedFloat=\count111
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
-\c@subfigure=\count112
-\c@subtable=\count113
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -202,8 +171,8 @@ File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 )
-\Gin@req@height=\dimen138
-\Gin@req@width=\dimen139
+\Gin@req@height=\dimen131
+\Gin@req@width=\dimen132
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -245,7 +214,38 @@ G,.JBIG2,.JB2,.eps]
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-))) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
+))) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen133
+\captionmargin@=\dimen134
+\captionwidth=\dimen135
+\caption@tempdima=\dimen136
+\caption@indent=\dimen137
+\caption@parindent=\dimen138
+\caption@hangindent=\dimen139
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\captionstyle \ifx \@ca
+ptype \fig@type \vskip \figcapgap \fi \setbox \@tempboxa \hbox {{\floatlegendst
+yle #1\floatcounterend }\capstrut #2}\ifdim \wd \@tempboxa >\hsize {\floatlegen
+dstyle #1\floatcounterend }\capstrut #2\par \else \hbox to\hsize {\leftlegendgl
+ue \unhbox \@tempboxa \hfil }\fi \ifx \@captype \fig@type \else \vskip \tabcapg
+ap \fi .
+\c@ContinuedFloat=\count111
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
+\c@subfigure=\count112
+\c@subtable=\count113
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \c@tracingmulticols=\count114
 \mult@box=\box29
@@ -856,19 +856,19 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box70
 )
 No file TikzFigures/paper-figure4.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 77.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -906,68 +906,93 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.12}).
 \immediate\closeout\minitoc
 \let \MiniTOC =N
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 
-Package mathptmx Warning: There are no bold math fonts on input line 91.
+Package mathptmx Warning: There are no bold math fonts on input line 92.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 91.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 91
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 92.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 92
 .
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 91
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 92
 .
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 91
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 92
 .
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 91
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 92
 .
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.29004> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.10005> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 Names of authors too long for running head. Please supply
 a shorter form with \authorrunning prior to \maketitle
 (./sections/1.intro.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+
+LaTeX Warning: Reference `sec:mor' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Reference `sec:skew' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Reference `sec:mor_skew' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Reference `sec:res' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Reference `sec:con' on page 1 undefined on input line 15.
+
 ) (./sections/2.mor.tex) (./sections/3.skew.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 3.
 
-LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 110.
+LaTeX Warning: Reference `sec:skew.1' on page 1 undefined on input line 71.
 
 
-LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 110.
+LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 112.
 
 
-LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 122.
+LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 124.
 
 
-LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 133.
+LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 135.
 
-) (./sections/4.mor_skew.tex) (./sections/5.res.tex
+) (./sections/4.mor_skew.tex
+
+LaTeX Warning: Reference `sec:skew' on page 1 undefined on input line 2.
+
+
+LaTeX Warning: Reference `sec:skew.1' on page 1 undefined on input line 26.
+
+) (./sections/5.res.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -1043,26 +1068,32 @@ disable this.
 The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
 Full_5.png}' has been optimized away. Use '/tikz/external/optimize=false' to di
 sable this.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 \openout5 = `TikzFigures/paper-figure4.dpth'.
 
-
-Package pgfplots Warning: Ignoring illegal input argument ymin=0: cannot apply 
-log. on input line 211.
-
- [warning /pgfplots/warning/illegal user argument in log axis]
-Package pgfplots info on input line 211: Using 'lua backend=false' for axis: ym
+Package pgfplots info on input line 207: Using 'lua backend=false' for axis: ym
 ode=log unsupported (yet).
-PGFPlots: reading {./data/Compressible_Euler/1D/Singular_values/sv.txt}
+PGFPlots: reading {./data/Compressible_Euler/KH/error/error_200.txt}
 \tikzexternal@dep@file=\write6
 \openout6 = `TikzFigures/paper-figure4.dep'.
 
+PGFPlots: reading {./data/Compressible_Euler/KH/error/error_300.txt}
+PGFPlots: reading {./data/Compressible_Euler/KH/error/error_400.txt}
+PGFPlots: reading {./data/Compressible_Euler/KH/error/error_500.txt}
+PGFPlots: reading {./data/Compressible_Euler/KH/error/error_600.txt}
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 213.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 213.
-[10
+[14
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -1098,6 +1129,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 The command '\includegraphics [width=0.8\linewidth ]{pic/radius}' has been opti
 mized away. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./sections/6.con.tex)
 No file TikzFigures/paper-figure4.bbl.
 \immediate\closeout\minitoc
@@ -1106,24 +1143,23 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26886 strings out of 493054
- 664206 string characters out of 6134761
- 1332162 words of memory out of 5000000
- 29901 multiletter control sequences out of 15000+600000
- 57931 words of font info for 142 fonts, out of 8000000 for 9000
+ 26839 strings out of 493054
+ 663276 string characters out of 6134761
+ 1330005 words of memory out of 5000000
+ 29851 multiletter control sequences out of 15000+600000
+ 46235 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,13n,89p,1453b,5540s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,23n,103p,1453b,2408s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on TikzFigures/paper-figure4.pdf (1 page, 47459 bytes).
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on TikzFigures/paper-figure4.pdf (1 page, 67299 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

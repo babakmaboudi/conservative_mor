@@ -1,2 +1,7 @@
-TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/error_DEIM/error_energy_DEIM.txt
-TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/error_DEIM/error_energy_POD.txt
+TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/Snapshots/density_exact_3000.txt
+TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_24_3000.txt
+TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_102_3000.txt
+TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_201_3000.txt
+TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_24_3000.txt
+TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_102_3000.txt
+TikzFigures/paper-figure20.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_201_3000.txt

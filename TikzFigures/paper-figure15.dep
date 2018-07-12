@@ -1,7 +1,8 @@
-TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/Snapshots/pressure_exact_1000.txt
-TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_24_1000.txt
-TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_102_1000.txt
-TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_201_1000.txt
-TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/Snapshots/pressure_approx_24_1000.txt
-TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/Snapshots/pressure_approx_102_1000.txt
-TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/Snapshots/pressure_approx_201_1000.txt
+TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/error/error_75.txt
+TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/error/error_126.txt
+TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/error/error_177.txt
+TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/error/error_225.txt
+TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/error/error_276.txt
+TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/error/error_327.txt
+TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/error/error_375.txt
+TikzFigures/paper-figure15.pdf: ./data/Compressible_Euler/1D/error/error_426.txt
