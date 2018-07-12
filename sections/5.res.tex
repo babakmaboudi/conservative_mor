@@ -2,23 +2,33 @@
 
 \section{Numerical Experiments} \label{sec:res}
 
-\subsection{The incompressible Euler Equation}
-\subsubsection{2D vortex merging problem}
-Consider the $2D$ of the incompressible Euler equation \eqref{eq:3.8} on the square $[0,2\pi]^2$, provided with periodic boundary conditions. To treat spatial derivatives, we use Fourier spectral methods, which are equivalent to a centered finite differences scheme using as differentiation stencil the entire domain. To capture the fine details characterizing the solution, $256\times 256$ modes have been adopted. The initial condition is given in terms of the vorticity distribution $\mathbf{\omega}$. We consider the evolution of three different vortices, and the initial structure is given by
+\subsection{Vortex Merging}
+Consider the $2D$ incompressible Euler equation, \eqref{eq:3.8} with no viscous term, on a square domain $\Omega = [0,2\pi]^2$, provided with periodic boundary conditions. Spatial derivatives are discretized using a Fourier spectral method, which in centered differential operators in the Fourier space. To capture the fine details characterizing the solution, $256\times 256$ modes have been adopted. The initial condition is given in terms of the vorticity distribution $\mathbf{\omega} = \nabla \times u$ {\commnet \{ check this \}}. 
+
+We consider the evolution of three different vortices, and the initial structure is given by
 \begin{equation}\label{eqn:initial_cond_vort}
 \omega = \omega_0 + \sum_{i=1}^{3} \alpha_i e^{-\dfrac{\left(x-x_i\right)^{2}+\left(y-y_i\right)^{2}}{\beta^2}}.
 \end{equation}
-In \eqref{eqn:initial_cond_vort}, $(x,y)$ represent the spatial coordinates, $\left( x_i, y_i\right)$ the center of the $i$-th vortex and $\alpha_i$ its maximum amplitude. In our example, we consider three vortices positioned close to the center of the domain 
+In \eqref{eqn:initial_cond_vort}, $(x,y)$ represents the spatial coordinates, $\left( x_i, y_i\right)$ is the center of the $i$th vortex, $\alpha_i$ its maximum amplitude, and $\beta$ controls the effective radius of the vortex. In this example, the center of three vortices are positioned at 
 \begin{equation}
 \left( x_1, y_1 \right) = \left(0.75\pi,\pi\right) , \left( x_2, y_2 \right) = \left(1.25\pi,\pi\right), \left( x_3, y_3 \right) = \left(1.25\pi,1.5\pi\right),
 \end{equation}
-two of them having positive spin $\left( \alpha_{1,2} = \pi \right)$ and the last one rotating in the opposite direction $\left( \alpha_3 = -0.5\pi \right)$. The coefficient $\beta$, for all the vortices, is set to $\frac{1}{\pi}$. The considered triangular arrangement of vortices, is an effective initial condition for the representation of merging processes: in practice, mergers are often caused by fast-moving dipoles running into another vortex. The numerical challenge raised by this setting is the formation of thin vorticity filaments: the forces developed during the merging process drain vorticity out of the main structures into long, narrow and spiral-shaped strips of intense vorticity \cite{filaments_vort}. Given the absence of natural dissipation characterizing the Euler equation, the correct preservation of this delicate structures is necessary for an energy preserving, and consequently stable, reduced models. To have initial conditions in terms of velocity components and pressure, we define first as stream-function $\Psi$ the solution of the problem $\nabla \Psi = \omega$, and then the initial velocity is given by the curl of $\Psi$. To solve the stream-function problem, we need that the integral of $\omega$ is null: to satisfy this requirement we set $\omega_0 = 0.038$. The pressure is recovered by solving the related Poisson pressure equation. 
-We use the implicit midpoint scheme as time integrator to preserve the kinetic energy of the initial condition. Having a skew-symmetric nonlinearity is of the essence: in Figure \ref{fig:unstable_full_models}, we show that formulations that are not skew symmetric lead to unstable solutions, characterized by a sudden change in the conserved quantity. The merging phenomenon is simulated for a total of $18$s using a temporal step $\Delta t=0.004$s: the same setting is adopted for simulations of reduced systems.
+close to the center of the domain, of which, two have positive spins with $\alpha_1 = \alpha_2 = \pi$ and the other rotates in the opposite direction with $\alpha_3 = -0.5\pi$. The effective radius of all the vortices is set to $\beta = 1 / \pi$. This arrangement of vortices is an effective initial condition for the process of merging vortices. This phenomenon is often a result of fast-moving dipoles {\commnet \{ what is a dipole?\}} facing another vortex {\commnet \{ ref \}}. The forces developed in the merging process transfers the vorticity from the initial configuration, into long, narrow, and spiral-shaped strips of intense vorticity \cite{filaments_vort}. The formation of such thin vorticity filaments in the fluid, can pose numerical challenges. 
+
+In the context of MOR, conservation of energy and stability is crucial for capturing fined structures, mentioned above. In the absence of natural dissipation, characterizing the Euler equation, straight forward application of MOR techniques is often unstable.
+
+To define the initial conditions in terms of the velocity components $\omega$ and the pressure $p$, we define a stream-function $\Psi$, the solution to the equation 
+\begin{equation} \label{eq:5.1}
+	\nabla \Psi = \omega.
+\end{equation}
+The initial velocity is then given by $\nabla \times \Psi$. To solve the stream-function problem \eqref{eq:5.1}, we require $\int_{\Omega} \omega \ dx= 0$ {\commnet \{ check this \}}. It is easily verified that this requirement implies $\omega_0 = 0.038$. The pressure is recovered by solving the related Poisson pressure equation {\commnet \{ write the equation here \}}. The implicit midpoint scheme, to mimic the time integration scheme presented in \eqref{eq:3.27}, is considered to integrate in time. The merging phenomenon is simulated for a total of $18$ time units using a temporal step $\Delta t=0.004$.
+
+\Cref{fig:unstable_full_models} illustrates the evolution of the kinetic energy for the advective, divergence, and the skew-symmetric form of the high-fidelity system. It is observed that only the skew-symmetric form preserves the kinetic energy, confirming the results in \Cref{sec:skew.2}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Comparison Skew symmetric, divergence and advective form %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
+\begin{figure}[t]
   \centering
   \begin{tikzpicture}[scale=0.5452]
     \begin{axis}[ylabel=$E_K(t)$,
@@ -40,15 +50,42 @@ We use the implicit midpoint scheme as time integrator to preserve the kinetic e
                  \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Incompressible_Euler/Energy_compare_formulations/energy_convective.txt};
     \end{axis}%  
   \end{tikzpicture}
-  \caption{Evolution of the quadratic invariant $K(t)$ for the solution to Euler equation considering three different formulations (skew-symmetric, divergent and convective forms).}
+  \caption{Conservation of the kinetic energy $K$ for the advective, divergence and the skew-symmetric formulations. {\commnet \{ please change Divergent to Divergence in the legend \}} }
   \label{fig:unstable_full_models}
 \end{figure}
-Time is the only parameter considered in the reduction and $5000$ uniformly sampled snapshots are stored. A useful information regarding system reducibility is given by the singular value behaviour and in particular by the relative information content, reported in Figure \ref{fig:RIC}. Taking the first $35$ POD modes allows to maintain more than $99\%$ of the energy of the high fidelity solution: this suggest that, given the stability of the reduction procedure, we should expect an accurate reduction if a similar number of basis functions is used. Nevertheless, also smaller sets of basis functions are considered in our simulations to study the behaviour and stability of the reduced system in underrepresented scenarios.
+A total of $5000$ temporal snapshots is used to construct a reduced basis, following the process discussed in \Cref{sec:mor}. The decay of the singular values, as an indication of the reducibility of the problem, is presented in \Cref{fig:RIC}. The first $35$ POD modes corresponds to over $99\%$ of the {\commnet \{ kinetic? \}} energy of the high fidelity solution. This suggests that an accurate reduced system can be constructed using a small number of basis vectors. To illustrate the effectiveness of the method, smaller bases are also considered.
+
+For a qualitative analysis, in Figure \ref{fig:snap_solution_incompressible_Euler}, four snapshots at different time frames are shown for the high fidelity system and reduced system with $k=17$ and $k=35$ modes. It is seen that the overall dynamics of the problem, and in particular the formation and development of vorticity filaments, are correctly represented, even with a moderate number of basis vectors. Although small details are not captured by the reduced system with a small number of basis vectors, the position and the spreading of the vortices are comparable. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Snapshots of merging process %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t]
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_17_2.png}\hspace{1em}
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_2.png}\hspace{1em}
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_2.png}\\
+
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_17_3.png}\hspace{1em}
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_3.png}\hspace{1em}
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_3.png}\\
+
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_17_4.png}\hspace{1em}
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_4.png}\hspace{1em}
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_4.png}\\
+
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_17_5.png}\hspace{1em}
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_5.png}\hspace{1em}
+\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_5.png}
+
+\caption{Snapshots of the high-fidelity system and the reduced system at $t=\left\{ 4,8,12,18 \right\}$. From left to right: the snapshots of the reduced model with $k=17$, $k=35$ and the high fidelity solution.}
+\label{fig:snap_solution_incompressible_Euler}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Singular values decay merging vorteces %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
+\begin{figure}[t]
 \centering
 \begin{tikzpicture}[scale=0.5452]
     \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
@@ -73,17 +110,18 @@ Time is the only parameter considered in the reduction and $5000$ uniformly samp
                  \addplot[color=black,style=solid,style=ultra thick]  table[x = x, y = s] {./data/Incompressible_Euler/Singular_values/sv.txt};
     \end{semilogyaxis}
 \end{tikzpicture}
-\caption{Singular values decay of the snapshot matrix related to POD algorithms for the velocity components of the solution to the incompressible Euler problem.}
+\caption{The decay of the singular values for the merging vortices problem. {\commnet \{please put this figure and figure 1 into a single figure (Left and right to each other)\} } }
 \label{fig:RIC}
 \end{figure}
-In Figure \ref{fig:approx_error_incompressible_Euler} we show that the error with respect to the high fidelity solution can be reduced, as expected, by increasing the number of basis and an arbitrary accuracy can be achieved at the cost of dealing with a more computationally expensive problem to be solved.
+\Cref{fig:approx_error_incompressible_Euler} shows the 2-norm error between the high-fidelity solution and the approximated solution. It is seen that the error decreases, consistently, as the number of basis vectors increase. Furthermore, the accuracy is maintained over the period of time integration.
 
-In Figure \ref{fig:energy_error_incompressible_Euler} we compare the quadratic invariant related to the high fidelity solution with the solution to the reduced models. As proved in section \ref{sec:skew.2}, the energy is preserved through the entire simulation for reduced models and it converges to the correct value as we enrich the approximating solution space.
+The conservation of the kinetic energy is presented in \Cref{fig:energy_error_incompressible_Euler}. It is seen that even for a small number of basis vectors, where the solution is not well approximated, the kinetic energy is conserved. Furthermore, it is observed that the error in the kinetic energy, due to MOR, is constant in time. This helps with the robustness of the reduced system over long time-integration.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Approximation error and energy conservation %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
+\begin{figure}[t]
 \centering
 \begin{subfigure}[]{0.47\linewidth}
 \begin{tikzpicture}[scale=0.58]
@@ -151,33 +189,9 @@ In Figure \ref{fig:energy_error_incompressible_Euler} we compare the quadratic i
 \label{fig:energy_error_incompressible_Euler}
 \end{subfigure}
 \label{fig:energy_approx_err}
-\caption{(\protect\subref{fig:approx_error_incompressible_Euler}) Evolution of $L_2(t)$ error between the high fidelity and the reduced velocity for the Euler incompressible problem, with $k$ being the number of basis considered. (\protect\subref{fig:energy_error_incompressible_Euler}) Conservation of the kinetic energy for the solutions of the reduced problem for different values of $k$.}
+\caption{(\protect\subref{fig:approx_error_incompressible_Euler}) Evolution of 2-norm error in velocity, between the high-fidelity system and the reduced system. (\protect\subref{fig:energy_error_incompressible_Euler}) Conservation of the kinetic energy. {\commnet \{ in fig a $y$ axis: $\| u - \tilde u \|_2$ \} \{ in fig b $|k - \tilde K|$ \}}  }
 \end{figure}
-For a qualitative analysis, in Figure \ref{fig:snap_solution_incompressible_Euler}, four snapshots at different time frames are shown for the high fidelity solution and for different reduced solutions. The dynamic of the solution, in particular the formation and development of vorticity filaments, is correctly represented even with a moderate number of basis functions. With fewer bases, even though small details are not captured by the POD models, the positions and spreadings of the vorticity masses match. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% Snapshots of merging process %%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_17_2.png}\hspace{1em}
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_2.png}\hspace{1em}
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_2.png}\\
-
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_17_3.png}\hspace{1em}
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_3.png}\hspace{1em}
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_3.png}\\
-
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_17_4.png}\hspace{1em}
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_4.png}\hspace{1em}
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_4.png}\\
-
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_17_5.png}\hspace{1em}
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_5.png}\hspace{1em}
-\includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_5.png}
-
-\caption{Solutions of the three-vortices merging problem at $t=\left\{ 4,8,12,18 \right\}$. From left to right we have the solution of the reduced model with $k=17$, $k=35$ and the high fidelity solution.}
-\label{fig:snap_solution_incompressible_Euler}
-\end{figure}
 
 \subsection{The Compressible Euler Equation}
 \subsubsection{2D Kelvin-Helmholtz instability}
