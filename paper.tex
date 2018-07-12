@@ -22,8 +22,11 @@
 \usepackage{makeidx}         % allows index generation
 \usepackage{graphicx}        % standard LaTeX graphics tool
                              % when including figure files
-\usepackage{subfigure}
 \usepackage{epstopdf}
+
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{subcaption}
+\captionsetup{compatibility=false} % otherwise it raises some issues regarding compatibility
 
 \usepackage{multicol}        % used for the two-column index
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
@@ -40,7 +43,24 @@
 \usepackage{multirow}
 \usepackage{cleveref}
 
-\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{
+    % most recent feature set of pgfplots
+    compat=newest,
+    % some settings for grid
+    grid style={black!20!white, thin, densely dotted},
+    % modify plot appearance
+    every axis plot/.append style={no markers, thick},
+    % i like the labels a bit smaller
+    label style={font=\small},
+    tick label style={font=\small}
+}
+\usepgfplotslibrary{external} 
+\tikzexternalize[prefix=TikzFigures/]
+
+%\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
 \usepackage{booktabs} % Horizontal rules in tables
 \usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
 %\usepackage{hyperref} % For hyperlinks in the PDF
