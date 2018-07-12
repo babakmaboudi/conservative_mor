@@ -1,7 +1,8 @@
-TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/Snapshots/density_exact_300.txt
-TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_24_300.txt
-TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_102_300.txt
-TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_201_300.txt
-TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_24_300.txt
-TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_102_300.txt
-TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/Snapshots/density_approx_201_300.txt
+TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/error/error_75.txt
+TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/error/error_126.txt
+TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/error/error_177.txt
+TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/error/error_225.txt
+TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/error/error_276.txt
+TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/error/error_327.txt
+TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/error/error_375.txt
+TikzFigures/paper-figure12.pdf: ./data/Compressible_Euler/1D/error/error_426.txt

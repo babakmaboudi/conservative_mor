@@ -181,9 +181,40 @@ For a qualitative analysis, in Figure \ref{fig:snap_solution_incompressible_Eule
 
 \subsection{The Compressible Euler Equation}
 \subsubsection{2D Kelvin-Helmholtz instability}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%% Singular values KH problem %%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Approximation Error %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\centering
+\begin{subfigure}[]{0.48\linewidth}
+  \begin{tikzpicture}[scale=0.55]
+    \begin{semilogyaxis}[xlabel=$t$,
+                 ylabel=$e(t)$,
+                 label style={font=\large},
+                 legend pos=outer north east,
+                 legend style={font=\large},
+                 legend entries={$k=200$,$k=300$,$k=400$,$k=500$,$k=600$},
+                 grid=both,
+                 ticks=both,
+                 width=1.4\linewidth, 
+                 height=1.0\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+                 cycle list name=exotic]
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_200.txt};  
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_300.txt};      
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_400.txt}; 
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_500.txt};      
+                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_600.txt};               
+    \end{semilogyaxis}%  
+  \end{tikzpicture}
+\end{subfigure}
+\caption{Evolution in time of the error  between the high fidelity solution of the Kelvin-Helmoltz and the reduced solution for different number of basis $k$. As error measure we consider $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{u_xr}-\mathbf{u_xr}^r\|^2 + \|\mathbf{u_yr}-\mathbf{u_yr}^r\|^2 + \|\mathbf{p}-\mathbf{p}^r\|^2}$.}
+\end{figure}
 
 \subsubsection{1D Shock problem}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -401,7 +432,7 @@ For a qualitative analysis, in Figure \ref{fig:snap_solution_incompressible_Eule
 \begin{subfigure}[]{0.48\linewidth}
   \begin{tikzpicture}[scale=0.55]
     \begin{semilogyaxis}[xlabel=$t$,
-                 ylabel=$e(t)$
+                 ylabel=$e(t)$,
                  label style={font=\large},
                  legend pos=outer north east,
                  legend style={font=\large},
@@ -428,7 +459,7 @@ For a qualitative analysis, in Figure \ref{fig:snap_solution_incompressible_Eule
     \end{semilogyaxis}%  
   \end{tikzpicture}
 \end{subfigure}
-\caption{Evolution in time of the error  between the high fidelity solution of the 1D compressible Euler and the reduced solution for different number of basis $k$. As error measure we consider $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{ur}-\mathbf{ur}^r\|^2\|\mathbf{p}-\mathbf{p}^r\|^2}$}.
+\caption{Evolution in time of the error  between the high fidelity solution of the 1D compressible Euler and the reduced solution for different number of basis $k$. As error measure we consider $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{ur}-\mathbf{ur}^r\|^2+\|\mathbf{p}-\mathbf{p}^r\|^2}$.}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

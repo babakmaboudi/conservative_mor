@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  12 JUL 2018 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  12 JUL 2018 11:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1103,21 +1103,24 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 \openout5 = `TikzFigures/paper-figure19.dpth'.
 
-PGFPlots: reading {./data/Compressible_Euler/1D/error_DEIM/error_energy_DEIM.tx
-t}
+PGFPlots: reading {./data/Compressible_Euler/1D/error_DEIM/error_DEIM.txt}
 \tikzexternal@dep@file=\write6
 \openout6 = `TikzFigures/paper-figure19.dep'.
 
-PGFPlots: reading {./data/Compressible_Euler/1D/error_DEIM/error_energy_POD.txt
-}
+PGFPlots: reading {./data/Compressible_Euler/1D/error_DEIM/error_POD.txt}
 [15
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 The command '\includegraphics [width=0.8\linewidth ]{pic/radius}' has been opti
 mized away. Use '/tikz/external/optimize=false' to disable this.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./sections/6.con.tex)
 No file TikzFigures/paper-figure19.bbl.
 \immediate\closeout\minitoc
@@ -1126,20 +1129,21 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26787 strings out of 493054
- 662511 string characters out of 6134761
+ 26785 strings out of 493054
+ 662393 string characters out of 6134761
  822245 words of memory out of 5000000
- 29811 multiletter control sequences out of 15000+600000
- 33464 words of font info for 84 fonts, out of 8000000 for 9000
+ 29806 multiletter control sequences out of 15000+600000
+ 35328 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,23n,89p,1453b,2388s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,23n,89p,1453b,2390s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on TikzFigures/paper-figure19.pdf (1 page, 21619 bytes).
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on TikzFigures/paper-figure19.pdf (1 page, 27892 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 14 compressed objects within 1 object stream
+ 24 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
