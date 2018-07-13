@@ -203,14 +203,32 @@ The conservation of the kinetic energy is presented in \Cref{fig:energy_error_in
 
 \subsection{The Compressible Euler Equation}
 \subsubsection{2D Kelvin-Helmholtz instability}
-Consider the 2D case of the compressible Euler equations \eqref{eq:3.18} ... .
-In this test case we consider the flows of different layers of an heterogenous fluid in relative horizontal motion. If the heterogeneity considered consists in a stratification of different density layers, the fluid develops, at the interface between two separated layers, an hydrodynamic instability called Kelvin-Helmholtz instability \cite{HHS}. As a result of  the different tangential velocities,  Given the considered geometrical setting and the absence of external forces, this phenomenon is induced only by the initial condition. In our test cases we consider three different layers, 
+Consider the 2D case of the compressible Euler equations \eqref{eq:3.18} in the periodic square box $[0,1]^2$. Spatial derivatives, differently from the incompressible example, are numerically approximated by means of a centered finite difference scheme of fourth order, using 256 nodes per side. 
+
+In this test case we consider the flows of different layers of an heterogenous fluid in relative vertical motion. If the heterogeneity considered consists in a stratification of different density layers, the fluid develops, at the interface between two separated layers, an hydrodynamic instability called Kelvin-Helmholtz instability \cite{HHS}. Given the considered geometrical setting and the absence of external forces, this phenomenon is induced only by the initial condition. In our test cases we consider three different layers, 
 \begin{equation*}
-dasdasd
+\begin{cases}
+& \mathbf{r} = 
+\begin{cases}
+& 2, \text{ if } 0.25<y<0.75,\\
+& 1, \text{ otherwise },
+\end{cases}
+\\
+& \mathbf{u}_x = a \sin(4\pi y) \left( e^{-\dfrac{(y-0.25)^2}{2\sigma^2}} + e^{-\dfrac{(y-0.75)^2}{2\sigma^2}} \right)\\
+& \mathbf{u}_y = 
+\begin{cases}
+& 0.5, \text{ if } 0.25<y<0.75,\\
+& -0.5, \text{ otherwise },
+\end{cases}
+\\
+& \mathbf{p} = 2.5\\
+\end{cases}
 \end{equation*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%% Approximation Error %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+with $a=0.1$ and $\sigma=5\sqrt{2}\cdot 10^{-3}$.  The initial condition on $\mathbf{u}_x$ represents a small perturbation in the normal direction with respect to the layer interfaces at $y=0.25$ and $y=0.75$. From the theory, we expect the shear stress at the interfaces to induce the formation of vortices that rolls up into spirals. To capture these delicate structures and considering the discontinuous initial data, we introduce numerical viscosity in the original formulation of the compressible Euler equations. The dissipation coefficient considered is based on the derivative-based model described in \cite{artificial_dissipation} while for the reduced model we filter out the last $5\%$ of POD modes every 10 iterations.
+
+The time marching method adopted for the discretization of the time derivatives for the complete and reduced models is the scheme proposed by Morinishi \eqref{eq:3.27}. The final time considered is $T=1s$ with a time step $\Delta t =5 \cdot 10^{-4}$. 
+
+In \Cref{fig:error_decay_KH} we show that the solution to the skew-symmetric reduced models are stable and the accuracy in the approximation of the high fidelity solution increases with the dimension of the set of basis functions considered. From \Cref{fig:snap_solution_KH}, where snapshots of the high fidelity and reduced solutions at different time steps are shown, we notice that even in the case considered,  the reduced solution is not easily distinguis
 \begin{figure}
 \centering
 \begin{subfigure}[]{0.48\linewidth}
@@ -241,8 +259,10 @@ dasdasd
   \end{tikzpicture}
 \end{subfigure}
 \caption{Evolution in time of the error  between the high fidelity solution of the Kelvin-Helmoltz and the reduced solution for different number of basis $k$. As error measure we consider $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{u_xr}-\mathbf{u_xr}^r\|^2 + \|\mathbf{u_yr}-\mathbf{u_yr}^r\|^2 + \|\mathbf{p}-\mathbf{p}^r\|^2}$.}
+\label{fig:error_decay_KH}
 \end{figure}
 
+In \Cref{fig:conservation_DEIM} 
 \begin{figure}
   \centering
   \begin{subfigure}[]{0.48\linewidth}
@@ -334,6 +354,7 @@ dasdasd
   \label{energy_error_KH}
   \end{subfigure}
 \caption{Comparison between the high fidelity solution of the Kelvin-Helmholtz problem and the reduced solution of the mass (\protect\subref{mass_error_KH}), the momentum (\protect\subref{momentum_error_KH}), and the total energy (\protect\subref{energy_error_KH}).}
+\label{fig:conservation_DEIM}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -357,7 +378,7 @@ dasdasd
 \includegraphics[scale=0.115]{data/Compressible_Euler/KH/Snapshots/density_exact_768.png}
 
 \caption{Solutions of the Kelvin-Helmholtz problem at $t=\left\{ 0.4, 0.6, 0.8, 1 \right\}$. From left to right we have the solution of the reduced model with $k=200$, $k=500$ and the high fidelity solution.}
-\label{fig:snap_solution_incompressible_Euler}
+\label{fig:snap_solution_KH}
 \end{figure}
 
 
