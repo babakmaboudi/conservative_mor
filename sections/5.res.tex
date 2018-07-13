@@ -228,7 +228,7 @@ with $a=0.1$ and $\sigma=5\sqrt{2}\cdot 10^{-3}$.  The initial condition on $\ma
 
 The time marching method adopted for the discretization of the time derivatives for the complete and reduced models is the scheme proposed by Morinishi \eqref{eq:3.27}. The final time considered is $T=1s$ with a time step $\Delta t =5 \cdot 10^{-4}$. 
 
-In \Cref{fig:error_decay_KH} we show that the solution to the skew-symmetric reduced models are stable and the accuracy in the approximation of the high fidelity solution increases with the dimension of the set of basis functions considered. From \Cref{fig:snap_solution_KH}, where snapshots of the high fidelity and reduced solutions at different time steps are shown, we notice that even in the case considered,  the reduced solution is not easily distinguis
+In \Cref{fig:error_decay_KH} we show that the solution to the skew-symmetric reduced models are stable and the accuracy in the approximation of the high fidelity solution increases with the dimension of the set of basis functions considered. From \Cref{fig:snap_solution_KH}, where snapshots of the high fidelity and reduced solutions at different time steps are shown, we notice that even in the less accurate case considered,  the reduced solution is not easily distinguishable from the high fidelity solution.
 \begin{figure}
 \centering
 \begin{subfigure}[]{0.48\linewidth}
@@ -262,7 +262,7 @@ In \Cref{fig:error_decay_KH} we show that the solution to the skew-symmetric red
 \label{fig:error_decay_KH}
 \end{figure}
 
-In \Cref{fig:conservation_DEIM} 
+In \Cref{fig:conservation_DEIM}  we show that the considered invariants of the system converges to the related invariatns of the high fidelity solution.
 \begin{figure}
   \centering
   \begin{subfigure}[]{0.48\linewidth}
@@ -383,35 +383,20 @@ In \Cref{fig:conservation_DEIM}
 
 
 \subsubsection{1D Shock problem}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%% Singular values 1D problem %%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
-\centering
-\begin{tikzpicture}[scale=0.5452]
-    \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
-                 xlabel=Basis,
-                 label style={font=\large},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=0.7\linewidth, 
-                 height=0.5\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymin=0,
-                 ymax = 2,
-                 samples = 100]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = n, y = sing_values] {./data/Compressible_Euler/1D/Singular_values/sv.txt};
-    \end{semilogyaxis}
-\end{tikzpicture}
-\caption{Singular values decay of the snapshot matrix related to POD algorithms for the 1D compressible Euler problem.}
-\end{figure}
+One of the most challenging aspects of model order reduction of combustion problems is the development 
+and propagation of shocks in the solution, starting from the simple steady state scenario. Before proceeding with the reduction of  such a problem, we focus on a much simpler case to assess the capability of the skew-symmetric formulation to handle moving discontinuities in combination to the reduced basis approach. We consider the 1D compressible Euler equation with periodic boundaries on the domain $[0,1]$. The initial conditions are given by
+\begin{equation*}
+\begin{cases}
+& \mathbf{r} = 0.5+0.2 \cos(2\pi x),\\
+& \mathbf{u} = 1.5,\\
+& \mathbf{p} = 0.5+0.2 \sin(2\pi x).\\
+\end{cases}
+\end{equation*}
+The domain is discretized using $2000$ nodes and spatial derivatives are approximated using a second order centered finite differences scheme. We simulate $T=0.3$s of the dynamic of the system, using Morinishi time integrator. Artificial viscosity is added, only to the pressure equation, with a constant diffusion coefficient equals to $\mu = 0.5 \cdot 10^{-4}$.
+First we consider a comparison between different formulations of the compressible Euler equation. In   \Cref{fig:energy_pres_1D}, we show the behaviour of the conserved quantities mass, total momentum and total energy, for the reduced solution of the skew-symmetric, divergence and advective formulations, while in \Cref{fig:snaps_1D_Euler} we show snapshots of the solution. The skew-symmetric formulation is the only one preserving these invariants, while other formulations are unstable. Moreover we notice that for unstable formulations, the more basis functions we use, the sooner the reduced solutions blow up. On the contrary,  for the stable formulation, increasing the number of basis leads to a more accurate representation, as shown in \Cref{error_behaviour_1D}. However, the introduction of the artificial diffusion  slightly affects the conservation properties of the algorithms, as can be seen in   \Cref{conservation_1D_focus}. 
 
+For this problem we estimate the effect of the DEIM procedure on the accuracy and on the conservation of invariants for the solution of the reduced problem.  First we notice, from \Cref{fig:singular_values_decay_1D}, that the space spanned by the snapshots of nonlinearity is larger than the space spanned by the solution snapshots. Hence, we expect that to reach the same accuracy of standard POD with the DEIM approach, more basis will be required.
+This conclusion is numerically justified by a direct comparison of the approximation error (\Cref{error_DEIM}) and of the total energy of the system (\Cref{energy_DEIM}) at the last time step. The number of POD basis has been fixed to $204$ while the number of DEIM basis adopted for the simulation varies in the interval  $[204,500]$. Even though the interpolatory procedure have an impact on the quality of the reduction, the reduced solution remains an accurate representation of the high fidelity solution, preserving stability and the boundedness of the conserved quantities. By increasing the number of DEIM basis,  the error is dominated by the POD approximation error.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% Mass, Total momentum & Energy %%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -424,7 +409,7 @@ In \Cref{fig:conservation_DEIM}
                  xlabel=$t$,
                  label style={font=\large},
                  legend pos=north east,
-                 legend entries={$k=102$ Conv,$k=201$ Conv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
+                 legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
                  grid=both,
                  ticks=both,
@@ -588,6 +573,7 @@ In \Cref{fig:conservation_DEIM}
   \label{conservation_1D_focus}
   \end{subfigure}
   \caption{(\protect\subref{conservation_1D})  Evolution of the three conserved quantities for the reduced solution of the compressible Euler equation (mass, total momentum and total energy).  The divergent, advective and skew-symmetric formulations have been considered and $k=102,204$ basis are used for the reduction. (\protect\subref{conservation_1D_focus}) Focus on the conserved quantity in case of stable reduction using the skew-symmetric formulation.} 
+  \label{fig:energy_pres_1D}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -626,6 +612,7 @@ In \Cref{fig:conservation_DEIM}
   \end{tikzpicture}
 \end{subfigure}
 \caption{Evolution in time of the error  between the high fidelity solution of the 1D compressible Euler and the reduced solution for different number of basis $k$. As error measure we consider $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{ur}-\mathbf{ur}^r\|^2+\|\mathbf{p}-\mathbf{p}^r\|^2}$.}
+\label{error_behaviour_1D}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -809,6 +796,37 @@ In \Cref{fig:conservation_DEIM}
 \label{pressure_reduction_1D}
 \end{subfigure}
 \caption{Qualitative comparison between different formulations for the reduced model in terms of density (\protect\subref{density_reduction_1D})  and pressure(\protect\subref{pressure_reduction_1D}) at $t=0.1,0.3$ and $1$s. Results for the advective formulation are not showed here because the related reduced solutions are unstable after few time steps.}
+\label{fig:snaps_1D_Euler}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% Singular values 1D problem %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.5452]
+    \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
+                 xlabel=Basis,
+                 label style={font=\large},
+                 legend style={font=\large},
+                 legend entries = {POD,DEIM},
+                 grid=both,
+                 ticks=both,
+                 width=0.7\linewidth, 
+                 height=0.5\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+                 samples = 100]
+                 \addplot[color=black,style=solid,style=ultra thick]  table[x = n, y = sing_values] {./data/Compressible_Euler/1D/Singular_values/sv.txt};
+                 \addplot[color=black,style=dashed,style=ultra thick]  table[x = n, y = sv] {./data/Compressible_Euler/1D/Singular_values/sv_DEIM.txt};
+    \end{semilogyaxis}
+\end{tikzpicture}
+\caption{Singular values decay of the snapshot matrix related to POD and DEim algorithms for the 1D compressible Euler problem.}
+\label{fig:singular_values_decay_1D}
 \end{figure}
 
 \begin{figure}[h!]
