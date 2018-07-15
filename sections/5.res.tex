@@ -2,8 +2,8 @@
 
 \section{Numerical Experiments} \label{sec:res}
 
-\subsection{Vortex Merging}
-Consider the $2D$ incompressible Euler equation, \eqref{eq:3.8} with no viscous term, on a square domain $\Omega = [0,2\pi]^2$, provided with periodic boundary conditions. Spatial derivatives are discretized using a Fourier spectral method, which in centered differential operators in the Fourier space. To capture the fine details characterizing the solution, $256\times 256$ modes have been adopted. The initial condition is given in terms of the vorticity distribution $\mathbf{\omega} = \nabla \times u$. 
+\subsection{Vortex Merging} \label{sec:res.1}
+Consider the 2-dimensional incompressible Euler equation \eqref{eq:3.8} , without any viscous terms, on a square domain $\Omega = [0,2\pi]^2$, with periodic boundary conditions. Spatial derivatives are discretized using a Fourier spectral method, which in centered differential operators in the Fourier space. To capture the fine details characterizing the solution, $256\times 256$ modes have been adopted. The initial condition is given in terms of the vorticity distribution $\mathbf{\omega} = \nabla \times u$. 
 
 We consider the evolution of three different vortices, and the initial structure is given by
 \begin{equation}\label{eqn:initial_cond_vort}
@@ -201,11 +201,10 @@ The conservation of the kinetic energy is presented in \Cref{fig:energy_error_in
 \end{figure}
 
 
-\subsection{The Compressible Euler Equation}
-\subsubsection{2D Kelvin-Helmholtz instability}
-Consider the 2D case of the compressible Euler equations \eqref{eq:3.18} in the periodic square box $[0,1]^2$. Spatial derivatives, differently from the incompressible example, are numerically approximated by means of a centered finite difference scheme of fourth order, using 256 nodes per side. 
+\subsection{2D Kelvin-Helmholtz instability}
+Consider a 2-dimensional compressible Euler equation \eqref{eq:3.18} in a periodic square box $[0,1]^2$. Unlike the incompressible example in \Cref{sec:res.1} a centered finite difference scheme of fourth order are used to discretize \eqref{eq:3.18}. The physical domain is discretized into a grid of $256\times 256$ nodes.
 
-In this test case we consider the flows of different layers of an heterogenous fluid in relative vertical motion. If the heterogeneity considered consists in a stratification of different density layers, the fluid develops, at the interface between two separated layers, an hydrodynamic instability called Kelvin-Helmholtz instability \cite{HHS}. Given the considered geometrical setting and the absence of external forces, this phenomenon is induced only by the initial condition. In our test cases we consider three different layers, 
+The initial velocity field is given by
 \begin{equation*}
 \begin{cases}
 & \mathbf{r} = 
@@ -219,17 +218,20 @@ In this test case we consider the flows of different layers of an heterogenous f
 \begin{cases}
 & 0.5, \text{ if } 0.25<y<0.75,\\
 & -0.5, \text{ otherwise },
-\end{cases}
+\end{cases},
 \\
-& \mathbf{p} = 2.5\\
+& \mathbf{p} = 2.5,\\
 \end{cases}
 \end{equation*}
-with $a=0.1$ and $\sigma=5\sqrt{2}\cdot 10^{-3}$.  The initial condition on $\mathbf{u}_x$ represents a small perturbation in the normal direction with respect to the layer interfaces at $y=0.25$ and $y=0.75$. From the theory, we expect the shear stress at the interfaces to induce the formation of vortices that rolls up into spirals. To capture these delicate structures and considering the discontinuous initial data, we introduce numerical viscosity in the original formulation of the compressible Euler equations. The dissipation coefficient considered is based on the derivative-based model described in \cite{artificial_dissipation} while for the reduced model we filter out the last $5\%$ of POD modes every 10 iterations.
+where $a=0.1$ and $\sigma=5\sqrt{2}\cdot 10^{-3}$. This corresponds to contacting streams of fluid with different densities. For specific choices of parameters describing the jets, fine structures and vortices emerges at the interface between the streams. Such instability is referred to as the Kelvin-Helmholtz instability \cite{HHS}.
 
-The time marching method adopted for the discretization of the time derivatives for the complete and reduced models is the scheme proposed by Morinishi \eqref{eq:3.27}. The final time considered is $T=1s$ with a time step $\Delta t =5 \cdot 10^{-4}$. 
+As centered finite difference schemes are dissipation free, resolving the discontinuous initial data requires application of an artificial viscosity. In the high-fidelity model, the method discussed in \cite{artificial_dissipation} is used as an artificial viscosity. However, at the level of the reduced system, this is replaced with a low pass filter over the expansion coefficients of POD basis vectors.
 
-In \Cref{fig:error_decay_KH} we show that the solution to the skew-symmetric reduced models are stable and the accuracy in the approximation of the high fidelity solution increases with the dimension of the set of basis functions considered. From \Cref{fig:snap_solution_KH}, where snapshots of the high fidelity and reduced solutions at different time steps are shown, we notice that even in the less accurate case considered,  the reduced solution is not easily distinguishable from the high fidelity solution.
-\begin{figure}
+The fully discrete skew-symmetric form \eqref{eq:3.27} is used as a time marching scheme with $\Delta t = 5 \cdot 10^{-4}$, the time step, over a period of $1$ time unit.
+
+\Cref{fig:error_decay_KH} illustrates that the accuracy of the method is consistently increase as higher number of POD basis modes are considered. Furthermore, the skew-symmetric form preserves the accuracy over the period of time integration. It is observed from \Cref{fig:snap_solution_KH} that all features of the flow are correctly represented in the reduced system, even with a low number of basis vectors.
+
+\begin{figure}[t]
 \centering
 \begin{subfigure}[]{0.48\linewidth}
   \begin{tikzpicture}[scale=0.55]
@@ -262,7 +264,9 @@ In \Cref{fig:error_decay_KH} we show that the solution to the skew-symmetric red
 \label{fig:error_decay_KH}
 \end{figure}
 
-In \Cref{fig:conservation_DEIM}  we show that the considered invariants of the system converges to the related invariatns of the high fidelity solution.
+Conservation mass, momentum and energy is presented in \Cref{fig:conservation_DEIM}. The accuracy of the method in approximating these invariants is enhanced when the size of the basis is increased. Furthermore, \Cref{energy_error_KH} shows how the kinetic energy associated with the reduced system mimic the kinetic energy of the high-fidelity system. This ensures the correct evolution of kinetic energy, and thus, the internal energy.
+
+This helps with the correct distribution of the energy and ensures 
 \begin{figure}
   \centering
   \begin{subfigure}[]{0.48\linewidth}
@@ -382,9 +386,8 @@ In \Cref{fig:conservation_DEIM}  we show that the considered invariants of the s
 \end{figure}
 
 
-\subsubsection{1D Shock problem}
-One of the most challenging aspects of model order reduction of combustion problems is the development 
-and propagation of shocks in the solution, starting from the simple steady state scenario. Before proceeding with the reduction of  such a problem, we focus on a much simpler case to assess the capability of the skew-symmetric formulation to handle moving discontinuities in combination to the reduced basis approach. We consider the 1D compressible Euler equation with periodic boundaries on the domain $[0,1]$. The initial conditions are given by
+\subsection{1D Shock problem}
+In this section we study the 1-dimensional compressible Euler problem, \eqref{eq:3.18} without viscous terms, with a steady state discontinuous solution. This is in preparation for \Cref{sec:5.res.4}, where development and propagation of shock waves is expected. Here we asses how the skew-symmetric form for \eqref{eq:3.18} can recover moving discontinuities at the level of reduced system. Consider a periodic boundary conditions on $\Omega = [0,1]$ with the initial condition`
 \begin{equation*}
 \begin{cases}
 & \mathbf{r} = 0.5+0.2 \cos(2\pi x),\\
@@ -392,11 +395,14 @@ and propagation of shocks in the solution, starting from the simple steady state
 & \mathbf{p} = 0.5+0.2 \sin(2\pi x).\\
 \end{cases}
 \end{equation*}
-The domain is discretized using $2000$ nodes and spatial derivatives are approximated using a second order centered finite differences scheme. We simulate $T=0.3$s of the dynamic of the system, using Morinishi time integrator. Artificial viscosity is added, only to the pressure equation, with a constant diffusion coefficient equals to $\mu = 0.5 \cdot 10^{-4}$.
-First we consider a comparison between different formulations of the compressible Euler equation. In   \Cref{fig:energy_pres_1D}, we show the behaviour of the conserved quantities mass, total momentum and total energy, for the reduced solution of the skew-symmetric, divergence and advective formulations, while in \Cref{fig:snaps_1D_Euler} we show snapshots of the solution. The skew-symmetric formulation is the only one preserving these invariants, while other formulations are unstable. Moreover we notice that for unstable formulations, the more basis functions we use, the sooner the reduced solutions blow up. On the contrary,  for the stable formulation, increasing the number of basis leads to a more accurate representation, as shown in \Cref{error_behaviour_1D}. However, the introduction of the artificial diffusion  slightly affects the conservation properties of the algorithms, as can be seen in   \Cref{conservation_1D_focus}. 
+The domain is discretized into $N=2000$ nodes and centered finite differences scheme are used to assemble the discrete Euler equation in skew-symmetric form, as discussed in \Cref{sec:skew.3}. 
 
-For this problem we estimate the effect of the DEIM procedure on the accuracy and on the conservation of invariants for the solution of the reduced problem.  First we notice, from \Cref{fig:singular_values_decay_1D}, that the space spanned by the snapshots of nonlinearity is larger than the space spanned by the solution snapshots. Hence, we expect that to reach the same accuracy of standard POD with the DEIM approach, more basis will be required.
-This conclusion is numerically justified by a direct comparison of the approximation error (\Cref{error_DEIM}) and of the total energy of the system (\Cref{energy_DEIM}) at the last time step. The number of POD basis has been fixed to $204$ while the number of DEIM basis adopted for the simulation varies in the interval  $[204,500]$. Even though the interpolatory procedure have an impact on the quality of the reduction, the reduced solution remains an accurate representation of the high fidelity solution, preserving stability and the boundedness of the conserved quantities. By increasing the number of DEIM basis,  the error is dominated by the POD approximation error.
+The fully discrete skew-symmetric form \eqref{eq:3.27} is used for time integration over a time interval $[0,0.3]$. To resolve the discontinuous solution we consider an artificial viscosity with $\tau = \mu \partial u / \partial x$, where $\mu = 0.5 \cdot 10^{-4}$.
+
+\Cref{fig:energy_pres_1D} shows the conservation of conserved quantities for the high-fidelity and reduced system. Here, the high-fidelity model is also considered in the divergence and advective form to be compared with the skew-symmetric form. It is observed the reduced systems that are not in skew-symmetric form violate conservation of mass, momentum, and energy. Even as the high-fidelity systems in divergence and advective forms are stable, the constructed reduced system is unstable, even with very high number of basis vectors. On the other hand, it is seen that the skew-symmetric forms yield a stable and conservative reduce system. Note that the loss in the energy associated with the skew-symmetric form, seen in \Cref{conservation_1D_focus}, is due to the application of an artificial viscosity. 
+
+As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonlinear components of \eqref{eq:3.18} can affect the conservative properties of the skew-symmetric form. \Cref{fig:singular_values_decay_1D} shows the decay of the singular values of the nonlinear snapshots. It is observed that the decay of these snapshots is significantly slower than the temporal snapshots of \eqref{eq:3.18}. This indicates that to maintain the accuracy of the reduced system, the DEIM basis should be chosen richer than the POD basis. \Cref{error_DEIM} and \Cref{energy_DEIM} present the error and the conservation of total energy when the DEIM is used to approximate the nonlinear term. It is observed that the conservation of energy is recovered once DEIM approximates the nonlinear terms with enough accuracy.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% Mass, Total momentum & Energy %%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

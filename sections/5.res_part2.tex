@@ -1,4 +1,4 @@
-\subsection{Continuous Variable Resonance Combustor}
+\subsection{Continuous Variable Resonance Combustor} \label{sec:5.res.4}
 
 CVRC is a model rocket combustor designed and operated at Purdue University (Indiana, U.S.) to investigate combustion instabilities \cite{yu2008combustion}. This setup is called the Continuously Variable Resonance Combustor (CVRC) because the length of the oxidizer injector can be varied continuously, allowing for a detailed investigation of the coupling between acoustics and combustion in the chamber \cite{garby2013simulations}. The 2D/3D high-fidelity simulations of CVRC are expensive. Thus to get a fast analysis tool, a quasi-1D model has been proposed by Smith et al. \cite{smith2008computational} and further developed by Frezzotti et al. \cite{frezzotti2015determination,frezzotti2017numerical,frezzotti2018quasi}. 
 
@@ -182,7 +182,7 @@ The pressure profile for the steady state, with $q'=0$, and the pressure oscilla
 \label{fig:5p2.2}
 \end{figure}
 
-The discontinuities that are involved in the solution \eqref{eq:5p2.10} suggests that a, relatively, large basis is required to resolve fine strucutres in the solution. In this paper, a POD basis is generated with $k=200$, $k=300$ and $k=400$ number of basis vectors. To avoid basis changes in reduced system, only one POD basis is considered for $\rho$, $\rho u$ $\rho E$ and $\rho Y_{ox}$. The explicit SSP RK3 is then used to integrated the reduced system in time, for the unsteady system. The source terms are evaluated in the high-fidelity space and then projected onto the reduced space. However, in principle, the DEIM can be applied to accelerate this evaluation. 
+The discontinuities that appear in the solution of \eqref{eq:5p2.10} suggests that a, relatively, large basis is required to resolve fine strucutres in the solution. In this paper, a POD basis is generated with $k=200$, $k=300$ and $k=400$ number of basis vectors. To avoid basis changes in reduced system, only one POD basis is considered for $\rho$, $\rho u$ $\rho E$ and $\rho Y_{ox}$. The explicit SSP RK3 is then used to integrated the reduced system in time, for the unsteady system. The source terms are evaluated in the high-fidelity space and then projected onto the reduced space. However, in principle, the DEIM can be applied to accelerate this evaluation. 
 
 \Cref{fig:5p2.2c} shows the approximation error of the pressure, due to MOR. It is observed that the approximation is coherently enhanced as the number of basis vectors are increase. Furthermore, the approximated solution maintains high accuracy over a relatively long time-integration. The oscilations of pressure is demostrated in \Cref{fig:5p2.2d}. It is seen that the overall behaviour of pressure is well approximated using the reduced system. Similar results are obtained for a POD basis with higher number of modes.
 
