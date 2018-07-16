@@ -86,7 +86,7 @@ obtained by applying the divergence operator to \eqref{eq:3.8} and using the inc
 \caption{}
 \label{singular_values_decay}
 \end{subfigure}
-  \caption{(\protect\subref{compare_different_models}) Conservation of the kinetic energy $K$ for the advective, divergence and the skew-symmetric formulations. (\protect\subref{singular_values_decay}) The decay of the singular values for the merging vortices problem. }
+  \caption{(\protect\subref{compare_different_models}) The kinetic energy $K$ for the advective, divergence and the skew-symmetric formulations. (\protect\subref{singular_values_decay}) The decay of the singular values for the vortex merging. }
   \label{fig:unstable_full_models}
 \end{figure}
 A total of $5000$ temporal snapshots is used to construct a reduced basis, following the process discussed in \Cref{sec:mor}. The decay of the singular values, as an indication of the reducibility of the problem, is presented in \Cref{singular_values_decay}. The first $35$ POD modes corresponds to over $99\%$ of the modes energy of the high fidelity solution. This suggests that an accurate reduced system can be constructed using a small number of basis vectors. To illustrate the effectiveness of the method, smaller bases are also considered.
@@ -113,7 +113,7 @@ For a qualitative analysis, in Figure \ref{fig:snap_solution_incompressible_Eule
 \includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/red_35_5.png}\hspace{1em}
 \includegraphics[scale=0.06]{data/Incompressible_Euler/Snapshots/Full_5.png}
 
-\caption{Snapshots of the high-fidelity system and the reduced system at $t=\left\{ 4,8,12,18 \right\}$. From left to right: the snapshots of the reduced model with $k=17$, $k=35$ and the high fidelity solution.}
+\caption{Snapshots of the high-fidelity system and the reduced system at $t=\left\{ 4,8,12,18 \right\}$. From left to right: the solution of the reduced model with $k=17$, $k=35$ and the high fidelity solution.}
 \label{fig:snap_solution_incompressible_Euler}
 \end{figure}
 
@@ -197,7 +197,7 @@ The conservation of the kinetic energy is presented in \Cref{fig:energy_error_in
 \label{fig:energy_error_incompressible_Euler}
 \end{subfigure}
 \label{fig:energy_approx_err}
-\caption{(\protect\subref{fig:approx_error_incompressible_Euler}) Evolution of 2-norm error in velocity, between the high-fidelity system and the reduced system. (\protect\subref{fig:energy_error_incompressible_Euler}) Conservation of the kinetic energy.}
+\caption{(\protect\subref{fig:approx_error_incompressible_Euler}) Evolution of $L_2$ error in velocity, between the high-fidelity system and the reduced system. (\protect\subref{fig:energy_error_incompressible_Euler}) Conservation of the kinetic energy.}
 \end{figure}
 
 
@@ -260,7 +260,7 @@ The fully discrete skew-symmetric form \eqref{eq:3.27} is used as a time marchin
     \end{semilogyaxis}%  
   \end{tikzpicture}
 \end{subfigure}
-\caption{Evolution in time of the error  between the high fidelity solution of the Kelvin-Helmoltz and the reduced solution for different number of basis $k$. As error measure we consider $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{u_xr}-\mathbf{u_xr}^r\|^2 + \|\mathbf{u_yr}-\mathbf{u_yr}^r\|^2 + \|\mathbf{p}-\mathbf{p}^r\|^2}$.}
+\caption{Evolution in time of the error  between the high fidelity solution of the Kelvin-Helmoltz and the reduced solution for different number of basis $k$. As error measure we use $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{u_xr}-\mathbf{u_xr}^r\|^2 + \|\mathbf{u_yr}-\mathbf{u_yr}^r\|^2 + \|\mathbf{p}-\mathbf{p}^r\|^2}$.}
 \label{fig:error_decay_KH}
 \end{figure}
 
@@ -357,7 +357,7 @@ This helps with the correct distribution of the energy and ensures
    \caption{}
   \label{energy_error_KH}
   \end{subfigure}
-\caption{Comparison between the high fidelity solution of the Kelvin-Helmholtz problem and the reduced solution of the mass (\protect\subref{mass_error_KH}), the momentum (\protect\subref{momentum_error_KH}), and the total energy (\protect\subref{energy_error_KH}).}
+\caption{Difference between the high fidelity solution of the Kelvin-Helmholtz problem and the reduced solution of the mass (\protect\subref{mass_error_KH}), the momentum (\protect\subref{momentum_error_KH}), and the total energy (\protect\subref{energy_error_KH}).}
 \label{fig:conservation_DEIM}
 \end{figure}
 
@@ -381,7 +381,7 @@ This helps with the correct distribution of the energy and ensures
 \includegraphics[scale=0.115]{data/Compressible_Euler/KH/Snapshots/density_500_768.png}\hspace{1em}
 \includegraphics[scale=0.115]{data/Compressible_Euler/KH/Snapshots/density_exact_768.png}
 
-\caption{Solutions of the Kelvin-Helmholtz problem at $t=\left\{ 0.4, 0.6, 0.8, 1 \right\}$. From left to right we have the solution of the reduced model with $k=200$, $k=500$ and the high fidelity solution.}
+\caption{Solutions of the Kelvin-Helmholtz problem at $t=\left\{ 0.4, 0.6, 0.8, 1 \right\}$. From left to right we show the solution of the reduced model with $k=200$, $k=500$ and the high fidelity solution.}
 \label{fig:snap_solution_KH}
 \end{figure}
 
@@ -399,9 +399,10 @@ The domain is discretized into $N=2000$ nodes and centered finite differences sc
 
 The fully discrete skew-symmetric form \eqref{eq:3.27} is used for time integration over a time interval $[0,0.3]$. To resolve the discontinuous solution we consider an artificial viscosity with $\tau = \mu \partial u / \partial x$, where $\mu = 0.5 \cdot 10^{-4}$.
 
-\Cref{fig:energy_pres_1D} shows the conservation of conserved quantities for the high-fidelity and reduced system. Here, the high-fidelity model is also considered in the divergence and advective form to be compared with the skew-symmetric form. It is observed the reduced systems that are not in skew-symmetric form violate conservation of mass, momentum, and energy. Even as the high-fidelity systems in divergence and advective forms are stable, the constructed reduced system is unstable, even with very high number of basis vectors. On the other hand, it is seen that the skew-symmetric forms yield a stable and conservative reduce system. Note that the loss in the energy associated with the skew-symmetric form, seen in \Cref{conservation_1D_focus}, is due to the application of an artificial viscosity. 
+\Cref{fig:energy_pres_1D} shows the conservation of conserved quantities for the high-fidelity and reduced system. Here, the high-fidelity model is also considered in the divergence and advective form to be compared with the skew-symmetric form. It is observed the reduced systems that are not in skew-symmetric form violate conservation of mass, momentum, and energy. Even as the high-fidelity systems in divergence and advective forms are stable, the constructed reduced system is unstable, even with very high number of basis vectors. On the other hand, it is seen that the skew-symmetric forms yield a stable and conservative reduce system. Note that the loss in the energy associated with the skew-symmetric form, seen in \Cref{conservation_1D_focus}, is due to the application of an artificial viscosity. Enriching the basis chosen for the  POD approximation leads to more accurate reduced solutions, as shown in \Cref{error_behaviour_1D}. In the same Figure, we observe that even though the reduced model manages to capture the discontinuity developed after half time units have been simulated, the accuracy is reduced of 
+$2$ orders of magnitude. In \Cref{fig:snaps_1D_Euler}, snapshots of the reduced solution for different formulations are reported, showing the development of instabilities for non skew-symmetric formulations.
 
-As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonlinear components of \eqref{eq:3.18} can affect the conservative properties of the skew-symmetric form. \Cref{fig:singular_values_decay_1D} shows the decay of the singular values of the nonlinear snapshots. It is observed that the decay of these snapshots is significantly slower than the temporal snapshots of \eqref{eq:3.18}. This indicates that to maintain the accuracy of the reduced system, the DEIM basis should be chosen richer than the POD basis. \Cref{error_DEIM} and \Cref{energy_DEIM} present the error and the conservation of total energy when the DEIM is used to approximate the nonlinear term. It is observed that the conservation of energy is recovered once DEIM approximates the nonlinear terms with enough accuracy.
+As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonlinear components of \eqref{eq:3.18} can affect the conservative properties of the skew-symmetric form. \Cref{fig:singular_values_decay_1D} shows the decay of the singular values of the nonlinear snapshots. It is observed that the decay of these snapshots is significantly slower than the temporal snapshots of \eqref{eq:3.18}. This indicates that to maintain the accuracy of the reduced system, the DEIM basis should be chosen richer than the POD basis. \Cref{error_DEIM} and \Cref{energy_DEIM} present the error and the conservation of total energy when the DEIM is used to approximate the nonlinear term. It is observed that the conservation of energy is recovered once DEIM approximates the nonlinear terms with enough accuracy. While straightforward POD reduction does not offer a significative speed up if compared to the solution of the original high-dimensional nonlinear system of equations, with the DEIM treatment of nonlinearity solvers of the reduced models are of the order of tens faster than high fidelity solvers. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% Mass, Total momentum & Energy %%%%%%%%%%%%%%
@@ -578,7 +579,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
   \caption{}
   \label{conservation_1D_focus}
   \end{subfigure}
-  \caption{(\protect\subref{conservation_1D})  Evolution of the three conserved quantities for the reduced solution of the compressible Euler equation (mass, total momentum and total energy).  The divergent, advective and skew-symmetric formulations have been considered and $k=102,204$ basis are used for the reduction. (\protect\subref{conservation_1D_focus}) Focus on the conserved quantity in case of stable reduction using the skew-symmetric formulation.} 
+  \caption{(\protect\subref{conservation_1D})  Evolution of the three conserved quantities for the reduced solution of the compressible Euler equation (mass, total momentum and total energy).  The divergent, advective and skew-symmetric formulations have been considered and $k=102,204$ basis are used in the reduced model. (\protect\subref{conservation_1D_focus}) Evolution of the conserved quantity for a stable reduced model using the skew-symmetric formulation.} 
   \label{fig:energy_pres_1D}
 \end{figure}
 
@@ -801,7 +802,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
 \caption{}
 \label{pressure_reduction_1D}
 \end{subfigure}
-\caption{Qualitative comparison between different formulations for the reduced model in terms of density (\protect\subref{density_reduction_1D})  and pressure(\protect\subref{pressure_reduction_1D}) at $t=0.1,0.3$ and $1$s. Results for the advective formulation are not showed here because the related reduced solutions are unstable after few time steps.}
+\caption{Qualitative comparison between different formulations for the reduced model in terms of density (\protect\subref{density_reduction_1D})  and pressure(\protect\subref{pressure_reduction_1D}) at $t=0.1,0.3$ and $1$s. Results for the advective formulation are not showed here because the related reduced solutions are unstable after a few time steps.}
 \label{fig:snaps_1D_Euler}
 \end{figure}
 
@@ -831,7 +832,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
                  \addplot[color=black,style=dashed,style=ultra thick]  table[x = n, y = sv] {./data/Compressible_Euler/1D/Singular_values/sv_DEIM.txt};
     \end{semilogyaxis}
 \end{tikzpicture}
-\caption{Singular values decay of the snapshot matrix related to POD and DEim algorithms for the 1D compressible Euler problem.}
+\caption{Decay of the singular values of the snapshot matrix related to POD and DEIM algorithms for the 1D compressible Euler problem.}
 \label{fig:singular_values_decay_1D}
 \end{figure}
 
