@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.5)  13 JUL 2018 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  17 JUL 2018 11:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -8,19 +8,19 @@ Document Class: svmult 2007/06/25 v5.4
 Springer Verlag global LaTeX document class for multi authored books
 Class Springer-SVMult Info: extra/valid Springer sub-package 
 (Springer-SVMult)           not found in option list - using "global" style.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -30,8 +30,8 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \betweenumberspace=\dimen105
 \headlineindent=\dimen106
 \minitoc=\write3
-\c@minitocdepth=\count88
-\c@chapter=\count89
+\c@minitocdepth=\count87
+\c@chapter=\count88
 \mottowidth=\dimen107
 \svitemindent=\dimen108
 \verbatimindent=\dimen109
@@ -58,31 +58,31 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 973.
 \tocsubparanum=\dimen119
 \foot@parindent=\dimen120
 \spthmsep=\dimen121
-\c@theorem=\count90
-\c@case=\count91
-\c@conjecture=\count92
-\c@corollary=\count93
-\c@definition=\count94
-\c@example=\count95
-\c@exercise=\count96
-\c@lemma=\count97
-\c@note=\count98
-\c@problem=\count99
-\c@property=\count100
-\c@proposition=\count101
-\c@question=\count102
-\c@solution=\count103
-\c@remark=\count104
-\c@prob=\count105
+\c@theorem=\count89
+\c@case=\count90
+\c@conjecture=\count91
+\c@corollary=\count92
+\c@definition=\count93
+\c@example=\count94
+\c@exercise=\count95
+\c@lemma=\count96
+\c@note=\count97
+\c@problem=\count98
+\c@property=\count99
+\c@proposition=\count100
+\c@question=\count101
+\c@solution=\count102
+\c@remark=\count103
+\c@prob=\count104
 \instindent=\dimen122
 \figgap=\dimen123
 \bildb@x=\box26
 \figcapgap=\dimen124
 \tabcapgap=\dimen125
-\c@merk=\count106
-\c@@inst=\count107
-\c@@auth=\count108
-\c@auco=\count109
+\c@merk=\count105
+\c@@inst=\count106
+\c@@auth=\count107
+\c@auco=\count108
 \instindent=\dimen126
 \authrun=\box27
 \authorrunning=\toks14
@@ -90,24 +90,30 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 973.
 \titrun=\box28
 \titlerunning=\toks16
 \toctitle=\toks17
-\c@contribution=\count110
+\c@contribution=\count109
 LaTeX Info: Redefining \abstract on input line 2320.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 147.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
+Package color Info: Driver file: pdftex.def on input line 142.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count110
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip43
 \fb@frw=\dimen127
 \fb@frh=\dimen128
 \FrameRule=\dimen129
 \FrameSep=\dimen130
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/mathptmx.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/mathptmx.sty
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -142,82 +148,77 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/helvet.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/courier.sty
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/type1cm/type1cm.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/type1cm/type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/makeidx.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 )
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf.sty
-Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-))) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+))) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(grfext)             \AppendGraphicsExtensions on input line 452.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+))) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen133
 \captionmargin@=\dimen134
 \captionwidth=\dimen135
@@ -240,12 +241,12 @@ dstyle #1\floatcounterend }\capstrut #2\par \else \hbox to\hsize {\leftlegendgl
 ue \unhbox \@tempboxa \hfil }\fi \ifx \@captype \fig@type \else \vskip \tabcapg
 ap \fi .
 \c@ContinuedFloat=\count111
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
 \c@subfigure=\count112
 \c@subtable=\count113
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \c@tracingmulticols=\count114
 \mult@box=\box29
 \multicol@leftmargin=\dimen140
@@ -292,7 +293,7 @@ Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
 \mult@nat@firstbox=\box53
 \colbreak@box=\box54
 \mc@col@check@num=\count122
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/footmisc/footmisc.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks19
 \footnotemargin=\dimen149
@@ -305,37 +306,37 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip46
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks20
 \ex@=\dimen150
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen151
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count124
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count125
 \leftroot@=\count126
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count127
 \DOTSCASE@=\count128
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box55
 \strutbox@=\box56
 \big@size=\dimen152
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 
 Package amsmath Warning: Unable to redefine math accent \vec.
 
@@ -359,20 +360,20 @@ Package amsmath Warning: Unable to redefine math accent \vec.
 \multlinegap=\skip47
 \multlinetaggap=\skip48
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count136
 \calc@Bcount=\count137
 \calc@Adimen=\dimen159
@@ -383,8 +384,8 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count138
 \calc@Cskip=\skip51
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
@@ -399,46 +400,42 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_intertext_sep=\dimen165
 \l_MT_above_shortintertext_sep=\dimen166
 \l_MT_below_shortintertext_sep=\dimen167
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks25
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip53
-\multirow@cntb=\count140
-\multirow@dima=\skip54
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen168
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/cleveref/cleveref.sty
-Package: cleveref 2018/03/03 v0.21.3 Intelligent cross-referencing
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/us
-r/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/te
-xlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/us
+r/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/te
+xlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks26
 \pgfutil@tempdima=\dimen169
 \pgfutil@tempdimb=\dimen170
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box57
-(/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.te
+)) (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.te
 x
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/
-local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/
+local/texlive/2015/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
 \pgfkeys@tmptoks=\toks29
 ))
@@ -452,87 +449,87 @@ ode.tex
 \pgf@yc=\dimen178
 \w@pgf@writea=\write4
 \r@pgf@reada=\read1
-\c@pgf@counta=\count141
-\c@pgf@countb=\count142
-\c@pgf@countc=\count143
-\c@pgf@countd=\count144
+\c@pgf@counta=\count140
+\c@pgf@countb=\count141
+\c@pgf@countc=\count142
+\c@pgf@countd=\count143
 \t@pgf@toka=\toks30
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
 ef
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
 df.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count145
-\pgfsyssoftpath@bigbuffer@items=\count146
+\pgfsyssoftpath@smallbuffer@items=\count144
+\pgfsyssoftpath@bigbuffer@items=\count145
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-LaTeX Info: Redefining \color on input line 709.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr
-/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/
-local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr
+/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/
+local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen179
-\pgfmath@count=\count147
+\pgfmath@count=\count146
 \pgfmath@box=\box58
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
 \pgfmath@stack@operation=\toks35
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
 .code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
 nometric.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
 m.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
 rison.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
 code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
 .code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
 code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
-erarithmetics.code.tex))) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/m
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex))) (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/m
 ath/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count148
+\c@pgfmathroundto@lastzeros=\count147
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen180
@@ -550,121 +547,121 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen192
 \pgf@zy=\dimen193
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen194
 \pgf@path@lasty=\dimen195
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen196
 \pgf@shorten@start@additional=\dimen197
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box59
 \pgf@hbox=\box60
 \pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count149
+\pgf@picture@serial@count=\count148
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen198
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen199
 \pgf@pt@y=\dimen256
 \pgf@pt@temp=\dimen257
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
 ode.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
 ssing.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen258
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen259
-\pgf@sys@shading@range@num=\count150
+\pgf@sys@shading@range@num=\count149
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box62
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
 ncy.code.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
 code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box63
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen260
 \pgf@nodesepend=\dimen261
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr
-/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/
-texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/loca
-l/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/20
-18/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2018/
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr
+/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/
+texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/loca
+l/texlive/2015/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/20
+15/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2015/
 texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen262
 \pgffor@skip=\dimen263
 \pgffor@stack=\toks36
 \pgffor@toks=\toks37
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count151
+\pgf@plot@mark@count=\count150
 \pgfplotmarksize=\dimen264
 )
 \tikz@lastx=\dimen265
@@ -677,132 +674,120 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box65
 \tikz@tempbox=\box66
 \tikz@tempbox@bg=\box67
-\tikztreelevel=\count152
-\tikznumberofchildren=\count153
-\tikznumberofcurrentchild=\count154
-\tikz@fig@count=\count155
+\tikztreelevel=\count151
+\tikznumberofchildren=\count152
+\tikznumberofcurrentchild=\count153
+\tikz@fig@count=\count154
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count156
-\pgfmatrixcurrentcolumn=\count157
-\pgf@matrix@numberofcolumns=\count158
+\pgfmatrixcurrentrow=\count155
+\pgfmatrixcurrentcolumn=\count156
+\pgf@matrix@numberofcolumns=\count157
 )
-\tikz@expandcount=\count159
+\tikz@expandcount=\count158
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/l
-ocal/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/us
-r/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+))) (/usr/local/texlive/2015/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/l
+ocal/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2015/05/02 v1.12.1 Data Visualization (1.12.1)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/us
+r/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
 \t@pgfplots@toka=\toks38
 \t@pgfplots@tokb=\toks39
 \t@pgfplots@tokc=\toks40
 \pgfplots@tmpa=\dimen271
-\c@pgfplots@coordindex=\count160
-\c@pgfplots@scanlineindex=\count161
+\c@pgfplots@coordindex=\count159
+\c@pgfplots@scanlineindex=\count160
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
 ode.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_loader.code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
-e.tex)
-Package pgfplots: loading complementary arithmetics for your pgf version...
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
-soldpgfsupp_pgflibraryfpu.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
-soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count162
-)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
-soldpgfsupp_leq.code.tex))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
 .tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 liststructure.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 liststructureext.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count163
+\c@pgfplotsarray@tmp=\count161
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count164
+\c@pgfplotstable@counta=\count162
 \t@pgfplotstable@a=\toks41
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
 de.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
 ta.code.tex))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
 .code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count165
+\c@pgfplotslibrarysurf@no=\count163
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
 code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
 e.tex))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
 ode.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
 ode.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
-r.code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
-code.tex)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
 tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
 g.code.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
 e.tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
 tex)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
 x)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
 \pgfdecoratedcompleteddistance=\dimen272
 \pgfdecoratedremainingdistance=\dimen273
 \pgfdecoratedinputsegmentcompleteddistance=\dimen274
 \pgfdecoratedinputsegmentremainingdistance=\dimen275
 \pgf@decorate@distancetomove=\dimen276
-\pgf@decorate@repeatstate=\count166
+\pgf@decorate@repeatstate=\count164
 \pgfdecorationsegmentamplitude=\dimen277
 \pgfdecorationsegmentlength=\dimen278
 )
 \tikz@lib@dec@box=\box68
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathmorphing.code.tex))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathreplacing.code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count167
+\pgfplots@numplots=\count165
 \pgfplots@xmin@reg=\dimen279
 \pgfplots@xmax@reg=\dimen280
 \pgfplots@ymin@reg=\dimen281
@@ -810,59 +795,41 @@ brarydecorations.pathreplacing.code.tex))
 \pgfplots@zmin@reg=\dimen283
 \pgfplots@zmax@reg=\dimen284
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
 ks.code.tex
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty (/
-usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplotstable 2018/03/28 v1.16 Table typesetting and Pretty-printing (
-1.16)
+))) (/usr/local/texlive/2015/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty (/
+usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplotstable 2015/05/02 v1.12.1 Table typesetting and Pretty-printing
+ (1.12.1)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 .code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
-.coltype.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.s
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+.coltype.code.tex)) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.s
 ty
-Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen285
-\ar@mcellbox=\box69
 \extrarowheight=\dimen286
 \NC@list=\toks42
-\extratabsurround=\skip55
-\backup@length=\skip56
-\ar@cellbox=\box70
+\extratabsurround=\skip53
+\backup@length=\skip54
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.external.code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzl
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzl
 ibraryexternal.code.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzexternalshared.code.tex))
-Package pgfplots external lib: loading complementary code for your PGF version.
-..
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
-soldpgfsupp_pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2015/08/29  (rcs-revision 1.22)
-\pgfexternal@startupbox=\box71
-)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
-soldpgfsupp_tikzlibraryexternal.code.tex (/usr/local/texlive/2018/texmf-dist/te
-x/latex/oberdiek/atveryend.sty
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
-soldpgfsupp_tikzexternalshared.code.tex)))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzexternalshared.code.tex)))
 No auxiliary output files.
 
 \w@pgfexternal@auxout=\write5
-(/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2016/04/27 v1.618033 publication quality tables
+(/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen287
 \lightrulewidth=\dimen288
 \cmidrulewidth=\dimen289
@@ -873,49 +840,49 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen294
 \cmidrulekern=\dimen295
 \defaultaddspace=\dimen296
-\@cmidla=\count168
-\@cmidlb=\count169
+\@cmidla=\count166
+\@cmidlb=\count167
 \@aboverulesep=\dimen297
 \@belowrulesep=\dimen298
-\@thisruleclass=\count170
-\@lastruleclass=\count171
+\@thisruleclass=\count168
+\@lastruleclass=\count169
 \@thisrulewidth=\dimen299
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count172
+\c@float@type=\count170
 \float@exts=\toks43
-\float@box=\box72
+\float@box=\box69
 \@float@everytoks=\toks44
-\@floatcapt=\box73
+\@floatcapt=\box70
 )
 No file TikzFigures/paper-figure18.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 79.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 81.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+) (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count173
+\scratchcounter=\count171
 \scratchdimen=\dimen300
-\scratchbox=\box74
-\nofMPsegments=\count174
-\nofMParguments=\count175
+\scratchbox=\box71
+\nofMPsegments=\count172
+\nofMParguments=\count173
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count176
+\MPscratchCnt=\count174
 \MPscratchDim=\dimen301
-\MPnumerator=\count177
-\makeMPintoPDFobject=\count178
+\MPnumerator=\count175
+\makeMPintoPDFobject=\count176
 \everyMPtoPDFconversion=\toks46
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -934,148 +901,55 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
-s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
+s been generated with the most recent feature set (\pgfplotsset{compat=1.12}).
 
 \immediate\closeout\minitoc
 \let \MiniTOC =N
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
 
-Package mathptmx Warning: There are no bold math fonts on input line 94.
+Package mathptmx Warning: There are no bold math fonts on input line 96.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 94.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 94
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 96.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 96
 .
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 94
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 96
 .
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 94
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 96
 .
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 94
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 96
 .
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.29004> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.10005> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
 Names of authors too long for running head. Please supply
 a shorter form with \authorrunning prior to \maketitle
 (./sections/1.intro.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-
-LaTeX Warning: Citation `doi:10.1137/17M1111991' on page 2 undefined on input l
-ine 7.
-
-
-LaTeX Warning: Citation `1705.00498' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation `kalashnikova2014stabilization' on page 2 undefined on 
-input line 7.
-
-
-LaTeX Warning: Citation `farhat2015structure' on page 2 undefined on input line
- 7.
-
-
-LaTeX Warning: Citation `doi:10.1137/110836742' on page 2 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `beattie2011structure' on page 2 undefined on input lin
-e 7.
-
-
-LaTeX Warning: Citation `doi:10.1137/140978922' on page 2 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `Carlberg:2014ky' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation `doi:10.1137/140978922' on page 2 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `doi:10.1137/17M1111991' on page 2 undefined on input l
-ine 7.
-
-
-LaTeX Warning: Citation `1705.00498' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation `beattie2011structure' on page 2 undefined on input lin
-e 7.
-
-
-LaTeX Warning: Citation `chaturantabut2016structure' on page 2 undefined on inp
-ut line 7.
-
-
-LaTeX Warning: Citation `gugercin2012structure' on page 2 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `farhat2015structure' on page 2 undefined on input line
- 7.
-
-
-LaTeX Warning: Citation `ballarin2015supremizer' on page 2 undefined on input l
-ine 7.
-
-
-LaTeX Warning: Citation `carlberg2018conservative' on page 2 undefined on input
- line 7.
-
-
-LaTeX Warning: Citation `carlberg2018conservative' on page 2 undefined on input
- line 9.
-
-
-LaTeX Warning: Citation `carlberg2018conservative' on page 2 undefined on input
- line 9.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 2 undefined on input line 1
-1.
-
-
-LaTeX Warning: Citation `morinishi1998fully' on page 2 undefined on input line 
-11.
-
-
-LaTeX Warning: Citation `desjardins2008high' on page 2 undefined on input line 
-11.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 2 undefined on input li
-ne 11.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 2 undefined on input li
-ne 11.
-
 
 LaTeX Warning: Reference `sec:mor' on page 1 undefined on input line 15.
 
@@ -1091,402 +965,29 @@ LaTeX Warning: Reference `sec:res' on page 1 undefined on input line 15.
 
 LaTeX Warning: Reference `sec:con' on page 1 undefined on input line 15.
 
-) (./sections/2.mor.tex
-
-LaTeX Warning: Citation `Edsberg:2008:ICM:1477735' on page 3 undefined on input
- line 12.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 16.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 20.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 20.
-
-
-LaTeX Warning: Reference `eq:4' on page 3 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:4' on page 3 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 33.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 33.
-
-
-LaTeX Warning: Citation `hesthaven2015certified' on page 4 undefined on input l
-ine 33.
-
-
-LaTeX Warning: Citation `trefethen97' on page 4 undefined on input line 42.
-
-
-LaTeX Warning: Reference `eq:6' on page 4 undefined on input line 42.
-
-
-LaTeX Warning: Reference `eq:6' on page 4 undefined on input line 42.
-
-
-LaTeX Warning: Citation `hesthaven2015certified' on page 4 undefined on input l
-ine 42.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 48.
-
-
-LaTeX Warning: Citation `haasdonk2013convergence' on page 4 undefined on input 
-line 48.
-
-
-LaTeX Warning: Citation `hesthaven2015certified' on page 4 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Citation `quarteroni2015reduced' on page 4 undefined on input li
-ne 48.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 50.
-
-
-LaTeX Warning: Citation `doi:10.1137/140959602' on page 4 undefined on input li
-ne 50.
-
-
-LaTeX Warning: Citation `doi:10.1137/140978922' on page 4 undefined on input li
-ne 50.
-
-
-LaTeX Warning: Citation `doi:10.1137/17M1111991' on page 4 undefined on input l
-ine 50.
-
-
-LaTeX Warning: Citation `MaboudiAfkham2018' on page 4 undefined on input line 5
-0.
-
-) (./sections/3.skew.tex
-
-LaTeX Warning: Citation `morinishi2010skew' on page 4 undefined on input line 3
-.
-
-
-LaTeX Warning: Citation `morinishi1998fully' on page 4 undefined on input line 
-3.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 4 undefined on input li
-ne 3.
-
+) (./sections/2.mor.tex) (./sections/3.skew.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 5.
 
-LaTeX Warning: Reference `eq:3.1' on page 5 undefined on input line 10.
-
-
-LaTeX Warning: Reference `eq:3.2' on page 5 undefined on input line 14.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 5 undefined on input line 14.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 5 undefined on input line 14.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 5 undefined on input line 18.
-
-
-LaTeX Warning: Reference `eq:3.5' on page 5 undefined on input line 26.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 6 undefined on input line 34.
-
-
-LaTeX Warning: Reference `eq:3.5' on page 6 undefined on input line 40.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 6 undefined on input line 4
-0.
-
-
-LaTeX Warning: Reference `eq:3.5' on page 6 undefined on input line 40.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 6 undefined on input line 4
-4.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 6 undefined on input li
-ne 44.
-
-
-LaTeX Warning: Citation `blaisdell1991numerical' on page 6 undefined on input l
-ine 44.
-
-
-LaTeX Warning: Citation `morinishi2003dns' on page 6 undefined on input line 44
-.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 6 undefined on input line 44.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 6 undefined on input line 4
-8.
-
-
-LaTeX Warning: Citation `blaisdell1991numerical' on page 6 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Citation `morinishi2003dns' on page 6 undefined on input line 48
-.
-
-
-LaTeX Warning: Reference `eq:3.9' on page 7 undefined on input line 75.
-
-
 LaTeX Warning: Reference `sec:skew.1' on page 1 undefined on input line 75.
-
-
-LaTeX Warning: Reference `eq:3.8' on page 7 undefined on input line 77.
-
-
-LaTeX Warning: Reference `eq:3.8' on page 7 undefined on input line 77.
-
-
-LaTeX Warning: Reference `eq:3.10' on page 8 undefined on input line 98.
-
-
-LaTeX Warning: Citation `morinishi1998fully' on page 8 undefined on input line 
-103.
-
-
-LaTeX Warning: Citation `desjardins2008high' on page 8 undefined on input line 
-103.
 
 
 LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 116.
 
 
-LaTeX Warning: Citation `reiss2014conservative' on page 8 undefined on input li
-ne 116.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 8 undefined on input line 123.
-
-
 LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 128.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 8 undefined on input line 128.
-
-
-LaTeX Warning: Reference `eq:3.20' on page 8 undefined on input line 128.
 
 
 LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 139.
 
-
-LaTeX Warning: Reference `eq:3.22' on page 9 undefined on input line 155.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 9 undefined on input line 155.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 9 undefined on input line 161.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 9 undefined on input line 170.
-
-
-LaTeX Warning: Citation `sjogreen2010skew' on page 9 undefined on input line 17
-0.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 9 undefined on input line 170.
-
-
-LaTeX Warning: Citation `honein2004higher' on page 9 undefined on input line 17
-0.
-
-
-LaTeX Warning: Citation `honein2005numerical' on page 9 undefined on input line
- 170.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 10 undefined on input l
-ine 173.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 10 undefined on input line 
-173.
-
-
-LaTeX Warning: Reference `sec:skew.3' on page 10 undefined on input line 173.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 10 undefined on input l
-ine 187.
-
-
-LaTeX Warning: Reference `eq:3.17' on page 10 undefined on input line 187.
-
-
-LaTeX Warning: Reference `eq:3.24' on page 10 undefined on input line 187.
-
-
-LaTeX Warning: Reference `eq:3.25' on page 10 undefined on input line 187.
-
-
-LaTeX Warning: Reference `eq:3.26' on page 10 undefined on input line 187.
-
-
-LaTeX Warning: Citation `hairer2006geometric' on page 10 undefined on input lin
-e 187.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 10 undefined on input l
-ine 187.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 10 undefined on input line 
-187.
-
 ) (./sections/4.mor_skew.tex
-
-LaTeX Warning: Reference `eq:3.8' on page 10 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 10 undefined on input line 2.
-
 
 LaTeX Warning: Reference `sec:skew' on page 1 undefined on input line 2.
 
 
-LaTeX Warning: Reference `eq:3.13' on page 10 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 10 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:4.1' on page 11 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:4.2' on page 11 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:3.13' on page 11 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 11 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 11 undefined on input line 26.
-
-
-LaTeX Warning: Reference `eq:4.3' on page 11 undefined on input line 26.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 11 undefined on input line 26.
-
-
 LaTeX Warning: Reference `sec:skew.1' on page 1 undefined on input line 26.
 
-
-LaTeX Warning: Reference `eq:4.4' on page 12 undefined on input line 46.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 12 undefined on input line 46.
-
-
-LaTeX Warning: Reference `eq:4.3' on page 12 undefined on input line 46.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.5' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.6' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.7' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.8' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 12 undefined on input line 52.
-
-
-LaTeX Warning: Reference `eq:4.3' on page 12 undefined on input line 56.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 12 undefined on input line 56.
-
-
-LaTeX Warning: Citation `Benner2018' on page 12 undefined on input line 56.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 12 undefined on input line 64.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 13 undefined on input line 66.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 13 undefined on input line 68.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 13 undefined on input line 68.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 13 undefined on input line 68.
-
 ) (./sections/5.res.tex
-
-LaTeX Warning: Reference `eq:3.8' on page 13 undefined on input line 6.
-
-
-LaTeX Warning: Reference `eqn:initial_cond_vort' on page 13 undefined on input 
-line 12.
-
-
-LaTeX Warning: Citation `filaments_vort2' on page 13 undefined on input line 16
-.
-
-
-LaTeX Warning: Citation `filaments_vort' on page 13 undefined on input line 16.
-
-
-
-LaTeX Warning: Reference `eq:5.1' on page 14 undefined on input line 24.
-
-
-LaTeX Warning: Reference `eq:3.8' on page 14 undefined on input line 28.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 14 undefined on input line 29.
-
 
 LaTeX Warning: Reference `compare_different_models' on page 1 undefined on inpu
 t line 31.
@@ -1499,31 +1000,11 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `sub@compare_different_models' on page 14 undefined on
- input line 89.
-
-
-LaTeX Warning: Reference `sub@singular_values_decay' on page 14 undefined on in
-put line 89.
-
-
-LaTeX Warning: Reference `sub@compare_different_models' on page 14 undefined on
- input line 89.
-
-
-LaTeX Warning: Reference `sub@singular_values_decay' on page 14 undefined on in
-put line 89.
-
-
 LaTeX Warning: Reference `sec:mor' on page 1 undefined on input line 92.
 
 
 LaTeX Warning: Reference `singular_values_decay' on page 1 undefined on input l
 ine 92.
-
-
-LaTeX Warning: Reference `fig:snap_solution_incompressible_Euler' on page 14 un
-defined on input line 94.
 
 The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
 red_17_2.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
@@ -1607,47 +1088,25 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `sub@fig:approx_error_incompressible_Euler' on page 15
- undefined on input line 200.
-
-
-LaTeX Warning: Reference `sub@fig:energy_error_incompressible_Euler' on page 15
- undefined on input line 200.
-
-
-LaTeX Warning: Reference `sub@fig:approx_error_incompressible_Euler' on page 15
- undefined on input line 200.
-
-
-LaTeX Warning: Reference `sub@fig:energy_error_incompressible_Euler' on page 15
- undefined on input line 200.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 15 undefined on input line 206.
-
-
-LaTeX Warning: Citation `HHS' on page 16 undefined on input line 208.
-
-
-LaTeX Warning: Citation `artificial_dissipation' on page 16 undefined on input 
-line 227.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 16 undefined on input line 229.
+LaTeX Warning: Reference `sec:res.1' on page 1 undefined on input line 205.
 
 
 LaTeX Warning: Reference `fig:error_decay_KH' on page 1 undefined on input line
- 231.
+ 232.
 
 
 LaTeX Warning: Reference `fig:snap_solution_KH' on page 1 undefined on input li
-ne 231.
+ne 232.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `fig:conservation_DEIM' on page 1 undefined on input l
-ine 265.
+ine 267.
+
+
+LaTeX Warning: Reference `energy_error_KH' on page 1 undefined on input line 26
+7.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1655,30 +1114,6 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-
-LaTeX Warning: Reference `sub@mass_error_KH' on page 16 undefined on input line
- 356.
-
-
-LaTeX Warning: Reference `sub@momentum_error_KH' on page 16 undefined on input 
-line 356.
-
-
-LaTeX Warning: Reference `sub@energy_error_KH' on page 16 undefined on input li
-ne 356.
-
-
-LaTeX Warning: Reference `sub@mass_error_KH' on page 16 undefined on input line
- 356.
-
-
-LaTeX Warning: Reference `sub@momentum_error_KH' on page 16 undefined on input 
-line 356.
-
-
-LaTeX Warning: Reference `sub@energy_error_KH' on page 16 undefined on input li
-ne 356.
-
 The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
 s/density_200_307.png}' has been optimized away. Use '/tikz/external/optimize=f
 alse' to disable this.
@@ -1687,26 +1122,6 @@ s/density_500_307.png}' has been optimized away. Use '/tikz/external/optimize=f
 alse' to disable this.
 The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
 s/density_exact_307.png}' has been optimized away. Use '/tikz/external/optimize
-=false' to disable this.
-
-Underfull \hbox (badness 1072) in paragraph at lines 364--367
-\OT1/ptm/m/sc/8.5 PDF\OT1/ptm/m/n/8.5 ]  [ \OT1/ptm/m/sc/8.5 \in-clude-graph-ic
-s op-ti-mized away be-cause it does not con-tribute
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 364--367
-
- []
-
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_200_461.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_500_461.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_exact_461.png}' has been optimized away. Use '/tikz/external/optimize
 =false' to disable this.
 
 Underfull \hbox (badness 1072) in paragraph at lines 368--371
@@ -1720,13 +1135,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--371
  []
 
 The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_200_614.png}' has been optimized away. Use '/tikz/external/optimize=f
+s/density_200_461.png}' has been optimized away. Use '/tikz/external/optimize=f
 alse' to disable this.
 The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_500_614.png}' has been optimized away. Use '/tikz/external/optimize=f
+s/density_500_461.png}' has been optimized away. Use '/tikz/external/optimize=f
 alse' to disable this.
 The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_exact_614.png}' has been optimized away. Use '/tikz/external/optimize
+s/density_exact_461.png}' has been optimized away. Use '/tikz/external/optimize
 =false' to disable this.
 
 Underfull \hbox (badness 1072) in paragraph at lines 372--375
@@ -1736,6 +1151,26 @@ s op-ti-mized away be-cause it does not con-tribute
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 372--375
+
+ []
+
+The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
+s/density_200_614.png}' has been optimized away. Use '/tikz/external/optimize=f
+alse' to disable this.
+The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
+s/density_500_614.png}' has been optimized away. Use '/tikz/external/optimize=f
+alse' to disable this.
+The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
+s/density_exact_614.png}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+
+Underfull \hbox (badness 1072) in paragraph at lines 376--379
+\OT1/ptm/m/sc/8.5 PDF\OT1/ptm/m/n/8.5 ]  [ \OT1/ptm/m/sc/8.5 \in-clude-graph-ic
+s op-ti-mized away be-cause it does not con-tribute
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--379
 
  []
 
@@ -1752,14 +1187,39 @@ s/density_exact_768.png}' has been optimized away. Use '/tikz/external/optimize
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `sec:5.res.4' on page 1 undefined on input line 390.
+
+
+LaTeX Warning: Reference `sec:skew.3' on page 1 undefined on input line 398.
+
+
+LaTeX Warning: Reference `fig:energy_pres_1D' on page 1 undefined on input line
+ 402.
+
+
+LaTeX Warning: Reference `conservation_1D_focus' on page 1 undefined on input l
+ine 402.
+
+
+LaTeX Warning: Reference `error_behaviour_1D' on page 1 undefined on input line
+ 402.
+
+
+LaTeX Warning: Reference `fig:snaps_1D_Euler' on page 1 undefined on input line
+ 403.
+
+
+LaTeX Warning: Reference `sec:mor_skew' on page 1 undefined on input line 405.
+
+
 LaTeX Warning: Reference `fig:singular_values_decay_1D' on page 1 undefined on 
-input line 399.
+input line 405.
 
 
-LaTeX Warning: Reference `error_DEIM' on page 1 undefined on input line 400.
+LaTeX Warning: Reference `error_DEIM' on page 1 undefined on input line 405.
 
 
-LaTeX Warning: Reference `energy_DEIM' on page 1 undefined on input line 400.
+LaTeX Warning: Reference `energy_DEIM' on page 1 undefined on input line 405.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1773,22 +1233,6 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-
-LaTeX Warning: Reference `sub@conservation_1D' on page 18 undefined on input li
-ne 576.
-
-
-LaTeX Warning: Reference `sub@conservation_1D_focus' on page 18 undefined on in
-put line 576.
-
-
-LaTeX Warning: Reference `sub@conservation_1D' on page 18 undefined on input li
-ne 576.
-
-
-LaTeX Warning: Reference `sub@conservation_1D_focus' on page 18 undefined on in
-put line 576.
-
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -5810,7 +5254,7 @@ NOTE: coordinate (1,NaNNaNi) has been dropped because it is unbounded (in y). (
 see also unbounded coords=jump). 
 
 Package pgfplots Warning: the current plot has no coordinates (or all have been
- filtered away) on input line 729.
+ filtered away) on input line 737.
 
  [warning /pgfplots/warning/plot without coordinates]
 PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/pressure_approx_24_10
@@ -5819,174 +5263,72 @@ PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/pressure_approx_102_1
 000.txt}
 PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/pressure_approx_201_1
 000.txt}
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 741.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.36008> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 741.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.40009> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 741.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 733.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 741.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 733.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 741.
 [18
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `sub@density_reduction_1D' on page 18 undefined on inp
-ut line 797.
-
-
-LaTeX Warning: Reference `sub@pressure_reduction_1D' on page 18 undefined on in
-put line 797.
-
-
-LaTeX Warning: Reference `sub@density_reduction_1D' on page 18 undefined on inp
-ut line 797.
-
-
-LaTeX Warning: Reference `sub@pressure_reduction_1D' on page 18 undefined on in
-put line 797.
-
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-
-LaTeX Warning: Reference `sub@error_DEIM' on page 18 undefined on input line 88
-2.
-
-
-LaTeX Warning: Reference `sub@energy_DEIM' on page 18 undefined on input line 8
-82.
-
-
-LaTeX Warning: Reference `sub@error_DEIM' on page 18 undefined on input line 88
-2.
-
-
-LaTeX Warning: Reference `sub@energy_DEIM' on page 18 undefined on input line 8
-82.
-
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./sections/5.res_part2.tex
-
-LaTeX Warning: Citation `yu2008combustion' on page 18 undefined on input line 3
-.
-
-
-LaTeX Warning: Citation `garby2013simulations' on page 18 undefined on input li
-ne 3.
-
-
-LaTeX Warning: Citation `smith2008computational' on page 18 undefined on input 
-line 3.
-
-
-LaTeX Warning: Citation `frezzotti2015determination' on page 18 undefined on in
-put line 3.
-
-
-LaTeX Warning: Citation `frezzotti2017numerical' on page 18 undefined on input 
-line 3.
-
-
-LaTeX Warning: Citation `frezzotti2018quasi' on page 18 undefined on input line
- 3.
-
-
-LaTeX Warning: Reference `fig:radius' on page 19 undefined on input line 6.
-
-
-LaTeX Warning: Reference `tab:geometry_parameters' on page 20 undefined on inpu
-t line 8.
-
 The command '\includegraphics [width=0.8\linewidth ]{pic/radius}' has been opti
 mized away. Use '/tikz/external/optimize=false' to disable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-LaTeX Warning: Reference `tab:operating-conditions' on page 20 undefined on inp
-ut line 38.
+LaTeX Warning: Reference `steady_state' on page 1 undefined on input line 194.
 
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-LaTeX Warning: Citation `frezzotti2017numerical' on page 22 undefined on input 
-line 129.
-
-
-LaTeX Warning: Citation `frezzotti2018quasi' on page 22 undefined on input line
- 129.
-
-
-LaTeX Warning: Reference `tab:operating-conditions' on page 22 undefined on inp
-ut line 145.
-
-
-LaTeX Warning: Reference `eq:multisine' on page 23 undefined on input line 150.
+LaTeX Warning: Reference `error_growth_comb' on page 1 undefined on input line 
+351.
 
 
-
-LaTeX Warning: Reference `eq:response-function' on page 23 undefined on input l
-ine 151.
-
-
-LaTeX Warning: Citation `delis1998tvd' on page 23 undefined on input line 155.
-
-
-LaTeX Warning: Citation `shu1988efficient' on page 23 undefined on input line 1
-55.
-
-
-LaTeX Warning: Citation `jiang1996efficient' on page 23 undefined on input line
- 155.
-
-
-LaTeX Warning: Reference `?' on page 23 undefined on input line 157.
-
-
-LaTeX Warning: Reference `?' on page 23 undefined on input line 157.
-
-
-LaTeX Warning: Reference `eq:3.7' on page 23 undefined on input line 157.
-
-
-LaTeX Warning: Reference `?' on page 23 undefined on input line 157.
-
-
-LaTeX Warning: Reference `?' on page 23 undefined on input line 159.
-
-
-LaTeX Warning: Reference `?' on page 23 undefined on input line 159.
-
-
-LaTeX Warning: Citation `Wang:255719' on page 23 undefined on input line 159.
-
-
-LaTeX Warning: Reference `' on page 23 undefined on input line 159.
+LaTeX Warning: Reference `oscill_focus' on page 1 undefined on input line 351.
 
 ) (./sections/6.con.tex)
 No file TikzFigures/paper-figure18.bbl.
 \immediate\closeout\minitoc
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 117.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 27929 strings out of 492649
- 703260 string characters out of 6129623
- 2162436 words of memory out of 5000000
- 31275 multiletter control sequences out of 15000+600000
- 43475 words of font info for 106 fonts, out of 8000000 for 9000
+ 26866 strings out of 493054
+ 664510 string characters out of 6134761
+ 2101272 words of memory out of 5000000
+ 29878 multiletter control sequences out of 15000+600000
+ 52310 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,15n,136p,1397b,2199s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018
+ 61i,15n,89p,1397b,2181s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on TikzFigures/paper-figure18.pdf (1 page, 126646 bytes).
 PDF statistics:

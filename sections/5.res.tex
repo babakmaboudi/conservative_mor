@@ -37,9 +37,9 @@ obtained by applying the divergence operator to \eqref{eq:3.8} and using the inc
   \centering
   \begin{subfigure}[]{0.47\linewidth}
   \begin{tikzpicture}[scale=0.58]
-    \begin{axis}[ylabel=$E_K(t)$,
+    \begin{axis}[ylabel=$K$,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=south west,
                  legend entries={Skew Symmetric form, Divergence form, Advective form},
                  legend style={font=\large},
@@ -63,7 +63,7 @@ obtained by applying the divergence operator to \eqref{eq:3.8} and using the inc
 \begin{tikzpicture}[scale=0.58]
     \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
                  xlabel=Basis POD,
-                 label style={font=\large},
+                 label style={font=\Large},
                  %legend pos=north east,
                  %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
@@ -135,7 +135,7 @@ The conservation of the kinetic energy is presented in \Cref{fig:energy_error_in
 \begin{tikzpicture}[scale=0.58]
     \begin{semilogyaxis}[ylabel = $\| \mathbf{u}-\tilde{\mathbf{u}}\|_2$,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend style={font=\large},
                  grid=both,
                  ticks=both,
@@ -166,7 +166,7 @@ The conservation of the kinetic energy is presented in \Cref{fig:energy_error_in
 \begin{tikzpicture}[scale=0.58]
     \begin{axis}[ylabel = $|K-\tilde{K}|$,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=south west,
                  legend entries={$k=5$ , $k=8$, $k=11$, $k=14$, $k=23$, $k=26$, $k=29$, $k=35$},
                  legend style={font=\large},
@@ -237,7 +237,7 @@ The fully discrete skew-symmetric form \eqref{eq:3.27} is used as a time marchin
   \begin{tikzpicture}[scale=0.55]
     \begin{semilogyaxis}[xlabel=$t$,
                  ylabel=$e(t)$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=outer north east,
                  legend style={font=\large},
                  legend entries={$k=200$,$k=300$,$k=400$,$k=500$,$k=600$},
@@ -271,9 +271,9 @@ This helps with the correct distribution of the energy and ensures
   \centering
   \begin{subfigure}[]{0.48\linewidth}
   \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[ylabel = $\left|\mathbf{1}^T(\mathbf{r}-\mathbf{r}^r)(t)\right|$,
+    \begin{semilogyaxis}[ylabel = error in mass,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=north east,
                  legend entries={$k=200$ ,$k=300$, $k=400$,$k=500$,$k=600$},
                  legend style={font=\large},
@@ -300,9 +300,9 @@ This helps with the correct distribution of the energy and ensures
   \end{subfigure}\hfill
   \begin{subfigure}[]{0.48\linewidth}
   \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[ylabel = $\left|(\mathbf{r}^{T}\mathbf{u}-\mathbf{r}^{rT}\mathbf{u}^{r})(t)\right|$,
+    \begin{semilogyaxis}[ylabel = error in total momentum,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=north east,
 %                 legend entries={$k=200$ Conv,$k=201$ Conv},
                  legend style={font=\large},
@@ -330,9 +330,9 @@ This helps with the correct distribution of the energy and ensures
   
   \begin{subfigure}[]{0.48\linewidth}
   \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[ylabel = $\left| \dfrac{1}{2}\left( \mathbf{u}^{rT}\mathbf{R}^r\mathbf{u}^r-\mathbf{u}^{T}\mathbf{R}\mathbf{u}\right)\right|$,
+    \begin{semilogyaxis}[ylabel = error in total energy,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=north east,
 %                 legend entries={$k=200$ Conv,$k=201$ Conv},
                  legend style={font=\large},
@@ -414,7 +414,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
   \begin{tikzpicture}[scale=0.55]
     \begin{axis}[ylabel = Mass,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=north east,
                  legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
@@ -444,7 +444,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
   \begin{subfigure}[]{0.48\linewidth}
   \begin{tikzpicture}[scale=0.55]
     \begin{axis}[xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=south west,
                  legend entries={$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
@@ -470,7 +470,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
   \begin{tikzpicture}[scale=0.55]
     \begin{axis}[ylabel = Momentum,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=north east,
                  %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
@@ -500,7 +500,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
   \begin{subfigure}[]{0.48\linewidth}
   \begin{tikzpicture}[scale=0.55]
     \begin{axis}[xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=south west,
                  legend style={font=\large},
                  grid=both,
@@ -525,7 +525,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
   \begin{tikzpicture}[scale=0.55]
     \begin{axis}[ylabel = Energy,
                  xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=north east,
                  %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
@@ -557,7 +557,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
   \begin{subfigure}[]{0.48\linewidth}
   \begin{tikzpicture}[scale=0.55]
     \begin{axis}[xlabel=$t$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=south west,
                  legend style={font=\large},
                  grid=both,
@@ -592,7 +592,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
   \begin{tikzpicture}[scale=0.55]
     \begin{semilogyaxis}[xlabel=$t$,
                  ylabel=$e(t)$,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=outer north east,
                  legend style={font=\large},
                  legend entries={$k=75$,$k=126$,$k=177$,$k=225$,$k=276$,$k=327$,$k=375$,$k=426$},
@@ -814,7 +814,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
 \begin{tikzpicture}[scale=0.5452]
     \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
                  xlabel=Basis,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend style={font=\large},
                  legend entries = {POD,DEIM},
                  grid=both,
@@ -827,7 +827,8 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
                  scaled x ticks = true,
                  enlargelimits=false,
                  scale only axis,
-                 samples = 100]
+                 samples = 100,
+                 xtick = {400, 800, 1200, 1600}]
                  \addplot[color=black,style=solid,style=ultra thick]  table[x = n, y = sing_values] {./data/Compressible_Euler/1D/Singular_values/sv.txt};
                  \addplot[color=black,style=dashed,style=ultra thick]  table[x = n, y = sv] {./data/Compressible_Euler/1D/Singular_values/sv_DEIM.txt};
     \end{semilogyaxis}
@@ -842,7 +843,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
 \begin{tikzpicture}[scale=0.58]
     \begin{axis}[ylabel = e(T),
                  xlabel=Basis DEIM,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=north east,
                  legend entries={POD+DEIM,POD},
                  legend style={font=\large},
@@ -850,8 +851,9 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
                  ticks=both,
                  width=1.4\linewidth, 
                  height=1\linewidth,
-                 minor x tick num=1,
+%                 minor x tick num=1,
                  minor y tick num=2,	
+                 xticklabel style={font = \large},
 %                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
                  scaled x ticks = true,
                  enlargelimits=false,
@@ -867,7 +869,7 @@ As discussed in \Cref{sec:mor_skew}, the DEIM approximation for evaluating nonli
 \begin{tikzpicture}[scale=0.58]
     \begin{axis}[ylabel = Energy(T),
                  xlabel=Basis DEIM,
-                 label style={font=\large},
+                 label style={font=\Large},
                  legend pos=north east,
                  legend entries={POD+DEIM,POD},
                  legend style={font=\large},

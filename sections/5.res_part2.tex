@@ -7,11 +7,45 @@ The CVRC consists of three parts: oxidizer post, combustion chamber and exit noz
 
 The geometry parameters of the quasi-1D CVRC with a oxidizer post length  $L_{op}= 14.0$ cm are shown in Table \ref{tab:geometry_parameters}.  The back-step and the converging part of the nozzle are sinusoidally contoured to avoid discontinuity of the radius that will invalidate the quasi-1D governing equations presented in the next subsection. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Combustor images %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
-	\centering
-	\includegraphics[width=0.8\linewidth]{pic/radius}
-	\caption{Geometry of quasi-1D CVRC model.}
-	\label{fig:radius}
+\centering
+\begin{tikzpicture}[]
+    \begin{axis}[width=12cm,
+                 height=4cm,
+                 ylabel = $r(m)$,
+                 xlabel=$x(m)$,
+                 yticklabel style={
+                  /pgf/number format/fixed,
+                  /pgf/number format/precision=5,
+                  style = {font=\normalsize}
+                  },
+                 xticklabel style={
+                  style = {font=\normalsize}
+                  },
+%                 label style={font=\large},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=0.7\linewidth, 
+%                 height=0.5\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 scaled y ticks = false,
+%                 enlargelimits=false,
+%                 samples = 100,
+                 ymax = 0.04]
+                 \addplot[color=black,style=solid,style=ultra thick]  table[x = x, y = radius] {./data/Combustor/radius_combustor.txt};
+                \node[pin=100:{injector}] at (-0.05,0.01) {};
+                \node[pin=93:{back-step}] at (0.001,0.015) {};
+                \node[pin=90:{chamber}] at (0.2,0.023) {};
+                \node[pin=80:{nozzle}] at (0.4,0.015) {};
+    \end{axis}
+\end{tikzpicture}
+\caption{Geometry of quasi-1D CVRC model.}
+\label{fig:radius}
 \end{figure}
 
 \begin{table} [h]
@@ -158,32 +192,165 @@ Introduction of an artificial viscosity is essential for a robust and long time-
 	\frac{\partial }{\partial t} v + \frac{\partial }{\partial x} F = s_A + s_f + s_q + d, \quad d = (0,\frac{\partial }{\partial x} \tau,0,0)^T,
 \end{equation}
 with $\tau = \mu \partial (u A)/ \partial x$, and $\mu = 6\times 10^{-5}$. This type of artificial viscosity is chosen due to its simplicity. This, however, can be replaced with a more moderate and sophisticated method. The three-stage Runge-Kutta (SSP RK3) \cite{jiang1996efficient} is used to then integrate \eqref{eq:5p2.10} in time.
-The pressure profile for the steady state, with $q'=0$, and the pressure oscillatory mode in the unsteady phase is presented in \Cref{fig:5p2.2a}. We report that the added viscous term affects the level of pressure in the steady state and the aplitude of oscilations in the unsteady mode, compared to \cite{Wang:255719}.
+The pressure profile for the steady state, with $q'=0$, and the pressure oscillatory mode in the unsteady phase is presented in \Cref{steady_state}. We report that the added viscous term affects the level of pressure in the steady state and the aplitude of oscilations in the unsteady mode, compared to \cite{Wang:255719}.
 
-\begin{figure}[t]
-\centering
-\begin{subfigure}[]{0.47\linewidth}
-	\includegraphics[width=\textwidth]{./pic/init_pressure}
-	\caption{} \label{fig:5p2.2a}
-\end{subfigure}
-\begin{subfigure}[]{0.47\linewidth}
-	\includegraphics[width=\textwidth]{./pic/init_osc}
-	\caption{} \label{fig:5p2.2b}
-\end{subfigure} \\
-\begin{subfigure}[]{0.47\linewidth}
-	\includegraphics[width=\textwidth]{./pic/p_error}
-	\caption{} \label{fig:5p2.2c}
-\end{subfigure}
-\begin{subfigure}[]{0.47\linewidth}
-	\includegraphics[width=\textwidth]{./pic/rom_freq}
-	\caption{} \label{fig:5p2.2d}
-\end{subfigure}
-\caption{(a) Pressure profile of the steady state. (b) Oscillatory mode of pressure located at $x=0.36$ for the unsteady flow. (c) Relative error between the high-fidelity and approximated pressure. (d) Approximation of the oscillations. }
-\label{fig:5p2.2}
+%\begin{figure}[t]
+%\centering
+%\begin{subfigure}[]{0.47\linewidth}
+%	\includegraphics[width=\textwidth]{./pic/init_pressure}
+%	\caption{} \label{fig:5p2.2a}
+%\end{subfigure}
+%\begin{subfigure}[]{0.47\linewidth}
+%	\includegraphics[width=\textwidth]{./pic/init_osc}
+%	\caption{} \label{fig:5p2.2b}
+%\end{subfigure} \\
+%\begin{subfigure}[]{0.47\linewidth}
+%	\includegraphics[width=\textwidth]{./pic/p_error}
+%	\caption{} \label{fig:5p2.2c}
+%\end{subfigure}
+%\begin{subfigure}[]{0.47\linewidth}
+%	\includegraphics[width=\textwidth]{./pic/rom_freq}
+%	\caption{} \label{fig:5p2.2d}
+%\end{subfigure}
+%\caption{(a) Pressure profile of the steady state. (b) Oscillatory mode of pressure located at $x=0.36$ for the unsteady flow. (c) Relative error between the high-fidelity and approximated pressure. (d) Approximation of the oscillations. }
+%\label{fig:5p2.2}
+%\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Combustor %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+  \centering
+  % Pressure steady
+  \begin{subfigure}[]{0.48\linewidth}
+  \begin{tikzpicture}[scale=0.55]
+    \begin{axis}[ylabel = pressure $p$,
+                 xlabel=$x$,
+                 label style={font=\Large},
+                 legend pos=north east,
+                 %legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
+                 legend style={font=\large},
+                 grid=both,
+                 ticks=both,
+                 width=1.4\linewidth, 
+                 height=1.0\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+%                 ymin=0,
+                 ymax = 1500000,
+                 samples = 100]
+                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = x, y = pressure] {./data/Combustor/pressure_steady_state.txt};
+    \end{axis}%  
+  \end{tikzpicture}
+  \caption{}
+  \label{steady_state}
+  \end{subfigure}\hfill% 
+  % Pressure oscilaltions
+  \begin{subfigure}[]{0.48\linewidth}
+  \begin{tikzpicture}[scale=0.55]
+    \begin{axis}[ylabel = pressure $p$,
+                 xlabel=$t$,
+                 label style={font=\Large},
+                 legend pos=north east,
+                 %legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
+                 legend style={font=\large},
+                 grid=both,
+                 ticks=both,
+                 width=1.4\linewidth, 
+                 height=1.0\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 scaled y ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+                 ymin=0,
+%                 samples = 100,
+                 xmax = 0.06,
+                 ymin = 1360000,
+                 ymax = 1460000,
+                 tick label style={/pgf/number format/fixed} ]
+                 \addplot[color=blue,style=solid,style=thick]  table[x = t, y = pressure] {./data/Combustor/ciao.txt};
+    \end{axis}%  
+  \end{tikzpicture}
+  \caption{}
+  \label{oscill_pressure}
+  \end{subfigure}
+  
+% Total momentum
+  \begin{subfigure}[]{0.48\linewidth}
+  \begin{tikzpicture}[scale=0.55]
+    \begin{semilogyaxis}[ylabel = $\| p-\tilde{p}\|_2$,
+                 xlabel=$t$,
+                 label style={font=\Large},
+                 legend pos=south east,
+                 legend entries={$k=200$,$k=300$,$k=300$},
+                 legend style={font=\large},
+                 grid=both,
+                 ticks=both,
+                 width=1.4\linewidth, 
+                 height=1.0\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 scaled y ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+                 samples = 300,
+                 ymin = 0.000001,
+                 ymax = 0.0001]
+                 \addplot[color=red,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_200.txt};
+                 \addplot[color=blue,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_300.txt};
+                 \addplot[color=black!50!green,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_400.txt};
+    \end{semilogyaxis}%  
+  \end{tikzpicture}
+  \caption{}
+  \label{error_growth_comb}
+  \end{subfigure}\hfill% 
+  % Pressure reduction  
+  \begin{subfigure}[]{0.48\linewidth}
+  \begin{tikzpicture}[scale=0.55]
+    \begin{axis}[ylabel = pressure $p$,
+                 xlabel=$t$,
+                 label style={font=\Large},
+                 legend pos=north east,
+                 legend entries={High fidelity,  POD with $k=200$},
+                 legend style={font=\large},
+                 grid=both,
+                 ticks=both,
+                 width=1.4\linewidth, 
+                 height=1.0\linewidth,
+                 minor x tick num=1,
+                 minor y tick num=2,	
+                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+                 scaled x ticks = true,
+                 enlargelimits=false,
+                 scale only axis,
+                 xmin = 0.9,
+                 xmax = 0.98,
+                 ymin = 1390000,
+                 ymax = 1450000,
+                 tick label style={/pgf/number format/fixed} ]
+                 \addplot[color=green,style=solid,style=ultra thick]  table[x = t, y = pressure] {./data/Combustor/full.txt};
+                 \addplot[color=black,style=dashed,style=thick]  table[x = t, y = pressure] {./data/Combustor/red.txt};
+    \end{axis}%  
+  \end{tikzpicture}
+  \caption{}
+  \label{oscill_focus}
+  \end{subfigure}
+  \caption{(\protect\subref{steady_state}) Pressure profile of the steady state.  (\protect\subref{oscill_pressure}) Oscillatory mode of pressure located at $x=0.36$ for the unsteady flow. (\protect\subref{error_growth_comb}) Relative error between the high-fidelity and approximated pressure. (\protect\subref{oscill_focus}) Approximation of the oscillations.} 
+  \label{fig:5p2.2}
 \end{figure}
 
-The discontinuities that appear in the solution of \eqref{eq:5p2.10} suggests that a, relatively, large basis is required to resolve fine strucutres in the solution. In this paper, a POD basis is generated with $k=200$, $k=300$ and $k=400$ number of basis vectors. To avoid basis changes in reduced system, only one POD basis is considered for $\rho$, $\rho u$ $\rho E$ and $\rho Y_{ox}$. The explicit SSP RK3 is then used to integrated the reduced system in time, for the unsteady system. The source terms are evaluated in the high-fidelity space and then projected onto the reduced space. However, in principle, the DEIM can be applied to accelerate this evaluation. 
 
-\Cref{fig:5p2.2c} shows the approximation error of the pressure, due to MOR. It is observed that the approximation is coherently enhanced as the number of basis vectors are increase. Furthermore, the approximated solution maintains high accuracy over a relatively long time-integration. The oscilations of pressure is demostrated in \Cref{fig:5p2.2d}. It is seen that the overall behaviour of pressure is well approximated using the reduced system. Similar results are obtained for a POD basis with higher number of modes.
+The discontinuities that appear in the solution of \eqref{eq:5p2.10} suggests that a, relatively, large basis is required to resolve fine structures in the solution. In this paper, a POD basis is generated with $k=200$, $k=300$ and $k=400$ number of basis vectors. To avoid basis changes in reduced system, only one POD basis is considered for $\rho$, $\rho u$ $\rho E$ and $\rho Y_{ox}$. The explicit SSP RK3 is then used to integrated the reduced system in time, for the unsteady system. The source terms are evaluated in the high-fidelity space and then projected onto the reduced space. However, in principle, the DEIM can be applied to accelerate this evaluation. 
+
+\Cref{error_growth_comb} shows the approximation error of the pressure, due to MOR. It is observed that the approximation is coherently enhanced as the number of basis vectors are increase. Furthermore, the approximated solution maintains high accuracy over a relatively long time-integration. The oscilations of pressure is demostrated in \Cref{oscill_focus}. It is seen that the overall behaviour of pressure is well approximated using the reduced system. Similar results are obtained for a POD basis with higher number of modes.
 
 We note that the discrete form of \eqref{eq:5p2.10} is not in the full skew-symmetric form. Nontheless, the quisi-skew-symmetric discretization provides a remarkable stability preservation.
