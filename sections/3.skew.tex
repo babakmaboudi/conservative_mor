@@ -1,9 +1,9 @@
 \section{Skew Symmetric and Centered Schemes for Fluid Flows} \label{sec:skew}
 
-In this section we summarize the conservative properties of skew-symmetric forms and discretization schemes, following, closely, the works of \cite{morinishi2010skew,morinishi1998fully,reiss2014conservative}.
+In this section we summarize the conservation properties of skew-symmetric forms and discretization schemes, following, closely, the works of \cite{morinishi2010skew,morinishi1998fully,reiss2014conservative}.
 
 \subsection{Conservation Laws} \label{sec:skew.1}
-Transport of conserved quantities, in the context of fluid flows, can be formulated as
+In the context of fluid flows, transport of conserved quantities, can be expressed as
 \begin{equation} \label{eq:3.1}
 	\frac{\partial }{\partial t} \rho \varphi + \nabla \cdot ( \rho u \varphi  ) = \nabla \cdot F_{\varphi}\quad \text{defined in} \quad \Omega \subset \mathbb R^{d}.
 \end{equation}
@@ -11,7 +11,7 @@ Here, $d = 1,2$ or $3$, $\rho:\Omega\to \mathbb R$ is the density, $u\in \Omega 
 \begin{equation} \label{eq:3.2}
 	\frac{d}{dt} \int_{\Omega} \rho \varphi \ dx = \int_{\partial \Omega} (F_{\varphi} - \rho u \varphi) \cdot \hat n\ ds,
 \end{equation}
-where $\partial \Omega$ is the boundary of $\Omega$, and $\hat n$ is the unit outward normal vector to $\partial \Omega$. When the right hand side of \eqref{eq:3.2} vanishes, e.g. in case where $\Omega$ is periodic and $\varphi$ is flux-free, the quantity $(\rho \varphi)$ is conserved. Therefore, the form \eqref{eq:3.1} is referred to the \emph{conservative form} and the convective term in \eqref{eq:3.1} is referred to as the \emph{divergence form}. However, using the \emph{continuity equation}
+where $\partial \Omega$ is the boundary of $\Omega$, and $\hat n$ is the unit outward normal vector to $\partial \Omega$. When the right hand side of \eqref{eq:3.2} vanishes, e.g. in case where $\Omega$ is periodic and $\varphi$ is flux-free, the quantity $(\rho \varphi)$ is conserved. Therefore, \eqref{eq:3.1} is referred to as the \emph{conservative form} and the convective term in \eqref{eq:3.1} is referred to as the \emph{divergence form}. However, using the \emph{continuity equation}
 \begin{equation} \label{eq:3.3}
 	\frac{\partial }{\partial t} \rho + \nabla \cdot (\rho u) = 0,
 \end{equation}
@@ -19,7 +19,7 @@ we can rewrite \eqref{eq:3.1} as
 \begin{equation} \label{eq:3.4}
 	\rho \frac{\partial }{\partial t} \varphi + (\rho u)\cdot \nabla \varphi = \nabla \cdot F_{\varphi}.
 \end{equation}
-The convective term in this formulation is referred to as the \emph{advective form}. The \emph{skew-symmetric} form for the convective term is obtained by the arithmetic average of the divergent and the advective form:
+The convective term in this formulation is referred to as the \emph{advective form}. The \emph{skew-symmetric} form of the convective term is obtained by the arithmetic average of the divergent and the advective form:
 \begin{equation} \label{eq:3.5}
 	\frac{1}{2} \left( \rho \frac{\partial }{\partial t} \varphi + \frac{\partial }{\partial t} (\rho \varphi) \right) + \frac 1 2 \left( (\rho u)\cdot \nabla \varphi + \nabla \cdot (\rho u \varphi) \right) = \nabla \cdot F_{\varphi}.
 \end{equation}
@@ -27,25 +27,25 @@ Multiplying \eqref{eq:3.5} with $\varphi$ yields
 \begin{equation}
 	\frac{\partial }{\partial t} \rho \varphi^2 + \nabla \cdot ( \rho u \varphi^2  ) = \varphi \nabla \cdot F_{\varphi}.
 \end{equation}
-Therefore, $\varphi^2$ is a conserved quantity for a flux-free $\varphi$. Since the divergence, the advective and the skew-symmetric forms are identical at the continuous level, then $\varphi^2$ is a conserved quantity for all forms. However, equivalence of these forms is not preserved through a general discretization scheme and, therefore, we do not expect $\varphi^2$ to be a conserved quantity at the discrete level. To motivate numerical advantages of the skew-symmetric form consider the operator 
+Therefore, $\varphi^2$ is a conserved quantity for a flux-free $\varphi$. Since the divergence, the advective and the skew-symmetric forms are identical at the continuous level, $\varphi^2$ is a conserved quantity for all forms. However, the equivalence of these forms is not preserved through a general discretization scheme and we can not expect $\varphi^2$ to be a conserved quantity at the discrete level. To motivate numerical advantages of the skew-symmetric form consider the operator 
 \begin{equation}
 	S_{\rho u}(\cdot) = \frac 1 2 ( [ \nabla \cdot \rho u ] + (\rho u)\cdot \nabla )(\cdot).
 \end{equation}
-With a proper set of boundary condition, this operator is a skew-adjoint operator with respect to the $L^2$ inner-product. Here, $[\cdot]$ indicates that the inside of brackets act as a differential operator. This skew-adjoint property is used in later sections to show the conservation of some quadratic quantities in \eqref{eq:3.1}. Similarly, we can define a skew-adjoint operator with respect to the time variable as
+With a proper set of boundary condition, this operator is a skew-adjoint operator on $L^2$. Here, $[\cdot]$ indicates that the inside of the brackets act as a differential operator. This skew-adjoint property is used later to show the conservation of some quadratic quantities in \eqref{eq:3.1}. Similarly, we can define a skew-adjoint operator with respect to the time variable as
 \begin{equation}
 	S_{\rho,\partial_t} = \frac{1}{2} \left( \rho \frac{\partial}{\partial t} + [ \frac{\partial}{\partial t} \rho] \right).
 \end{equation}
-Here, the subscript $\partial t$ is to emphasize that $S_{\rho,\partial_t}$ is a differential operator with respect to $t$. A proper time and space integration of $S_{\rho u}$ and $S_{\rho,\partial_t}$, usually with centered discretization schemes, can preserve the skewness property.
+Here, the subscript $\partial t$ is to emphasize that $S_{\rho,\partial_t}$ is a differential operator with respect to $t$. A proper time and space discretization of $S_{\rho u}$ and $S_{\rho,\partial_t}$ can preserve the skewness property.
 
-Numerical time integration of \eqref{eq:3.5} can be challenging since the time differentiation of different variable is present. However, following derivations in \cite{morinishi2010skew}, one can rewrite \eqref{eq:3.5} as
+Numerical time integration of \eqref{eq:3.5} can be challenging since the time differentiation of different variables is present. Following \cite{morinishi2010skew}, we rewrite \eqref{eq:3.5} as
 \begin{equation} \label{eq:3.6}
 	\sqrt{\rho } \frac{\partial }{\partial t} (\sqrt \rho \varphi ) + S_{\rho u}(\varphi) = \nabla \cdot F_{\varphi}.
 \end{equation}
-Time integration of this form is presented in the works of \cite{morinishi2010skew,reiss2014conservative}. Note that one can also generate a quasi-skew-symmetric form \cite{blaisdell1991numerical,morinishi2003dns} of \eqref{eq:3.1} as
+Time integration of this form is presented in \cite{morinishi2010skew,reiss2014conservative}. Note that one can also generate a quasi-skew-symmetric form \cite{blaisdell1991numerical,morinishi2003dns} of \eqref{eq:3.1} as
 \begin{equation} \label{eq:3.7}
 	\frac{\partial }{\partial t} (\rho \varphi) + S_{\rho u}(\varphi) = \nabla \cdot F_{\varphi}.
 \end{equation}
-Even though this is not a fully skew-symmetric form (skew-symmetric only in space), the numerical stabilities of this form is significantly better than the divergence and advective form \cite{morinishi2010skew,blaisdell1991numerical,morinishi2003dns}. Note that the quasi-skew-symmetric form is identical to the skew-symmetric form in the incompressible limit.
+Even though this is not a fully skew-symmetric form (skew-symmetric only in space), the numerical stability of this form is significantly better than the divergence and advective form \cite{morinishi2010skew,blaisdell1991numerical,morinishi2003dns}. Note that this quasi-skew-symmetric form is identical to the skew-symmetric form in the incompressible limit.
 
 \subsection{Incompressible Fluid} \label{sec:skew.2}
 Consider the governing equations of an incompressible fluid with skew-symmetric convective term:
@@ -61,20 +61,13 @@ defined on $\Omega$. Here, $p: \Omega \to \mathbb R^+$ is the pressure, $\tau: \
 \begin{equation} \label{eq:3.9}
 	\frac{d}{dt} K + \nabla \cdot (Ku) + \nabla \cdot (pu)= \nabla \cdot (\tau u) - (\tau \nabla)\cdot u,
 \end{equation}
-where $K = \frac 1 2 \sum_{i=1}^d u_i^2 $ is the kinetic energy. Here we used 
-\begin{equation} \label{eq:3.10}
-	\begin{aligned}
-	u\cdot \nabla p &= \nabla \cdot (up) - p\nabla \cdot u, \\
-	u \cdot (\nabla \cdot \tau) &= \nabla \cdot (\tau u) - (\tau \nabla)\cdot u,
-	\end{aligned} 
-\end{equation}
-and
+where $K = \frac 1 2 \sum_{i=1}^d u_i^2 $ is the kinetic energy and we used 
 \begin{equation} \label{eq:3.11}
 	u\cdot S_{u}(u) = \nabla \cdot(Ku).
 \end{equation}
-The only non-conservative term in \eqref{eq:3.9} is $-(\tau \nabla)\cdot u$, which corresponds to dissipation of kinetic energy. Therefore, in the absence of the viscous terms, $K$ is a conserved quantity of the system, and $\frac d {dt} \int_{\Omega} K \ dx <0$ when $\tau\neq 0$. Note that as long as $\nabla \cdot u = 0$, as discussed in \Cref{sec:skew.1}, the divergence, the convective, and the skew-symmetric forms are identical for the incompressible fluid equation. Thus, kinetic energy is conserved for all forms. However, for a general discretization scheme, these forms are not identical, and often the conservation of kinetic energy, in the discrete sense, is violated.
+The only non-conservative term in \eqref{eq:3.9} is $-(\tau \nabla)\cdot u$, which corresponds to dissipation of kinetic energy. Therefore, in the absence of the viscous terms, $K$ is a conserved quantity of the system, and $\frac d {dt} \int_{\Omega} K \ dx <0$ when $\tau\neq 0$. Note that as long as $\nabla \cdot u = 0$, as discussed in \Cref{sec:skew.1}, the divergence, the convective, and the skew-symmetric forms are identical for the incompressible fluid equation. Thus, kinetic energy is conserved for all forms. However, for a general discretization scheme, these forms are not identical and often conservation of kinetic energy (in the discrete sense) may be violated.
 
-The skew-symmetric discretization of \eqref{eq:3.8} is a centered scheme that exploits the skew-adjoint property of $S_u$, and ensures conservation of kinetic energy at the discrete level. We uniformly discretize $\Omega$ into $N$ points and denote by $\mathbf u \in \mathbb R^{N\times d}$, $\mathbf p \in \mathbb R^N$, and $T \in R^{N\times d\times d} $ the discrete representation of $u$, $p$, and $\tau$, respectively. Let $D_j$ be the centered finite difference matrix operator for $\partial / \partial x_j$, and for $j = 1,\dots,d$. The momentum equation in \eqref{eq:3.8} is then discretized as
+A skew-symmetric discretization of \eqref{eq:3.8} is a centered scheme that exploits the skew-adjoint property of $S_u$, and ensures conservation of kinetic energy at the discrete level. We uniformly discretize $\Omega$ into $N$ points and denote by $\mathbf u \in \mathbb R^{N\times d}$, $\mathbf p \in \mathbb R^N$, and $T \in R^{N\times d\times d} $ the discrete representation of $u$, $p$, and $\tau$, respectively. Let $D_j$ be the centered finite difference scheme for $\partial / \partial x_j$, and for $j = 1,\dots,d$. The momentum equation in \eqref{eq:3.8} is discretized as
 \begin{equation} \label{eq:3.13}
 	\frac{d}{dt}{\mathbf u}_i + S_{\mathbf u} \mathbf u_i + D_i \mathbf p = \sum_{j=1}^d D_j T_{ij}, \quad i=1,\dots,d,
 \end{equation}
@@ -87,23 +80,22 @@ and $U_i$ contains components of $\mathbf u_i$ on its diagonal. We require $D_i$
 	\item $D_i = -D_i^T$
 	\item $D_i \mathbf 1 = \mathbf 0$, where $\mathbf 1$ and $\mathbf 0$ are vectors of ones and zeros, respectively.
 \end{enumerate}
-Condition 1 and 2 yield
+Conditions 1 and 2 yield
 \begin{equation} \label{eq:3.15}
 	S_{\mathbf u} = -S_{\mathbf u}^T, \quad \mathbf 1^T S_{\mathbf u} \mathbf u_i = 0, \quad i=1,\dots,d.
 \end{equation}
-Conservation of momentum in the discrete sense reads
+Conservation of momentum in the discrete sense is expressed as
 \begin{equation} \label{eq:3.16}
 	\frac{d}{dt} \sum_{i=1}^d  \mathbf 1^T \mathbf u_i = \sum_{i=1}^d \left( - \mathbf 1^T S_{\mathbf u} \mathbf u_i - \mathbf 1^T D_i \mathbf p + \sum_{j=1}^d \mathbf 1^T D_j T_{ij}  \right) = 0.
 \end{equation}
-Similarly, using \eqref{eq:3.10}, it is verified that
+Similarly, it is verified that
 \begin{equation} \label{eq:3.17}
 \frac{d}{dt} \sum_{i=1}^d \left( \frac 1 2 \mathbf u_i^T \mathbf u_i \right) = - \sum_{i,j=1}^d T_{ij}D_j \mathbf u_i \leq 0.
 \end{equation}
-
-Conditions 1 and 2 for $D_i$ can be easily checked for a centered finite differences scheme on a periodic domain. For other types of boundaries, e.g., wall boundary and inflow/outflow, we refer the reader to \cite{morinishi1998fully,desjardins2008high} for construction of the proper discrete centered differentiation operator. 
+Conditions 1 and 2 for $D_i$ are easily checked for a centered finite differences scheme on a periodic domain. For other types of boundaries, e.g., wall boundary and inflow/outflow, we refer the reader to \cite{morinishi1998fully,desjardins2008high} for the construction of the proper discrete centered differentiation operator. We note that the finite differences schemes are chosen here for illustration purposes. It is easily checked that any discrete differentiation operator that satisfies discrete integration by parts, e.g. summation by part (SBP) methods and discontinuous Galerkin (DG) methods, also satisfies conditions 1 and 2 and can be used to construct a skew-symmetric discretization.
 
 \subsection{Compressible Fluid} \label{sec:skew.3}
-Consider the equation governing the evolution of a compressible fluid in a skew-symmetric form in one spacial dimension
+Consider the equations governing the evolution of a compressible fluid in a skew-symmetric form in one spacial dimension
 \begin{equation} \label{eq:3.18}
 \left\{
 \begin{aligned}
@@ -113,19 +105,18 @@ Consider the equation governing the evolution of a compressible fluid in a skew-
 \end{aligned}
 \right.
 \end{equation}
-Here $E= e + u^2/2$ is the total energy per unit mass, with $e = \frac{p}{\rho(\gamma - 1)}$ the internal energy, $\gamma$ the adiabatic gas index, and $\phi = -\lambda \frac{\partial T}{\partial x}$ is the heat flux, with $\lambda$ the heat conductivity. The rest of the variables are the same as those discussed in \Cref{sec:skew.2}. Following \cite{reiss2014conservative}, the evolution of the momentum equation reads
+Here $E= e + u^2/2$ is the total energy per unit mass, with $e = {p}/{\rho(\gamma - 1)}$ being the internal energy, $\gamma$ the adiabatic gas index, and $\phi = -\lambda \frac{\partial T}{\partial x}$ is the heat flux, with $\lambda$ as the heat conductivity. The remaining variables are the same as those discussed in \Cref{sec:skew.2}. Following \cite{reiss2014conservative}, the evolution of the momentum equation is
 \begin{equation} \label{eq:3.19}
 	\begin{aligned}
 	\frac{\partial}{\partial t}(\frac{\rho u^2}{2}) + \frac{\partial }{\partial x}(\rho u \frac{u^2}{2}) &= \frac 1 2 u( \frac{d}{dt} \rho u + \rho \frac{d}{dt} u ) + \frac 1 2 u ( [ \frac{\partial}{\partial x} \rho u ] u + \rho u \frac{\partial }{\partial x} u ) \\
 	& = - u \frac{\partial}{\partial x} p + u \frac{\partial}{\partial x} \tau.
 	\end{aligned}
 \end{equation}
-Substituting this into the energy equation in \eqref{eq:3.18} while assuming a constant adiabatic index yields
+Substituting this into the energy equation in \eqref{eq:3.18}, while assuming a constant adiabatic index, yields
 \begin{equation} \label{eq:3.20}
 	\frac{1}{\gamma -1} \frac{d}{dt} p + \frac{\gamma}{\gamma -1} \frac{\partial }{\partial x} up - u \frac{\partial }{\partial x}(p) = - u \frac{\partial}{\partial x} \tau + \frac{\partial }{\partial x}(u\tau - \phi).
 \end{equation}
-
-We discretize the real line, uniformly, into $N$ grid points and denote by $\mathbf r, \mathbf u, \mathbf p \in \mathbb R^{N}$, the discrete representations of $\rho$, $u$, and $p$, respectively. Using the matrix differentiation operator $D\in \mathbb R^{N\times N}$ (we omit the subscript ``$i$'' for the one dimensional case), introduced in \Cref{sec:skew.2}, we define the skew-symmetric matrix operator $S_{\mathbf r \mathbf u} = \frac 1 2 (DUR + RUD)$, where $R$ is the matrix that contains $r$ in its diagonal. Now, a semi-discretization of \eqref{eq:3.18} and \eqref{eq:3.20} takes the form
+We discretize the real line, uniformly, into $N$ grid points and denote by $\mathbf r, \mathbf u, \mathbf p \in \mathbb R^{N}$, the discrete representations of $\rho$, $u$, and $p$, respectively. Using the matrix differentiation operator $D\in \mathbb R^{N\times N}$ (we omit the subscript ``$i$'' for the one dimensional case), introduced in \Cref{sec:skew.2}, we define the skew-symmetric matrix operator $S_{\mathbf r \mathbf u} = \frac 1 2 (DUR + RUD)$, where $R$ is the matrix that contains $r$ in its diagonal. Semi-discrete expression of \eqref{eq:3.18} and \eqref{eq:3.20} takes the form
 \begin{equation} \label{eq:3.21}
 \left\{
 \begin{aligned}
@@ -135,12 +126,11 @@ We discretize the real line, uniformly, into $N$ grid points and denote by $\mat
 \end{aligned}
 \right.
 \end{equation}
-
-Considering conditions 1 and 2 for $D$, discussed in \Cref{sec:skew.2}, it is easily verified that
+Recalling conditions 1 and 2 for $D$, discussed in \Cref{sec:skew.2}, it is easily verified that
 \begin{equation} \label{eq:3.22}
 	S_{\mathbf r \mathbf u}^T = - S_{\mathbf r \mathbf u}, \quad \mathbf 1^T S_{\mathbf r \mathbf u} \mathbf u = - \mathbf u^T DU \mathbf r.
 \end{equation}
-Conservation of mass yields
+Conservation of mass is expressed as
 \begin{equation} \label{eq:3.23}
 	\frac{d}{dt} (\mathbf 1^T \mathbf r) = - \mathbf 1^T DR\mathbf u = 0. 
 \end{equation}
@@ -152,25 +142,25 @@ Furthermore, we recover conservation of momentum in the discrete sense as
 	&= -\frac 1 2 \mathbf u^T DU \mathbf r  - \frac 1 2 \mathbf 1^T S_{\mathbf r \mathbf u} \mathbf u - \mathbf 1^T D\mathbf p +  \mathbf 1^T D T = 0.
 \end{aligned}
 \end{equation}
-Here we used \eqref{eq:3.22} and the mass and the momentum equation in \eqref{eq:3.21}. Similarly, for the conservation of the total energy, we have
+Here we used \eqref{eq:3.22} and the mass and the momentum equation in \eqref{eq:3.21}. Similarly, for conservation of the total energy, we have
 \begin{equation} \label{eq:3.25}
 \begin{aligned}
 	\frac{d}{dt} \left( \frac{1}{\gamma - 1} \mathbf 1^T \mathbf p + \frac 1 2 \mathbf (R\mathbf u)^T \mathbf u  \right) &= \frac{d}{dt} \left( \frac{1}{\gamma - 1} \mathbf 1^T \mathbf p \right) + \frac 1 2 \mathbf u^T  S_{\mathbf r,\partial_t} (\mathbf u) = 0.
 \end{aligned}
 \end{equation}
-In addition to the conservation of the total energy, skew-symmetric form of \eqref{eq:3.21} also conserves the evolutions of the kinetic energy:
+In addition to the conservation of the total energy, the skew-symmetric form of \eqref{eq:3.21} also conserves the evolutions of the kinetic energy:
 \begin{equation} \label{eq:3.26}
 \begin{aligned}
 	\frac{d}{dt} ( \frac 1 2 \mathbf u^T R\mathbf u) = \frac 1 2 \mathbf u^T S_{\mathbf r,\partial_t} (\mathbf u) &= -\mathbf u ^T S_{\mathbf r \mathbf u} \mathbf u + \mathbf u^T D p + \mathbf u^T DT \\
 	&= \mathbf u^T D p + \mathbf u^T DT.
 \end{aligned}
 \end{equation}
-Here, we used the skew-symmetry of $S_{\mathbf r \mathbf u}$. Therefore, only the pressure and viscous terms contribute to a change in the level of kinetic energy.
+Here, we used the skew-symmetry of $S_{\mathbf r \mathbf u}$. Therefore, only the pressure and the viscous terms contribute to a change in the kinetic energy.
 
-We point out that there are other methods to obtain a skew-symmetric form for \eqref{eq:3.18}, that result in the conservation of other quantities. An entropy preserving skew-symmetric form can be found in \cite{sjogreen2010skew}. Furthermore, a fully quasi-skew-symmetric form for \eqref{eq:3.18}, where all quadratic fluxes are in a skew-symmetric form, is shown to have lowest aliasing error \cite{honein2004higher,honein2005numerical}
+We point out that there are other methods to obtain a skew-symmetric form for \eqref{eq:3.18}, that result in the conservation of other quantities. An entropy preserving skew-symmetric form can be found in \cite{sjogreen2010skew}. Furthermore, a fully quasi-skew-symmetric form for \eqref{eq:3.18}, where all quadratic fluxes are in a skew-symmetric form, is shown to minimize aliasing errors \cite{honein2004higher,honein2005numerical}
 
 \subsection{Time integration}
-Following steps in \cite{reiss2014conservative,morinishi2010skew} we can construct a fully discrete scheme for \eqref{sec:skew.3} as
+Following \cite{reiss2014conservative,morinishi2010skew} we can construct a fully discrete second order accurate scheme for \eqref{sec:skew.3} as
 \begin{equation} \label{eq:3.27}
 	\left\{
 	\begin{aligned}
@@ -180,8 +170,8 @@ Following steps in \cite{reiss2014conservative,morinishi2010skew} we can constru
 	\end{aligned}
 	\right.
 \end{equation}
-Here, $\Delta t$ is the time discretization unit, superscript $n$ denotes evaluating a variable at $t = n\Delta t$, superscript $n+1/2$ denotes the arithmetic average of a variable evaluated at $t=n\Delta t$ and $t=(n+1)\Delta t$, the square root sign denotes element-wise application of square root, and 
+Here, $\Delta t$ is the time step, superscript $n$ denotes evaluating at $t = n\Delta t$, superscript $n+1/2$ denotes the arithmetic average of a variable evaluated at $t=n\Delta t$ and $t=(n+1)\Delta t$, the square root sign denotes element-wise application of square root, and 
 \begin{equation}
 	\mathbf u_{\alpha}^{n+1/2} = \frac{\sqrt{\mathbf R}^{n+1} \mathbf u^{n+1} + \sqrt{\mathbf R}^{n} \mathbf u^{n}}{2\sqrt{\mathbf r}^{n+1/2} }.
 \end{equation}
-It is discussed in \cite{reiss2014conservative} that this time discretization scheme preserves the symmetries expressed in \eqref{eq:3.17}, \eqref{eq:3.24}, \eqref{eq:3.25}, and \eqref{eq:3.26}. In the incompressible case, the method reduces to the implicit mid-point scheme \cite{hairer2006geometric}. For further information see \cite{reiss2014conservative,morinishi2010skew}.
+As discussed in \cite{reiss2014conservative}, this time discretization scheme preserves the symmetries expressed in \eqref{eq:3.17}, \eqref{eq:3.24}, \eqref{eq:3.25}, and \eqref{eq:3.26}. In the incompressible case, the method reduces to the implicit mid-point scheme \cite{hairer2006geometric}. For further information see \cite{reiss2014conservative,morinishi2010skew}.
