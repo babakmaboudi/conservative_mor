@@ -11,7 +11,7 @@ Here, $d = 1,2$ or $3$, $\rho:\Omega\to \mathbb R$ is the density, $u\in \Omega 
 \begin{equation} \label{eq:3.2}
 	\frac{d}{dt} \int_{\Omega} \rho \varphi \ dx = \int_{\partial \Omega} (F_{\varphi} - \rho u \varphi) \cdot \hat n\ ds,
 \end{equation}
-where $\partial \Omega$ is the boundary of $\Omega$, and $\hat n$ is the unit outward normal vector to $\partial \Omega$. When the right hand side of \eqref{eq:3.2} vanishes, e.g. in case where $\Omega$ is periodic and $\varphi$ is flux-free, the quantity $(\rho \varphi)$ is conserved. Therefore, \eqref{eq:3.1} is referred to as the \emph{conservative form} and the convective term in \eqref{eq:3.1} is referred to as the \emph{divergence form}. However, using the \emph{continuity equation}
+where $\partial \Omega$ is the boundary of $\Omega$, and $\hat n$ is the unit outward normal vector to $\partial \Omega$. \edit{This means that the quantity $(\rho\varphi)$ is explicitly conserved over control volumes.} Therefore, \eqref{eq:3.1} is referred to as the \emph{conservative form} and the convective term in \eqref{eq:3.1} is referred to as the \emph{divergence form}. However, using the \emph{continuity equation}
 \begin{equation} \label{eq:3.3}
 	\frac{\partial }{\partial t} \rho + \nabla \cdot (\rho u) = 0,
 \end{equation}
@@ -27,7 +27,7 @@ Multiplying \eqref{eq:3.5} with $\varphi$ yields
 \begin{equation}
 	\frac{\partial }{\partial t} \rho \varphi^2 + \nabla \cdot ( \rho u \varphi^2  ) = \varphi \nabla \cdot F_{\varphi}.
 \end{equation}
-Therefore, $\varphi^2$ is a conserved quantity for a flux-free $\varphi$. Since the divergence, the advective and the skew-symmetric forms are identical at the continuous level, $\varphi^2$ is a conserved quantity for all forms. However, the equivalence of these forms is not preserved through a general discretization scheme and we can not expect $\varphi^2$ to be a conserved quantity at the discrete level. To motivate numerical advantages of the skew-symmetric form consider the operator 
+\edit{Therefore, $\rho \varphi^2$} is a conserved quantity for a flux-free $\varphi$. Since the divergence, the advective and the skew-symmetric forms are identical at the continuous level, $\varphi^2$ is a conserved quantity for all forms. However, the equivalence of these forms is not preserved through a general discretization scheme and we can not expect $\varphi^2$ to be a conserved quantity at the discrete level. To motivate numerical advantages of the skew-symmetric form consider the operator 
 \begin{equation}
 	S_{\rho u}(\cdot) = \frac 1 2 ( [ \nabla \cdot \rho u ] + (\rho u)\cdot \nabla )(\cdot).
 \end{equation}
@@ -43,7 +43,7 @@ Numerical time integration of \eqref{eq:3.5} can be challenging since the time d
 \end{equation}
 Time integration of this form is presented in \cite{morinishi2010skew,reiss2014conservative}. Note that one can also generate a quasi-skew-symmetric form \cite{blaisdell1991numerical,morinishi2003dns} of \eqref{eq:3.1} as
 \begin{equation} \label{eq:3.7}
-	\frac{\partial }{\partial t} (\rho \varphi) + S_{\rho u}(\varphi) = \nabla \cdot F_{\varphi}.
+	\frac{\partial }{\partial t} (\rho \varphi) + \edit{ \frac 1 2 \left( \nabla \cdot(\rho u \varphi) + \rho u \cdot \nabla \varphi + \varphi \nabla \cdot(\rho u) \right) } = \nabla \cdot F_{\varphi}.
 \end{equation}
 Even though this is not a fully skew-symmetric form (skew-symmetric only in space), the numerical stability of this form is significantly better than the divergence and advective form \cite{morinishi2010skew,blaisdell1991numerical,morinishi2003dns}. Note that this quasi-skew-symmetric form is identical to the skew-symmetric form in the incompressible limit.
 
@@ -165,12 +165,12 @@ Following \cite{reiss2014conservative,morinishi2010skew} we can construct a full
 	\left\{
 	\begin{aligned}
 	&\frac 1 2 \sqrt{\mathbf r} ^{n+1/2} \frac{\sqrt{\mathbf r}^{n+1} - \sqrt{\mathbf r}^{n}}{\Delta t} + DU^{n+1/2} \mathbf r^{n} = 0, \\
-	& \sqrt{\mathbf r} ^{n+1/2}  \frac{\sqrt{ \mathbf R}^{n+1} u^{n+1} - \sqrt{\mathbf R}^{n}u^n}{\Delta t} + S_{\mathbf r^{n} \mathbf u^n} \mathbf u^{n+1/2}_\alpha + D \mathbf p^{n} = DT^{n}, \\
-	& \frac 1 {\gamma -1} \frac{\mathbf p^{n+1} - \mathbf p^n}{\Delta t} + \frac{\gamma}{\gamma -1} D U^{n} \mathbf p - U^{n} D \mathbf p = - U^{n}D T^{n} + D (U^nT^n - \phi^n).
+	& \sqrt{\mathbf r} ^{n+1/2}  \frac{\sqrt{ \mathbf R}^{n+1} \mathbf u^{n+1} - \sqrt{\mathbf R}^{n}\mathbf u^n}{\Delta t} + S_{\mathbf r^{n} \mathbf u^n} \mathbf u^{n+1/2}_\alpha + D \mathbf p^{n} = DT^{n}, \\
+	& \frac 1 {\gamma -1} \frac{\mathbf p^{n+1} - \mathbf p^n}{\Delta t} + \frac{\gamma}{\gamma -1} D U^{n} \mathbf p^n - U^{n} D \mathbf p^n = - U^{n}D T^{n} + D (U^nT^n - \phi^n),
 	\end{aligned}
 	\right.
 \end{equation}
-Here, $\Delta t$ is the time step, superscript $n$ denotes evaluating at $t = n\Delta t$, superscript $n+1/2$ denotes the arithmetic average of a variable evaluated at $t=n\Delta t$ and $t=(n+1)\Delta t$, the square root sign denotes element-wise application of square root, and 
+\edit{and all the variables are stored at the same location with the same resolution (colocated).} Here, \edit{$\mathbf R$ contains elements of $\mathbf r$ on its diagonal,} $\Delta t$ is the time step, superscript $n$ denotes evaluating at $t = n\Delta t$, superscript $n+1/2$ denotes the arithmetic average of a variable evaluated at $t=n\Delta t$ and $t=(n+1)\Delta t$, the square root sign denotes element-wise application of square root, and 
 \begin{equation}
 	\mathbf u_{\alpha}^{n+1/2} = \frac{\sqrt{\mathbf R}^{n+1} \mathbf u^{n+1} + \sqrt{\mathbf R}^{n} \mathbf u^{n}}{2\sqrt{\mathbf r}^{n+1/2} }.
 \end{equation}
