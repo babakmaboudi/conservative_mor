@@ -221,9 +221,10 @@ The initial velocity field is given by
 \end{equation*}
 where $a=0.1$ and $\sigma=5\sqrt{2}\cdot 10^{-3}$. This corresponds to contacting streams of fluid with different densities. For specific choices of parameters describing the jets, fine structures and vortices emerges at the interface between the streams. Such an instability is referred to as the Kelvin-Helmholtz instability \cite{HHS}.
 
-As centered schemes are often dissipation free, resolving the discontinuous initial data requires some artificial viscosity. In the high-fidelity model, the method discussed in \cite{artificial_dissipation} is used as an artificial viscosity. However, at the level of the reduced system, this is replaced with a low pass filter on the expansion coefficients of POD basis vectors.
+As centered schemes are often dissipation free, resolving the discontinuous initial data requires some artificial viscosity. In the high-fidelity model, the method discussed in \cite{artificial_dissipation}\edit{, based on a derivative-based model,} is used as an artificial viscosity. However, at the level of the reduced system, this is replaced with a low pass filter on the expansion coefficients of POD basis vectors. \edit{The last $5\%$ of the POD modes are put to zero at each time iteration. The reason for the different treatment is that we want to avoid the reconstruction of the derivative of the solution in the full space during the integration of the reduced system.}
 
 The fully discrete skew-symmetric form \eqref{eq:3.27} is used as a time marching scheme with $\Delta t = 5 \cdot 10^{-4}$ over a period of $1$ time unit.
+\edit{A total of $500$ snapshots have been used for the computation of the basis in the offline stage.}
 
 \Cref{fig:error_decay_KH} illustrates that the accuracy of the method consistently improves as a higher number of POD basis modes are considered. Furthermore, the skew-symmetric form preserves the accuracy over the period of time integration. It is observed in \Cref{fig:snap_solution_KH} that all features of the flow are correctly represented in the reduced system, even with a low number of basis vectors.
 
@@ -392,7 +393,7 @@ In this section we study the 1-dimensional compressible Euler problem, \eqref{eq
 \end{equation*}
 The domain is discretized into $N=2000$ nodes and a centered finite differences scheme is used to assemble the discrete Euler equation in skew-symmetric form, as discussed in \Cref{sec:skew.3}. 
 
-The fully discrete skew-symmetric form \eqref{eq:3.27} is used for time integration over a time interval $[0,0.3]$. To resolve the discontinuous solution we use an artificial viscosity with $\tau = \mu \partial u / \partial x$, where $\mu = 0.5 \cdot 10^{-4}$.
+The fully discrete skew-symmetric form \eqref{eq:3.27} is used for time integration over a time interval $[0,0.3]$. To resolve the discontinuous solution we use an artificial viscosity with $\tau = \mu \partial u / \partial x$, where $\mu = 0.5 \cdot 10^{-4}$. \edit{Regarding the reduction procedure, $1000$ snapshots of the numerical solution given by the high fidelity method have been collected.}
 
 		\Cref{fig:energy_pres_1D} shows the evolution of conserved quantities for the high-fidelity and reduced system. Here, the high-fidelity model is also considered in the divergence and advective form in addition to the skew-symmetric form. It is clear that when the reduced systems is not in skew-symmetric form, it violates conservation of mass, momentum, and energy. Even while the high-fidelity systems in divergence and advective forms are stable, the constructed reduced system is unstable, independent on the number of basis vectors. On the other hand, the skew-symmetric form yields a stable and conservative reduce system. Note that the loss in the energy associated with the skew-symmetric form, illustrated in \Cref{conservation_1D_focus}, is due to the application of an artificial viscosity. 
 
@@ -626,14 +627,15 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\begin{subfigure}[]{0.47\linewidth}
+\begin{subfigure}[t]{0.47\linewidth}
 \begin{tikzpicture}[scale=0.58]
     \begin{axis}[xlabel=$x$,
                  ylabel=Density,
                  label style={font=\large},
-                 legend pos=south west,
+                 %legend pos=south west,
                  legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
+                 legend style={at={(axis cs:0.375,0.45)},anchor=south west},
                  grid=both,
                  ticks=both,
                  width=1.4\linewidth, 
@@ -654,7 +656,7 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
     \end{axis}% 
 \end{tikzpicture}
 \end{subfigure} 
-\begin{subfigure}[]{0.47\linewidth}
+\begin{subfigure}[t]{0.47\linewidth}
 \begin{tikzpicture}[scale=0.58]
     \begin{axis}[xlabel=$x$,
                  ylabel=Pressure,
@@ -689,7 +691,7 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
     \begin{axis}[xlabel=$x$,
                  ylabel=Density,
                  label style={font=\large},
-                 legend pos=south west,
+                 legend pos=north east,
                  legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
                  grid=both,
@@ -746,7 +748,7 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
     \begin{axis}[xlabel=$x$,
                  ylabel=Density,
                  label style={font=\large},
-                 legend pos=south west,
+                 legend pos=north east,
                  legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
                  legend style={font=\large},
                  grid=both,

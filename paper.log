@@ -1,9 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.5)  10 OCT 2018 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.5)  10 OCT 2018 18:13
 entering extended mode
  \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**\def\tikzexternalrealjob{paper}\input{paper}
-(./paper.tex (./svmult.cls
+**paper.tex
+(./paper.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(./svmult.cls
 Document Class: svmult 2007/06/25 v5.4 
 Springer Verlag global LaTeX document class for multi authored books
 Class Springer-SVMult Info: extra/valid Springer sub-package 
@@ -92,22 +96,27 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 973.
 \toctitle=\toks17
 \c@contribution=\count110
 LaTeX Info: Redefining \abstract on input line 2320.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip43
 \fb@frw=\dimen127
 \fb@frh=\dimen128
 \FrameRule=\dimen129
 \FrameSep=\dimen130
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/mathptmx.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/mathptmx.sty
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -142,49 +151,68 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/helvet.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/courier.sty
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/type1cm/type1cm.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/type1cm/type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/makeidx.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
@@ -193,9 +221,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-))) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
@@ -210,11 +240,14 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
@@ -244,7 +277,8 @@ ap \fi .
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count112
 \c@subtable=\count113
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
 \c@tracingmulticols=\count114
 \mult@box=\box29
@@ -292,7 +326,8 @@ Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
 \mult@nat@firstbox=\box53
 \colbreak@box=\box54
 \mc@col@check@num=\count122
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/footmisc/footmisc.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks19
 \footnotemargin=\dimen149
@@ -305,20 +340,25 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip46
+
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen150
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen151
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count124
@@ -336,6 +376,7 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen152
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+
 
 Package amsmath Warning: Unable to redefine math accent \vec.
 
@@ -363,14 +404,17 @@ LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count136
@@ -383,7 +427,8 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count138
 \calc@Cskip=\skip51
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
@@ -399,20 +444,24 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_intertext_sep=\dimen165
 \l_MT_above_shortintertext_sep=\dimen166
 \l_MT_below_shortintertext_sep=\dimen167
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks25
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip53
 \multirow@cntb=\count140
 \multirow@dima=\skip54
 \bigstrutjot=\dimen168
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/cleveref/cleveref.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/03 v0.21.3 Intelligent cross-referencing
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/us
-r/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/te
-xlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks26
@@ -425,13 +474,13 @@ sts.tex))
 \pgfutil@abb=\box57
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.te
-x
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/
-local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
@@ -459,6 +508,7 @@ ode.tex
 \t@pgf@toka=\toks30
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -483,6 +533,7 @@ code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 )) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
@@ -500,9 +551,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr
-/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/
-local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen179
 \pgfmath@count=\count147
@@ -528,8 +579,8 @@ code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
 code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
-erarithmetics.code.tex))) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfloat.code.tex
+erarithmetics.code.tex)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count148
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
@@ -644,13 +695,15 @@ Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr
-/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/
-texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/loca
-l/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/20
-18/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2018/
-texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen262
 \pgffor@skip=\dimen263
@@ -694,11 +747,12 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/l
-ocal/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/us
-r/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
 \t@pgfplots@toka=\toks38
 \t@pgfplots@tokb=\toks39
 \t@pgfplots@tokc=\toks40
@@ -817,16 +871,17 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
 ks.code.tex
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty (/
-usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplotstable 2018/03/28 v1.16 Table typesetting and Pretty-printing (
 1.16)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 .code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
-.coltype.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.s
-ty
+.coltype.code.tex))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \col@sep=\dimen285
 \ar@mcellbox=\box69
@@ -851,16 +906,16 @@ File: pgfcoreexternal.code.tex 2015/08/29  (rcs-revision 1.22)
 \pgfexternal@startupbox=\box71
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
-soldpgfsupp_tikzlibraryexternal.code.tex (/usr/local/texlive/2018/texmf-dist/te
-x/latex/oberdiek/atveryend.sty
+soldpgfsupp_tikzlibraryexternal.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/atveryend.sty
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_tikzexternalshared.code.tex)))
-No auxiliary output files.
+\openout4 = `paper.auxlock'.
 
-\w@pgfexternal@auxout=\write5
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen287
@@ -880,7 +935,8 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count170
 \@lastruleclass=\count171
 \@thisrulewidth=\dimen299
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count172
 \float@exts=\toks43
@@ -888,7 +944,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks44
 \@floatcapt=\box73
 )
-No file TikzFigures/paper-figure15.aux.
+\@indexfile=\write5
+\openout5 = `paper.idx'.
+
+
+Writing index file paper.idx
+(./paper.aux)
+\openout1 = `paper.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
@@ -902,9 +965,10 @@ LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 81.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+)
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count173
 \scratchdimen=\dimen300
@@ -925,6 +989,7 @@ Package caption Info: Incompatible package detected (regarding \@caption).
 \ignorespaces #2}}\begingroup \@parboxrestore \if@minipage \@setminipage \fi \@
 makecaption {\csname fnum@#1\endcsname }{\ignorespaces #3}\par \endgroup .
 
+
 Package caption Warning: Forced redefinition of \caption since the
 (caption)                unsupported(!) package option `compatibility=false'
 (caption)                was given.
@@ -936,8 +1001,6 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
-\immediate\closeout\minitoc
-\let \MiniTOC =N
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
 
@@ -953,16 +1016,19 @@ File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 95
 .
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 95
 .
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 95
 .
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
@@ -978,1155 +1044,391 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+
 (./sections/1.intro.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ [1
 
-LaTeX Warning: Citation `doi:10.1137/17M1111991' on page 2 undefined on input l
-ine 7.
 
 
-LaTeX Warning: Citation `kalashnikova2014stabilization' on page 2 undefined on 
-input line 7.
-
-
-LaTeX Warning: Citation `farhat2015structure' on page 2 undefined on input line
- 7.
-
-
-LaTeX Warning: Citation `doi:10.1137/110836742' on page 2 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `beattie2011structure' on page 2 undefined on input lin
-e 7.
-
-
-LaTeX Warning: Citation `doi:10.1137/140978922' on page 2 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `Carlberg:2014ky' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation `doi:10.1137/140978922' on page 2 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `doi:10.1137/17M1111991' on page 2 undefined on input l
-ine 7.
-
-
-LaTeX Warning: Citation `beattie2011structure' on page 2 undefined on input lin
-e 7.
-
-
-LaTeX Warning: Citation `chaturantabut2016structure' on page 2 undefined on inp
-ut line 7.
-
-
-LaTeX Warning: Citation `gugercin2012structure' on page 2 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `farhat2015structure' on page 2 undefined on input line
- 7.
-
-
-LaTeX Warning: Citation `ballarin2015supremizer' on page 2 undefined on input l
-ine 7.
-
-
-LaTeX Warning: Citation `carlberg2018conservative' on page 2 undefined on input
- line 7.
-
-
-LaTeX Warning: Citation `carlberg2018conservative' on page 2 undefined on input
- line 9.
-
-
-LaTeX Warning: Citation `barone2009stable' on page 2 undefined on input line 9.
-
-
-
-LaTeX Warning: Citation `carlberg2018conservative' on page 2 undefined on input
- line 9.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 2 undefined on input line 1
-3.
-
-
-LaTeX Warning: Citation `morinishi1998fully' on page 2 undefined on input line 
-13.
-
-
-LaTeX Warning: Citation `desjardins2008high' on page 2 undefined on input line 
-13.
-
-
-LaTeX Warning: Citation `tadmor1984skew' on page 2 undefined on input line 13.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 2 undefined on input li
-ne 13.
-
-
-LaTeX Warning: Citation `carlberg2018conservative' on page 2 undefined on input
- line 15.
-
-
-LaTeX Warning: Reference `sec:mor' on page 1 undefined on input line 17.
-
-
-LaTeX Warning: Reference `sec:skew' on page 1 undefined on input line 17.
-
-
-LaTeX Warning: Reference `sec:mor_skew' on page 1 undefined on input line 17.
-
-
-LaTeX Warning: Reference `sec:res' on page 1 undefined on input line 17.
-
-
-LaTeX Warning: Reference `sec:con' on page 1 undefined on input line 17.
-
-) (./sections/2.mor.tex
-
-LaTeX Warning: Citation `Edsberg:2008:ICM:1477735' on page 3 undefined on input
- line 12.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 16.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 20.
-
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 20.
-
-
-LaTeX Warning: Reference `eq:4' on page 4 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:4' on page 4 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 33.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 33.
-
-
-LaTeX Warning: Citation `hesthaven2015certified' on page 4 undefined on input l
-ine 33.
-
-
-LaTeX Warning: Citation `trefethen97' on page 4 undefined on input line 42.
-
-
-LaTeX Warning: Reference `eq:6' on page 4 undefined on input line 42.
-
-
-LaTeX Warning: Reference `eq:6' on page 4 undefined on input line 42.
-
-
-LaTeX Warning: Citation `hesthaven2015certified' on page 4 undefined on input l
-ine 42.
-
-
-LaTeX Warning: Reference `eq:1' on page 4 undefined on input line 48.
-
-
-LaTeX Warning: Citation `haasdonk2013convergence' on page 4 undefined on input 
-line 48.
-
-
-LaTeX Warning: Citation `hesthaven2015certified' on page 4 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Citation `quarteroni2015reduced' on page 4 undefined on input li
-ne 48.
-
-
-LaTeX Warning: Reference `eq:1' on page 5 undefined on input line 50.
-
-
-LaTeX Warning: Citation `doi:10.1137/140959602' on page 5 undefined on input li
-ne 50.
-
-
-LaTeX Warning: Citation `doi:10.1137/140978922' on page 5 undefined on input li
-ne 50.
-
-
-LaTeX Warning: Citation `doi:10.1137/17M1111991' on page 5 undefined on input l
-ine 50.
-
-
-LaTeX Warning: Citation `MaboudiAfkham2018' on page 5 undefined on input line 5
-0.
-
-
-LaTeX Warning: Reference `eq:4' on page 5 undefined on input line 50.
-
-) (./sections/3.skew.tex
-
-LaTeX Warning: Citation `morinishi2010skew' on page 5 undefined on input line 3
-.
-
-
-LaTeX Warning: Citation `morinishi1998fully' on page 5 undefined on input line 
-3.
-
-
-LaTeX Warning: Citation `tadmor1984skew' on page 5 undefined on input line 3.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 5 undefined on input li
-ne 3.
-
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]) (.
+/sections/2.mor.tex [3] [4]) (./sections/3.skew.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 5.
 
-LaTeX Warning: Reference `eq:3.1' on page 5 undefined on input line 10.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 5 undefined on input line 14.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 5 undefined on input line 14.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 5 undefined on input line 18.
-
-
-LaTeX Warning: Reference `eq:3.5' on page 6 undefined on input line 26.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 6 undefined on input line 34.
-
-
-LaTeX Warning: Reference `eq:3.5' on page 6 undefined on input line 40.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 6 undefined on input line 4
-0.
-
-
-LaTeX Warning: Reference `eq:3.5' on page 6 undefined on input line 40.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 6 undefined on input line 4
-4.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 6 undefined on input li
-ne 44.
-
-
-LaTeX Warning: Citation `blaisdell1991numerical' on page 6 undefined on input l
-ine 44.
-
-
-LaTeX Warning: Citation `morinishi2003dns' on page 6 undefined on input line 44
-.
-
-
-LaTeX Warning: Reference `eq:3.1' on page 6 undefined on input line 44.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 6 undefined on input line 4
-8.
-
-
-LaTeX Warning: Citation `blaisdell1991numerical' on page 6 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Citation `morinishi2003dns' on page 6 undefined on input line 48
-.
-
-
-LaTeX Warning: Reference `eq:3.9' on page 7 undefined on input line 68.
-
-
-LaTeX Warning: Reference `sec:skew.1' on page 1 undefined on input line 68.
-
-
-LaTeX Warning: Reference `eq:3.8' on page 7 undefined on input line 70.
-
-
-LaTeX Warning: Reference `eq:3.8' on page 7 undefined on input line 70.
-
-
-LaTeX Warning: Citation `morinishi1998fully' on page 8 undefined on input line 
-95.
-
-
-LaTeX Warning: Citation `desjardins2008high' on page 8 undefined on input line 
-95.
-
-
-LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 108.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 8 undefined on input li
-ne 108.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 8 undefined on input line 115.
-
-
-LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 119.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 9 undefined on input line 119.
-
-
-LaTeX Warning: Reference `eq:3.20' on page 9 undefined on input line 119.
-
-
-LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 129.
-
-
-LaTeX Warning: Reference `eq:3.22' on page 9 undefined on input line 145.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 9 undefined on input line 145.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 9 undefined on input line 151.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 10 undefined on input line 160.
-
-
-LaTeX Warning: Citation `sjogreen2010skew' on page 10 undefined on input line 1
-60.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 10 undefined on input line 160.
-
-
-LaTeX Warning: Citation `honein2004higher' on page 10 undefined on input line 1
-60.
-
-
-LaTeX Warning: Citation `honein2005numerical' on page 10 undefined on input lin
-e 160.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 10 undefined on input l
-ine 163.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 10 undefined on input line 
-163.
-
-
-LaTeX Warning: Reference `sec:skew.3' on page 10 undefined on input line 163.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 10 undefined on input l
-ine 177.
-
-
-LaTeX Warning: Reference `eq:3.17' on page 10 undefined on input line 177.
-
-
-LaTeX Warning: Reference `eq:3.24' on page 10 undefined on input line 177.
-
-
-LaTeX Warning: Reference `eq:3.25' on page 10 undefined on input line 177.
-
-
-LaTeX Warning: Reference `eq:3.26' on page 10 undefined on input line 177.
-
-
-LaTeX Warning: Citation `hairer2006geometric' on page 10 undefined on input lin
-e 177.
-
-
-LaTeX Warning: Citation `reiss2014conservative' on page 10 undefined on input l
-ine 177.
-
-
-LaTeX Warning: Citation `morinishi2010skew' on page 10 undefined on input line 
-177.
-
-) (./sections/4.mor_skew.tex
-
-LaTeX Warning: Reference `eq:3.8' on page 10 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 10 undefined on input line 2.
-
-
-LaTeX Warning: Reference `sec:skew' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:3.13' on page 10 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 10 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:4.1' on page 11 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:4.2' on page 11 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:3.13' on page 11 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 11 undefined on input line 12.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 11 undefined on input line 26.
-
-
-LaTeX Warning: Reference `eq:4.3' on page 11 undefined on input line 26.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 11 undefined on input line 26.
-
-
-LaTeX Warning: Reference `sec:skew.1' on page 1 undefined on input line 26.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 12 undefined on input line 46.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 12 undefined on input line 46.
-
-
-LaTeX Warning: Reference `eq:4.3' on page 12 undefined on input line 46.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:3.21' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.5' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.6' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.7' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.8' on page 12 undefined on input line 50.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 12 undefined on input line 52.
-
-
-LaTeX Warning: Reference `eq:4.3' on page 12 undefined on input line 56.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 12 undefined on input line 56.
-
-
-LaTeX Warning: Citation `Benner2018' on page 12 undefined on input line 56.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 13 undefined on input line 64.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 13 undefined on input line 66.
-
-
-LaTeX Warning: Reference `eq:4.4' on page 13 undefined on input line 68.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 13 undefined on input line 68.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 13 undefined on input line 68.
-
-) (./sections/5.res.tex
-
-LaTeX Warning: Reference `eq:3.8' on page 13 undefined on input line 4.
-
-
-LaTeX Warning: Citation `filaments_vort2' on page 14 undefined on input line 12
-.
-
-
-LaTeX Warning: Citation `filaments_vort' on page 14 undefined on input line 12.
-
-
-
-LaTeX Warning: Reference `eq:5.1' on page 14 undefined on input line 20.
-
-
-LaTeX Warning: Reference `eq:3.8' on page 14 undefined on input line 24.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 14 undefined on input line 25.
-
-
-LaTeX Warning: Reference `compare_different_models' on page 1 undefined on inpu
-t line 27.
-
-
-LaTeX Warning: Reference `sec:skew.2' on page 1 undefined on input line 27.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `sub@compare_different_models' on page 14 undefined on
- input line 85.
-
-
-LaTeX Warning: Reference `sub@singular_values_decay' on page 14 undefined on in
-put line 85.
-
-
-LaTeX Warning: Reference `sub@compare_different_models' on page 14 undefined on
- input line 85.
-
-
-LaTeX Warning: Reference `sub@singular_values_decay' on page 14 undefined on in
-put line 85.
-
-
-LaTeX Warning: Reference `sec:mor' on page 1 undefined on input line 88.
-
-
-LaTeX Warning: Reference `singular_values_decay' on page 1 undefined on input l
-ine 88.
-
-
-LaTeX Warning: Reference `fig:snap_solution_incompressible_Euler' on page 15 un
-defined on input line 90.
-
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-red_17_2.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
-disable this.
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-red_35_2.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
-disable this.
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-Full_2.png}' has been optimized away. Use '/tikz/external/optimize=false' to di
-sable this.
-
-Underfull \hbox (badness 1072) in paragraph at lines 96--99
-\OT1/ptm/m/sc/8.5 PDF\OT1/ptm/m/n/8.5 ]  [ \OT1/ptm/m/sc/8.5 \in-clude-graph-ic
-s op-ti-mized away be-cause it does not con-tribute
+[5] [6] [7] [8] [9]) (./sections/4.mor_skew.tex [10] [11] [12])
+(./sections/5.res.tex [13]
+===== Image 'TikzFigures/paper-figure0' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure1' is up-to-date. ======
+
+Overfull \hbox (15.97414pt too wide) in paragraph at lines 59--82
+[][] 
  []
 
+<data/Incompressible_Euler/Snapshots/red_17_2.png, id=61, 1506.1068pt x 1506.10
+68pt>
+File: data/Incompressible_Euler/Snapshots/red_17_2.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/red_17_2.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/red_17_2.png  used
+ on input line 96.
+(pdftex.def)             Requested size: 90.3625pt x 90.3625pt.
+<data/Incompressible_Euler/Snapshots/red_35_2.png, id=62, 1506.1068pt x 1506.10
+68pt>
+File: data/Incompressible_Euler/Snapshots/red_35_2.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/red_35_2.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/red_35_2.png  used
+ on input line 97.
+(pdftex.def)             Requested size: 90.3625pt x 90.3625pt.
+<data/Incompressible_Euler/Snapshots/Full_2.png, id=63, 2182.554pt x 1506.1068p
+t>
+File: data/Incompressible_Euler/Snapshots/Full_2.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/Full_2.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/Full_2.png  used o
+n input line 98.
+(pdftex.def)             Requested size: 130.94759pt x 90.3625pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-red_17_3.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
-disable this.
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-red_35_3.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
-disable this.
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-Full_3.png}' has been optimized away. Use '/tikz/external/optimize=false' to di
-sable this.
-
-Underfull \hbox (badness 1072) in paragraph at lines 100--103
-\OT1/ptm/m/sc/8.5 PDF\OT1/ptm/m/n/8.5 ]  [ \OT1/ptm/m/sc/8.5 \in-clude-graph-ic
-s op-ti-mized away be-cause it does not con-tribute
- []
-
+<data/Incompressible_Euler/Snapshots/red_17_3.png, id=64, 1506.1068pt x 1506.10
+68pt>
+File: data/Incompressible_Euler/Snapshots/red_17_3.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/red_17_3.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/red_17_3.png  used
+ on input line 100.
+(pdftex.def)             Requested size: 90.3625pt x 90.3625pt.
+<data/Incompressible_Euler/Snapshots/red_35_3.png, id=65, 1506.1068pt x 1506.10
+68pt>
+File: data/Incompressible_Euler/Snapshots/red_35_3.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/red_35_3.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/red_35_3.png  used
+ on input line 101.
+(pdftex.def)             Requested size: 90.3625pt x 90.3625pt.
+<data/Incompressible_Euler/Snapshots/Full_3.png, id=66, 2182.554pt x 1506.1068p
+t>
+File: data/Incompressible_Euler/Snapshots/Full_3.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/Full_3.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/Full_3.png  used o
+n input line 102.
+(pdftex.def)             Requested size: 130.94759pt x 90.3625pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 100--103
 
  []
 
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-red_17_4.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
-disable this.
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-red_35_4.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
-disable this.
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-Full_4.png}' has been optimized away. Use '/tikz/external/optimize=false' to di
-sable this.
-
-Underfull \hbox (badness 1072) in paragraph at lines 104--107
-\OT1/ptm/m/sc/8.5 PDF\OT1/ptm/m/n/8.5 ]  [ \OT1/ptm/m/sc/8.5 \in-clude-graph-ic
-s op-ti-mized away be-cause it does not con-tribute
- []
-
+<data/Incompressible_Euler/Snapshots/red_17_4.png, id=67, 1506.1068pt x 1506.10
+68pt>
+File: data/Incompressible_Euler/Snapshots/red_17_4.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/red_17_4.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/red_17_4.png  used
+ on input line 104.
+(pdftex.def)             Requested size: 90.3625pt x 90.3625pt.
+<data/Incompressible_Euler/Snapshots/red_35_4.png, id=68, 1506.1068pt x 1506.10
+68pt>
+File: data/Incompressible_Euler/Snapshots/red_35_4.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/red_35_4.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/red_35_4.png  used
+ on input line 105.
+(pdftex.def)             Requested size: 90.3625pt x 90.3625pt.
+<data/Incompressible_Euler/Snapshots/Full_4.png, id=69, 2182.554pt x 1506.1068p
+t>
+File: data/Incompressible_Euler/Snapshots/Full_4.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/Full_4.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/Full_4.png  used o
+n input line 106.
+(pdftex.def)             Requested size: 130.94759pt x 90.3625pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-red_17_5.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
-disable this.
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-red_35_5.png}' has been optimized away. Use '/tikz/external/optimize=false' to 
-disable this.
-The command '\includegraphics [scale=0.06]{data/Incompressible_Euler/Snapshots/
-Full_5.png}' has been optimized away. Use '/tikz/external/optimize=false' to di
-sable this.
+<data/Incompressible_Euler/Snapshots/red_17_5.png, id=70, 1506.1068pt x 1506.10
+68pt>
+File: data/Incompressible_Euler/Snapshots/red_17_5.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/red_17_5.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/red_17_5.png  used
+ on input line 108.
+(pdftex.def)             Requested size: 90.3625pt x 90.3625pt.
+<data/Incompressible_Euler/Snapshots/red_35_5.png, id=71, 1506.1068pt x 1506.10
+68pt>
+File: data/Incompressible_Euler/Snapshots/red_35_5.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/red_35_5.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/red_35_5.png  used
+ on input line 109.
+(pdftex.def)             Requested size: 90.3625pt x 90.3625pt.
+<data/Incompressible_Euler/Snapshots/Full_5.png, id=72, 2182.554pt x 1506.1068p
+t>
+File: data/Incompressible_Euler/Snapshots/Full_5.png Graphic file (type png)
+<use data/Incompressible_Euler/Snapshots/Full_5.png>
+Package pdftex.def Info: data/Incompressible_Euler/Snapshots/Full_5.png  used o
+n input line 110.
+(pdftex.def)             Requested size: 130.94759pt x 90.3625pt.
+[14]
+===== Image 'TikzFigures/paper-figure2' is up-to-date. ======
 
-LaTeX Warning: Reference `fig:approx_error_incompressible_Euler' on page 1 unde
-fined on input line 120.
-
-
-LaTeX Warning: Reference `fig:energy_error_incompressible_Euler' on page 1 unde
-fined on input line 122.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `sub@fig:approx_error_incompressible_Euler' on page 15
- undefined on input line 196.
-
-
-LaTeX Warning: Reference `sub@fig:energy_error_incompressible_Euler' on page 15
- undefined on input line 196.
-
-
-LaTeX Warning: Reference `sub@fig:approx_error_incompressible_Euler' on page 15
- undefined on input line 196.
-
-
-LaTeX Warning: Reference `sub@fig:energy_error_incompressible_Euler' on page 15
- undefined on input line 196.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 15 undefined on input line 201.
-
-
-LaTeX Warning: Reference `sec:res.1' on page 1 undefined on input line 201.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 15 undefined on input line 201.
-
-
-LaTeX Warning: Citation `HHS' on page 16 undefined on input line 222.
-
-
-LaTeX Warning: Citation `artificial_dissipation' on page 16 undefined on input 
-line 224.
-
-
-LaTeX Warning: Reference `eq:3.27' on page 16 undefined on input line 226.
-
-
-LaTeX Warning: Reference `fig:error_decay_KH' on page 1 undefined on input line
- 229.
-
-
-LaTeX Warning: Reference `fig:snap_solution_KH' on page 1 undefined on input li
-ne 229.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `fig:conservation_DEIM' on page 1 undefined on input l
-ine 264.
-
-
-LaTeX Warning: Reference `energy_error_KH' on page 1 undefined on input line 26
-4.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `sub@mass_error_KH' on page 16 undefined on input line
- 356.
-
-
-LaTeX Warning: Reference `sub@momentum_error_KH' on page 16 undefined on input 
-line 356.
-
-
-LaTeX Warning: Reference `sub@energy_error_KH' on page 16 undefined on input li
-ne 356.
-
-
-LaTeX Warning: Reference `sub@mass_error_KH' on page 16 undefined on input line
- 356.
-
-
-LaTeX Warning: Reference `sub@momentum_error_KH' on page 16 undefined on input 
-line 356.
-
-
-LaTeX Warning: Reference `sub@energy_error_KH' on page 16 undefined on input li
-ne 356.
-
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_200_307.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_500_307.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_exact_307.png}' has been optimized away. Use '/tikz/external/optimize
-=false' to disable this.
-
-Underfull \hbox (badness 1072) in paragraph at lines 364--367
-\OT1/ptm/m/sc/8.5 PDF\OT1/ptm/m/n/8.5 ]  [ \OT1/ptm/m/sc/8.5 \in-clude-graph-ic
-s op-ti-mized away be-cause it does not con-tribute
+Overfull \hbox (7.23045pt too wide) in paragraph at lines 131--158
+[][] 
  []
 
+===== Image 'TikzFigures/paper-figure3' is up-to-date. ======
+
+Overfull \hbox (30.64694pt too wide) in paragraph at lines 162--192
+[][] 
+ []
+
+[15 <./TikzFigures/paper-figure0.pdf> <./TikzFigures/paper-figure1.pdf>]
+[16 <./data/Incompressible_Euler/Snapshots/red_17_2.png> <./data/Incompressible
+_Euler/Snapshots/red_35_2.png> <./data/Incompressible_Euler/Snapshots/Full_2.pn
+g> <./data/Incompressible_Euler/Snapshots/red_17_3.png> <./data/Incompressible_
+Euler/Snapshots/red_35_3.png> <./data/Incompressible_Euler/Snapshots/Full_3.png
+> <./data/Incompressible_Euler/Snapshots/red_17_4.png> <./data/Incompressible_E
+uler/Snapshots/red_35_4.png> <./data/Incompressible_Euler/Snapshots/Full_4.png>
+ <./data/Incompressible_Euler/Snapshots/red_17_5.png> <./data/Incompressible_Eu
+ler/Snapshots/red_35_5.png> <./data/Incompressible_Euler/Snapshots/Full_5.png>]
+===== Image 'TikzFigures/paper-figure4' is up-to-date. ======
+
+Overfull \hbox (33.33727pt too wide) in paragraph at lines 234--259
+[][] 
+ []
+
+===== Image 'TikzFigures/paper-figure5' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure6' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure7' is up-to-date. ======
+<data/Compressible_Euler/KH/Snapshots/density_200_307.png, id=126, 807.015pt x 
+807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_200_307.png Graphic file (ty
+pe png)
+<use data/Compressible_Euler/KH/Snapshots/density_200_307.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_200_307.p
+ng  used on input line 364.
+(pdftex.def)             Requested size: 92.81093pt x 92.81093pt.
+<data/Compressible_Euler/KH/Snapshots/density_500_307.png, id=127, 807.015pt x 
+807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_500_307.png Graphic file (ty
+pe png)
+<use data/Compressible_Euler/KH/Snapshots/density_500_307.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_500_307.p
+ng  used on input line 365.
+(pdftex.def)             Requested size: 92.81093pt x 92.81093pt.
+<data/Compressible_Euler/KH/Snapshots/density_exact_307.png, id=128, 1077.02374
+pt x 807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_exact_307.png Graphic file (
+type png)
+<use data/Compressible_Euler/KH/Snapshots/density_exact_307.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_exact_307
+.png  used on input line 366.
+(pdftex.def)             Requested size: 123.86334pt x 92.81093pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 364--367
 
  []
 
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_200_461.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_500_461.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_exact_461.png}' has been optimized away. Use '/tikz/external/optimize
-=false' to disable this.
-
-Underfull \hbox (badness 1072) in paragraph at lines 368--371
-\OT1/ptm/m/sc/8.5 PDF\OT1/ptm/m/n/8.5 ]  [ \OT1/ptm/m/sc/8.5 \in-clude-graph-ic
-s op-ti-mized away be-cause it does not con-tribute
- []
-
+<data/Compressible_Euler/KH/Snapshots/density_200_461.png, id=129, 807.015pt x 
+807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_200_461.png Graphic file (ty
+pe png)
+<use data/Compressible_Euler/KH/Snapshots/density_200_461.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_200_461.p
+ng  used on input line 368.
+(pdftex.def)             Requested size: 92.81093pt x 92.81093pt.
+<data/Compressible_Euler/KH/Snapshots/density_500_461.png, id=130, 807.015pt x 
+807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_500_461.png Graphic file (ty
+pe png)
+<use data/Compressible_Euler/KH/Snapshots/density_500_461.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_500_461.p
+ng  used on input line 369.
+(pdftex.def)             Requested size: 92.81093pt x 92.81093pt.
+<data/Compressible_Euler/KH/Snapshots/density_exact_461.png, id=131, 1077.02374
+pt x 807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_exact_461.png Graphic file (
+type png)
+<use data/Compressible_Euler/KH/Snapshots/density_exact_461.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_exact_461
+.png  used on input line 370.
+(pdftex.def)             Requested size: 123.86334pt x 92.81093pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 368--371
 
  []
 
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_200_614.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_500_614.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_exact_614.png}' has been optimized away. Use '/tikz/external/optimize
-=false' to disable this.
-
-Underfull \hbox (badness 1072) in paragraph at lines 372--375
-\OT1/ptm/m/sc/8.5 PDF\OT1/ptm/m/n/8.5 ]  [ \OT1/ptm/m/sc/8.5 \in-clude-graph-ic
-s op-ti-mized away be-cause it does not con-tribute
- []
-
+<data/Compressible_Euler/KH/Snapshots/density_200_614.png, id=132, 807.015pt x 
+807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_200_614.png Graphic file (ty
+pe png)
+<use data/Compressible_Euler/KH/Snapshots/density_200_614.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_200_614.p
+ng  used on input line 372.
+(pdftex.def)             Requested size: 92.81093pt x 92.81093pt.
+<data/Compressible_Euler/KH/Snapshots/density_500_614.png, id=133, 807.015pt x 
+807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_500_614.png Graphic file (ty
+pe png)
+<use data/Compressible_Euler/KH/Snapshots/density_500_614.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_500_614.p
+ng  used on input line 373.
+(pdftex.def)             Requested size: 92.81093pt x 92.81093pt.
+<data/Compressible_Euler/KH/Snapshots/density_exact_614.png, id=134, 1077.02374
+pt x 807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_exact_614.png Graphic file (
+type png)
+<use data/Compressible_Euler/KH/Snapshots/density_exact_614.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_exact_614
+.png  used on input line 374.
+(pdftex.def)             Requested size: 123.86334pt x 92.81093pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 372--375
 
  []
 
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_200_768.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_500_768.png}' has been optimized away. Use '/tikz/external/optimize=f
-alse' to disable this.
-The command '\includegraphics [scale=0.115]{data/Compressible_Euler/KH/Snapshot
-s/density_exact_768.png}' has been optimized away. Use '/tikz/external/optimize
-=false' to disable this.
+<data/Compressible_Euler/KH/Snapshots/density_200_768.png, id=135, 807.015pt x 
+807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_200_768.png Graphic file (ty
+pe png)
+<use data/Compressible_Euler/KH/Snapshots/density_200_768.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_200_768.p
+ng  used on input line 376.
+(pdftex.def)             Requested size: 92.81093pt x 92.81093pt.
+<data/Compressible_Euler/KH/Snapshots/density_500_768.png, id=136, 807.015pt x 
+807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_500_768.png Graphic file (ty
+pe png)
+<use data/Compressible_Euler/KH/Snapshots/density_500_768.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_500_768.p
+ng  used on input line 377.
+(pdftex.def)             Requested size: 92.81093pt x 92.81093pt.
+<data/Compressible_Euler/KH/Snapshots/density_exact_768.png, id=137, 1077.02374
+pt x 807.015pt>
+File: data/Compressible_Euler/KH/Snapshots/density_exact_768.png Graphic file (
+type png)
+<use data/Compressible_Euler/KH/Snapshots/density_exact_768.png>
+Package pdftex.def Info: data/Compressible_Euler/KH/Snapshots/density_exact_768
+.png  used on input line 378.
+(pdftex.def)             Requested size: 123.86334pt x 92.81093pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[17 <./TikzFigures/paper-figure2.pdf> <./TikzFigures/paper-figure3.pdf> <./Tikz
+Figures/paper-figure4.pdf>] [18 <./TikzFigures/paper-figure5.pdf> <./TikzFigure
+s/paper-figure6.pdf> <./TikzFigures/paper-figure7.pdf>] [19 <./data/Compressibl
+e_Euler/KH/Snapshots/density_200_307.png> <./data/Compressible_Euler/KH/Snapsho
+ts/density_500_307.png> <./data/Compressible_Euler/KH/Snapshots/density_exact_3
+07.png> <./data/Compressible_Euler/KH/Snapshots/density_200_461.png> <./data/Co
+mpressible_Euler/KH/Snapshots/density_500_461.png> <./data/Compressible_Euler/K
+H/Snapshots/density_exact_461.png> <./data/Compressible_Euler/KH/Snapshots/dens
+ity_200_614.png> <./data/Compressible_Euler/KH/Snapshots/density_500_614.png> <
+./data/Compressible_Euler/KH/Snapshots/density_exact_614.png> <./data/Compressi
+ble_Euler/KH/Snapshots/density_200_768.png> <./data/Compressible_Euler/KH/Snaps
+hots/density_500_768.png> <./data/Compressible_Euler/KH/Snapshots/density_exact
+_768.png>]
+===== Image 'TikzFigures/paper-figure8' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure9' is up-to-date. ======
 
-LaTeX Warning: Reference `eq:3.18' on page 16 undefined on input line 386.
+Overfull \hbox (13.58046pt too wide) in paragraph at lines 445--467
+[][] 
+ []
 
+===== Image 'TikzFigures/paper-figure10' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure11' is up-to-date. ======
 
-LaTeX Warning: Reference `sec:5.res.4' on page 1 undefined on input line 386.
+Overfull \hbox (13.58046pt too wide) in paragraph at lines 501--522
+[][] 
+ []
 
+===== Image 'TikzFigures/paper-figure12' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure13' is up-to-date. ======
 
-LaTeX Warning: Reference `eq:3.18' on page 16 undefined on input line 386.
+Overfull \hbox (9.73007pt too wide) in paragraph at lines 558--579
+[][] 
+ []
 
+===== Image 'TikzFigures/paper-figure14' is up-to-date. ======
 
-LaTeX Warning: Reference `sec:skew.3' on page 1 undefined on input line 394.
+Overfull \hbox (33.33527pt too wide) in paragraph at lines 592--620
+[][] 
+ []
 
+===== Image 'TikzFigures/paper-figure15' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure16' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure17' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure18' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure19' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure20' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure21' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure22' is up-to-date. ======
 
-LaTeX Warning: Reference `eq:3.27' on page 18 undefined on input line 396.
+Overfull \hbox (3.96626pt too wide) in paragraph at lines 844--866
+[][] 
+ []
 
-
-LaTeX Warning: Reference `fig:energy_pres_1D' on page 1 undefined on input line
- 398.
-
-
-LaTeX Warning: Reference `conservation_1D_focus' on page 1 undefined on input l
-ine 398.
-
-
-LaTeX Warning: Reference `error_behaviour_1D' on page 1 undefined on input line
- 400.
-
-
-LaTeX Warning: Reference `fig:snaps_1D_Euler' on page 1 undefined on input line
- 402.
-
-
-LaTeX Warning: Citation `thompson1992fourier' on page 18 undefined on input lin
-e 402.
-
-
-LaTeX Warning: Reference `sec:mor_skew' on page 1 undefined on input line 404.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 18 undefined on input line 404.
-
-
-LaTeX Warning: Reference `fig:singular_values_decay_1D' on page 1 undefined on 
-input line 404.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 18 undefined on input line 404.
-
-
-LaTeX Warning: Reference `error_DEIM' on page 1 undefined on input line 404.
-
-
-LaTeX Warning: Reference `energy_DEIM' on page 1 undefined on input line 404.
-
-
-LaTeX Warning: Reference `eq:3.18' on page 18 undefined on input line 405.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `sub@conservation_1D' on page 18 undefined on input li
-ne 582.
-
-
-LaTeX Warning: Reference `sub@conservation_1D_focus' on page 18 undefined on in
-put line 582.
-
-
-LaTeX Warning: Reference `sub@conservation_1D' on page 18 undefined on input li
-ne 582.
-
-
-LaTeX Warning: Reference `sub@conservation_1D_focus' on page 18 undefined on in
-put line 582.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-\openout5 = `TikzFigures/paper-figure15.dpth'.
-
-PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/density_exact_300.txt
-}
-\tikzexternal@dep@file=\write6
-\openout6 = `TikzFigures/paper-figure15.dep'.
-
-PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/density_approx_unstab
-le_24_300.txt}
-PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/density_approx_unstab
-le_102_300.txt}
-PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/density_approx_unstab
-le_201_300.txt}
-PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/density_approx_24_300
-.txt}
-PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/density_approx_102_30
-0.txt}
-PGFPlots: reading {./data/Compressible_Euler/1D/Snapshots/density_approx_201_30
-0.txt}
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 656.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.36008> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 656.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.40009> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 656.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 656.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 656.
-[19
-
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `sub@density_reduction_1D' on page 19 undefined on inp
-ut line 806.
-
-
-LaTeX Warning: Reference `sub@pressure_reduction_1D' on page 19 undefined on in
-put line 806.
-
-
-LaTeX Warning: Reference `sub@density_reduction_1D' on page 19 undefined on inp
-ut line 806.
-
-
-LaTeX Warning: Reference `sub@pressure_reduction_1D' on page 19 undefined on in
-put line 806.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `sub@error_DEIM' on page 19 undefined on input line 89
-4.
-
-
-LaTeX Warning: Reference `sub@energy_DEIM' on page 19 undefined on input line 8
-94.
-
-
-LaTeX Warning: Reference `sub@error_DEIM' on page 19 undefined on input line 89
-4.
-
-
-LaTeX Warning: Reference `sub@energy_DEIM' on page 19 undefined on input line 8
-94.
-
+===== Image 'TikzFigures/paper-figure23' is up-to-date. ======
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./sections/5.res_part2.tex
+) (./sections/5.res_part2.tex [20]
+===== Image 'TikzFigures/paper-figure24' is up-to-date. ======
 
-LaTeX Warning: Citation `yu2008combustion' on page 19 undefined on input line 3
-.
-
-
-LaTeX Warning: Citation `garby2013simulations' on page 19 undefined on input li
-ne 3.
-
-
-LaTeX Warning: Citation `smith2008computational' on page 19 undefined on input 
-line 3.
-
-
-LaTeX Warning: Citation `frezzotti2015determination' on page 19 undefined on in
-put line 3.
-
-
-LaTeX Warning: Citation `frezzotti2017numerical' on page 19 undefined on input 
-line 3.
-
-
-LaTeX Warning: Citation `frezzotti2018quasi' on page 19 undefined on input line
- 3.
-
-
-LaTeX Warning: Reference `fig:radius' on page 20 undefined on input line 6.
-
-
-LaTeX Warning: Reference `tab:geometry_parameters' on page 20 undefined on inpu
-t line 8.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `tab:operating-conditions' on page 20 undefined on inp
-ut line 71.
+Overfull \hbox (1.73798pt too wide) in paragraph at lines 15--47
+ [][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation `frezzotti2017numerical' on page 22 undefined on input 
-line 161.
-
-
-LaTeX Warning: Citation `frezzotti2018quasi' on page 22 undefined on input line
- 161.
-
-
-LaTeX Warning: Reference `eq:5p2.7' on page 23 undefined on input line 169.
-
-
-LaTeX Warning: Reference `tab:operating-conditions' on page 23 undefined on inp
-ut line 177.
-
-
-LaTeX Warning: Reference `eq:5p2.7' on page 23 undefined on input line 182.
-
-
-LaTeX Warning: Reference `eq:5p2.3' on page 23 undefined on input line 183.
-
-
-LaTeX Warning: Reference `eq:5p2.3' on page 23 undefined on input line 185.
-
-
-LaTeX Warning: Reference `eq:5p2.3' on page 23 undefined on input line 185.
-
-
-LaTeX Warning: Citation `Wang:255719' on page 23 undefined on input line 185.
-
-
-LaTeX Warning: Reference `eq:5p2.3' on page 23 undefined on input line 185.
-
-
+[21 <./TikzFigures/paper-figure8.pdf> <./TikzFigures/paper-figure9.pdf> <./Tikz
+Figures/paper-figure10.pdf> <./TikzFigures/paper-figure11.pdf> <./TikzFigures/p
+aper-figure12.pdf> <./TikzFigures/paper-figure13.pdf>] [22 <./TikzFigures/paper
+-figure14.pdf>] [23 <./TikzFigures/paper-figure15.pdf> <./TikzFigures/paper-fig
+ure16.pdf> <./TikzFigures/paper-figure17.pdf> <./TikzFigures/paper-figure18.pdf
+> <./TikzFigures/paper-figure19.pdf> <./TikzFigures/paper-figure20.pdf> <./Tikz
+Figures/paper-figure21.pdf>] [24 <./TikzFigures/paper-figure22.pdf> <./TikzFigu
+res/paper-figure23.pdf> <./TikzFigures/paper-figure24.pdf>] [25]
 Overfull \hbox (4.5188pt too wide) in paragraph at lines 185--186
 \OT1/ptm/m/n/10 Introduction of an ar-ti-fi-cial vis-cos-ity is es-sen-tial for
  a ro-bust and long time-integration
  []
 
-
-LaTeX Warning: Reference `eq:5p2.10' on page 23 undefined on input line 191.
-
-
-LaTeX Warning: Reference `eq:5p2.3' on page 23 undefined on input line 191.
-
-
-LaTeX Warning: Reference `eq:3.7' on page 23 undefined on input line 191.
-
-
-LaTeX Warning: Reference `eq:5p2.3' on page 23 undefined on input line 191.
-
-
-LaTeX Warning: Citation `sjogreen2010skew' on page 23 undefined on input line 1
-91.
-
-
-LaTeX Warning: Reference `eq:5p2.9.2' on page 24 undefined on input line 199.
-
-
-LaTeX Warning: Reference `eq:5p2.9.1' on page 24 undefined on input line 199.
-
-
-LaTeX Warning: Reference `eq:5p2.10' on page 24 undefined on input line 199.
-
-
-LaTeX Warning: Citation `jiang1996efficient' on page 24 undefined on input line
- 211.
-
-
-LaTeX Warning: Reference `eq:5p2.10' on page 24 undefined on input line 211.
-
-
-LaTeX Warning: Reference `fig:5p2.2b' on page 1 undefined on input line 212.
-
-
-LaTeX Warning: Reference `fig:5p2.2a' on page 1 undefined on input line 212.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `sub@steady_state' on page 24 undefined on input line 
-364.
-
-
-LaTeX Warning: Reference `sub@oscill_pressure' on page 24 undefined on input li
-ne 364.
-
-
-LaTeX Warning: Reference `sub@error_growth_comb' on page 24 undefined on input 
-line 364.
-
-
-LaTeX Warning: Reference `sub@oscill_focus' on page 24 undefined on input line 
-364.
-
-
-LaTeX Warning: Reference `sub@steady_state' on page 24 undefined on input line 
-364.
-
-
-LaTeX Warning: Reference `sub@oscill_pressure' on page 24 undefined on input li
-ne 364.
-
-
-LaTeX Warning: Reference `sub@error_growth_comb' on page 24 undefined on input 
-line 364.
-
-
-LaTeX Warning: Reference `sub@oscill_focus' on page 24 undefined on input line 
-364.
-
-
-LaTeX Warning: Reference `eq:5p2.10' on page 24 undefined on input line 369.
-
-
-LaTeX Warning: Reference `fig:5p2.2c' on page 1 undefined on input line 371.
-
-
-LaTeX Warning: Reference `fig:5p2.2d' on page 1 undefined on input line 371.
-
-
-LaTeX Warning: Reference `eq:5p2.10' on page 25 undefined on input line 373.
-
-) (./sections/6.con.tex)
-No file TikzFigures/paper-figure15.bbl.
-\immediate\closeout\minitoc
+[26]
+===== Image 'TikzFigures/paper-figure25' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure26' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure27' is up-to-date. ======
+===== Image 'TikzFigures/paper-figure28' is up-to-date. ======
+) (./sections/6.con.tex [27] [28 <./TikzFigures/paper-figure25.pdf> <./TikzFigu
+res/paper-figure26.pdf> <./TikzFigures/paper-figure27.pdf> <./TikzFigures/paper
+-figure28.pdf>]) (./paper.bbl [29] [30]) [31]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
+ (./paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 118.
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 28002 strings out of 492649
- 704588 string characters out of 6129623
- 2347700 words of memory out of 5000000
- 31346 multiletter control sequences out of 15000+600000
- 52940 words of font info for 131 fonts, out of 8000000 for 9000
+ 27862 strings out of 492649
+ 699494 string characters out of 6129623
+ 860284 words of memory out of 5000000
+ 31124 multiletter control sequences out of 15000+600000
+ 56890 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,23n,136p,1554b,2450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,15n,136p,1519b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TikzFigures/paper-figure15.pdf (1 page, 157078 bytes).
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/ti
+mes/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (31 pages, 4384550 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 614 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
