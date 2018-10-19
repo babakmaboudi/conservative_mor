@@ -175,3 +175,4 @@ Following \cite{reiss2014conservative,morinishi2010skew} we can construct a full
 	\mathbf u_{\alpha}^{n+1/2} = \frac{\sqrt{\mathbf R}^{n+1} \mathbf u^{n+1} + \sqrt{\mathbf R}^{n} \mathbf u^{n}}{2\sqrt{\mathbf r}^{n+1/2} }.
 \end{equation}
 As discussed in \cite{reiss2014conservative}, this time discretization scheme preserves the symmetries expressed in \eqref{eq:3.17}, \eqref{eq:3.24}, \eqref{eq:3.25}, and \eqref{eq:3.26}. In the incompressible case, the method reduces to the implicit mid-point scheme \cite{hairer2006geometric}. For further information see \cite{reiss2014conservative,morinishi2010skew}.
+\edit{Since the reduced system shows the same structure of \eqref{eq:3.27},  the same numerical integrator is used to compute the reduced solution, without decoupling the modes related to velocity, density and pressure.}
