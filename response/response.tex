@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage{url}
+\usepackage[margin=1in]{geometry}
+\newcommand{\breview}{\begin{quotation}\begin{bf}\noindent}
+\newcommand{\ereview}{\end{bf}\end{quotation}}
+\newcommand{\reviewbullet}[1]{\breview \begin{itemize}\item #1 \end{itemize}\ereview}
+
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+
+\begin{document}
+Dear Editor, \\[1cm]
+
+Attached you will find the revised version of the paper, titled ``Conservative Model Order Reduction for Fluid Flow'', with file name ``paper.pdf''. Another document under the file name ``paper-highlighted.pdf'' is also attached, where the changes in the paper are highlighted in the color red.
+
+Yours Sincerely,\\[1.0cm]
+Babak Maboudi Afkham
+\\[1cm]
+
+\section*{Response to Reviewer}
+
+All the comments of the reviewer are addressed in the revision of the paper. Below you can find the response to some of the comments.
+
+\breview
+In some of the numerical examples is not reported the number of snapshots used to generate the POD spaces. For completeness I would add the number of snapshots used to generate the POD space in every numerical example.\ereview
+
+The number of snapshots used in each simulation is now reported.
+
+\breview
+In section 5.2 page 17 it is mentioned that a different strategy to ensure stability is used at the full order and at the reduced order level (artificial viscosity vs low pass filter). I would add a sentence to better explain the procedure used at the reduced order level (low pass filter on the expansion coefficients).
+\ereview
+
+The strategy used for stability in this simulation is now included.
+
+\breview
+It is not clear to me the strategy used, at the reduced order level, to deal with the pressure-
+velocity coupling. Are equations 39-40 solved using a monolithic approach?
+\ereview
+
+The reduced system is solved similar to the high fidelity system, on a collocated grid. Therefore, at each time step one system of equations is solved for density, velocity, as well as for pressure. This is clarified in the paper in page 13.  
+
+
+\end{document}
+
