@@ -32,53 +32,55 @@ obtained by applying the divergence operator to \eqref{eq:3.8} and using the inc
 \begin{figure}[t]
   \centering
   \begin{subfigure}[]{0.47\linewidth}
-  \begin{tikzpicture}[scale=0.58]
-    \begin{axis}[ylabel=$K$,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=south west,
-                 legend entries={Skew Symmetric form, Divergence form, Advective form},
-                 legend style={font=\large},
-                 width=1.4\linewidth, 
-                 height=1\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=4},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Incompressible_Euler/Energy_compare_formulations/energy_skew_symmetric.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Incompressible_Euler/Energy_compare_formulations/energy_divergence.txt};
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Incompressible_Euler/Energy_compare_formulations/energy_convective.txt};
-    \end{axis}%  
-  \end{tikzpicture}
+            \includegraphics[scale=1]{Figures/paper-figure0.pdf}
+%  \begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[ylabel=$K$,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=south west,
+%                 legend entries={Skew Symmetric form, Divergence form, Advective form},
+%                 legend style={font=\large},
+%                 width=1.4\linewidth, 
+%                 height=1\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=4},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Incompressible_Euler/Energy_compare_formulations/energy_skew_symmetric.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Incompressible_Euler/Energy_compare_formulations/energy_divergence.txt};
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Incompressible_Euler/Energy_compare_formulations/energy_convective.txt};
+%    \end{axis}%  
+%  \end{tikzpicture}
 \caption{}
 \label{compare_different_models}
 \end{subfigure}
   \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
-                 xlabel=Basis POD,
-                 label style={font=\Large},
-                 %legend pos=north east,
-                 %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymin=0,
-                 ymax = 2,
-                 samples = 100]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = x, y = s] {./data/Incompressible_Euler/Singular_values/sv.txt};
-    \end{semilogyaxis}
-\end{tikzpicture}
+            \includegraphics[scale=1]{Figures/paper-figure1.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
+%                 xlabel=Basis POD,
+%                 label style={font=\Large},
+%                 %legend pos=north east,
+%                 %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 ymin=0,
+%                 ymax = 2,
+%                 samples = 100]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = x, y = s] {./data/Incompressible_Euler/Singular_values/sv.txt};
+%    \end{semilogyaxis}
+%\end{tikzpicture}
 \caption{}
 \label{singular_values_decay}
 \end{subfigure}
@@ -128,67 +130,69 @@ The conservation of the kinetic energy is presented in \Cref{fig:energy_error_in
 \begin{figure}[t]
 \centering
 \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{semilogyaxis}[ylabel = $\| \mathbf{u}-\tilde{\mathbf{u}}\|_2$,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 samples = 100,
-                 cycle list name=exotic]
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_5.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_8.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_11.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_14.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_23.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_26.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_29.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_35.txt};
-    \end{semilogyaxis}
-\end{tikzpicture}
+          \includegraphics[scale=1]{Figures/paper-figure2.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{semilogyaxis}[ylabel = $\| \mathbf{u}-\tilde{\mathbf{u}}\|_2$,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 samples = 100,
+%                 cycle list name=exotic]
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_5.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_8.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_11.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_14.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_23.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_26.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_29.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Approximation_Error/err_35.txt};
+%    \end{semilogyaxis}
+%\end{tikzpicture}
 \caption{}
 \label{fig:approx_error_incompressible_Euler}
 \end{subfigure} \hfill
 \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[ylabel = $|K-\tilde{K}|$,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=south west,
-                 legend entries={$k=5$ , $k=8$, $k=11$, $k=14$, $k=23$, $k=26$, $k=29$, $k=35$},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymax = 0.5598,
-                 samples = 100,
-                 cycle list name=exotic]
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_5.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_8.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_11.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_14.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_23.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_26.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_29.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_35.txt};
-    \end{axis}
-\end{tikzpicture}
+          \includegraphics[scale=1]{Figures/paper-figure3.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[ylabel = $|K-\tilde{K}|$,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=south west,
+%                 legend entries={$k=5$ , $k=8$, $k=11$, $k=14$, $k=23$, $k=26$, $k=29$, $k=35$},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 ymax = 0.5598,
+%                 samples = 100,
+%                 cycle list name=exotic]
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_5.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_8.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_11.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_14.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_23.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_26.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_29.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = error] {./data/Incompressible_Euler/Energy_conservation/ene_full_35.txt};
+%    \end{axis}
+%\end{tikzpicture}
 \caption{}
 \label{fig:energy_error_incompressible_Euler}
 \end{subfigure}
@@ -231,31 +235,32 @@ The fully discrete skew-symmetric form \eqref{eq:3.27} is used as a time marchin
 \begin{figure}[t]
 \centering
 \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[xlabel=$t$,
-                 ylabel=$e(t)$,
-                 label style={font=\Large},
-                 legend pos=outer north east,
-                 legend style={font=\large},
-                 legend entries={$k=200$,$k=300$,$k=400$,$k=500$,$k=600$},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 cycle list name=exotic]
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_200.txt};  
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_300.txt};      
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_400.txt}; 
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_500.txt};      
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_600.txt};               
-    \end{semilogyaxis}%  
-  \end{tikzpicture}
+          \includegraphics[scale=1]{Figures/paper-figure4.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{semilogyaxis}[xlabel=$t$,
+%                 ylabel=$e(t)$,
+%                 label style={font=\Large},
+%                 legend pos=outer north east,
+%                 legend style={font=\large},
+%                 legend entries={$k=200$,$k=300$,$k=400$,$k=500$,$k=600$},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 cycle list name=exotic]
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_200.txt};  
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_300.txt};      
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_400.txt}; 
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_500.txt};      
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/error/error_600.txt};               
+%    \end{semilogyaxis}%  
+%  \end{tikzpicture}
 \end{subfigure}
 \caption{Evolution in time of the error  between the high fidelity solution of the Kelvin-Helmoltz and the reduced solution for different number of basis $k$. As error measure we use $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{u_xr}-\mathbf{u_xr}^r\|^2 + \|\mathbf{u_yr}-\mathbf{u_yr}^r\|^2 + \|\mathbf{p}-\mathbf{p}^r\|^2}$.}
 \label{fig:error_decay_KH}
@@ -266,90 +271,93 @@ Conservation of mass, momentum and energy is presented in \Cref{fig:conservation
 \begin{figure}
   \centering
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[ylabel = error in mass,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 legend entries={$k=200$ ,$k=300$, $k=400$,$k=500$,$k=600$},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 cycle list name=exotic]
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_200.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_300.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_400.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_500.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_600.txt};
-    \end{semilogyaxis}%  
-  \end{tikzpicture}
+            \includegraphics[scale=1]{Figures/paper-figure5.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{semilogyaxis}[ylabel = error in mass,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 legend entries={$k=200$ ,$k=300$, $k=400$,$k=500$,$k=600$},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 cycle list name=exotic]
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_200.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_300.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_400.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_500.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/mass_red_600.txt};
+%    \end{semilogyaxis}%  
+%  \end{tikzpicture}
   \caption{}
   \label{mass_error_KH}
   \end{subfigure}\hfill
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[ylabel = error in total momentum,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=north east,
-%                 legend entries={$k=200$ Conv,$k=201$ Conv},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 cycle list name=exotic]
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_200.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_300.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_400.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_500.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_600.txt};
-    \end{semilogyaxis}%  
-  \end{tikzpicture}
+            \includegraphics[scale=1]{Figures/paper-figure6.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{semilogyaxis}[ylabel = error in total momentum,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%%                 legend entries={$k=200$ Conv,$k=201$ Conv},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 cycle list name=exotic]
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_200.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_300.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_400.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_500.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/momentum_red_600.txt};
+%    \end{semilogyaxis}%  
+%  \end{tikzpicture}
   \caption{}
   \label{momentum_error_KH}
   \end{subfigure}
   
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[ylabel = error in total energy,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=north east,
-%                 legend entries={$k=200$ Conv,$k=201$ Conv},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 cycle list name=exotic]
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_200.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_300.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_400.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_500.txt};
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_600.txt};
-    \end{semilogyaxis}%  
-  \end{tikzpicture}
+            \includegraphics[scale=1]{Figures/paper-figure7.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{semilogyaxis}[ylabel = error in total energy,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%%                 legend entries={$k=200$ Conv,$k=201$ Conv},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 cycle list name=exotic]
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_200.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_300.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_400.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_500.txt};
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/KH/conserved_quantities/energy_red_600.txt};
+%    \end{semilogyaxis}%  
+%  \end{tikzpicture}
    \caption{}
   \label{energy_error_KH}
   \end{subfigure}
@@ -411,171 +419,177 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
   \centering
   % MASS
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[ylabel = Mass,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymin=0,
-                 ymax = 2,
-                 samples = 100]
-                 \addplot[color=red,style=dashdotted,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/mass_102_1.txt};
-                 \addplot[color=blue,style=dashdotted,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/mass_201_1.txt};
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/mass_102_1.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/mass_201_1.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_102_1.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_201_1.txt};
-    \end{axis}%  
-  \end{tikzpicture}
+            \includegraphics[scale=1]{Figures/paper-figure8.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[ylabel = Mass,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 ymin=0,
+%                 ymax = 2,
+%                 samples = 100]
+%                 \addplot[color=red,style=dashdotted,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/mass_102_1.txt};
+%                 \addplot[color=blue,style=dashdotted,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/mass_201_1.txt};
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/mass_102_1.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/mass_201_1.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_102_1.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_201_1.txt};
+%    \end{axis}%  
+%  \end{tikzpicture}
   \end{subfigure}\hfill% 
   % MASS (focus)
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=south west,
-                 legend entries={$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymax=0.5000001]
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_24_1.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_102_1.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_201_1.txt};
-    \end{axis}%  
-  \end{tikzpicture}
+          \includegraphics[scale=1]{Figures/paper-figure9.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=south west,
+%                 legend entries={$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 ymax=0.5000001]
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_24_1.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_102_1.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/mass_201_1.txt};
+%    \end{axis}%  
+%  \end{tikzpicture}
   \end{subfigure}
  % TOTAL MOMENTUM
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[ylabel = Momentum,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymin=1,
-                 ymax = 2,
-                 samples = 100]
-                 \addplot[color=red,style=dashdotted,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/momentum_102_1.txt};
-                 \addplot[color=blue,style=dashdotted,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/momentum_201_1.txt};
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/momentum_102_1.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/momentum_201_1.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_102_1.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_201_1.txt};
-    \end{axis}%  
-  \end{tikzpicture} 
+          \includegraphics[scale=1]{Figures/paper-figure10.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[ylabel = Momentum,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 ymin=1,
+%                 ymax = 2,
+%                 samples = 100]
+%                 \addplot[color=red,style=dashdotted,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/momentum_102_1.txt};
+%                 \addplot[color=blue,style=dashdotted,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/momentum_201_1.txt};
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/momentum_102_1.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/momentum_201_1.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_102_1.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_201_1.txt};
+%    \end{axis}%  
+%  \end{tikzpicture} 
   \end{subfigure}\hfill% 
  % TOTAL MOMENTUM (focus)
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=south west,
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 ymax=1.04963,
-                 scale only axis]
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_24_1.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_102_1.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_201_1.txt};
-    \end{axis}%  
-  \end{tikzpicture}
+          \includegraphics[scale=1]{Figures/paper-figure11.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=south west,
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 ymax=1.04963,
+%                 scale only axis]
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_24_1.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_102_1.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/momentum_201_1.txt};
+%    \end{axis}%  
+%  \end{tikzpicture}
   \end{subfigure}
  % ENERGY
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[ylabel = Energy,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymin=2.5,
-                 ymax = 4.5,
-                 samples = 100]
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/energy_102_1.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/energy_201_1.txt};                
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/energy_102_1.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/energy_201_1.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_102_1.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_201_1.txt};
-    \end{axis}%  
-  \end{tikzpicture} 
+          \includegraphics[scale=1]{Figures/paper-figure12.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[ylabel = Energy,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 %legend entries={$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 ymin=2.5,
+%                 ymax = 4.5,
+%                 samples = 100]
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/energy_102_1.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/convective_data/energy_201_1.txt};                
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/energy_102_1.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/divergence_data/energy_201_1.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_102_1.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_201_1.txt};
+%    \end{axis}%  
+%  \end{tikzpicture} 
   \caption{}
   \label{conservation_1D}
   \end{subfigure}\hfill% 
  % ENERGY (focus)
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=south west,
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymax = 2.87438]
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_24_1.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_102_1.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_201_1.txt};
-    \end{axis}%  
-  \end{tikzpicture}
+          \includegraphics[scale=1]{Figures/paper-figure13.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=south west,
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 ymax = 2.87438]
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_24_1.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_102_1.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/skew_symm_data/energy_201_1.txt};
+%    \end{axis}%  
+%  \end{tikzpicture}
   \caption{}
   \label{conservation_1D_focus}
   \end{subfigure}
@@ -589,34 +603,35 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
 \begin{figure}
 \centering
 \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[xlabel=$t$,
-                 ylabel=$e(t)$,
-                 label style={font=\Large},
-                 legend pos=outer north east,
-                 legend style={font=\large},
-                 legend entries={$k=75$,$k=126$,$k=177$,$k=225$,$k=276$,$k=327$,$k=375$,$k=426$},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 cycle list name=exotic]
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_75.txt};  
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_126.txt};      
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_177.txt}; 
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_225.txt};      
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_276.txt};  
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_327.txt}; 
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_375.txt};      
-                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_426.txt};              
-    \end{semilogyaxis}%  
-  \end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure14.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{semilogyaxis}[xlabel=$t$,
+%                 ylabel=$e(t)$,
+%                 label style={font=\Large},
+%                 legend pos=outer north east,
+%                 legend style={font=\large},
+%                 legend entries={$k=75$,$k=126$,$k=177$,$k=225$,$k=276$,$k=327$,$k=375$,$k=426$},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 cycle list name=exotic]
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_75.txt};  
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_126.txt};      
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_177.txt}; 
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_225.txt};      
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_276.txt};  
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_327.txt}; 
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_375.txt};      
+%                 \addplot+[style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error/error_426.txt};              
+%    \end{semilogyaxis}%  
+%  \end{tikzpicture}
 \end{subfigure}
 \caption{Evolution in time of the error  between the high fidelity solution of the 1D compressible Euler and the reduced solution for different number of basis $k$. As error measure we consider $e(t)=\sqrt{\|\mathbf{r}-\mathbf{r}^r\|^2+\|\mathbf{ur}-\mathbf{ur}^r\|^2+\|\mathbf{p}-\mathbf{p}^r\|^2}$.}
 \label{error_behaviour_1D}
@@ -628,178 +643,184 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
 \begin{figure}
 \centering
 \begin{subfigure}[t]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[xlabel=$x$,
-                 ylabel=Density,
-                 label style={font=\large},
-                 %legend pos=south west,
-                 legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 legend style={at={(axis cs:0.375,0.45)},anchor=south west},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_exact_300.txt};
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_24_300.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_102_300.txt};
-                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_201_300.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_24_300.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_102_300.txt};
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_201_300.txt};
-    \end{axis}% 
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure15.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[xlabel=$x$,
+%                 ylabel=Density,
+%                 label style={font=\large},
+%                 %legend pos=south west,
+%                 legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 legend style={at={(axis cs:0.375,0.45)},anchor=south west},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_exact_300.txt};
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_24_300.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_102_300.txt};
+%                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_201_300.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_24_300.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_102_300.txt};
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_201_300.txt};
+%    \end{axis}% 
+%\end{tikzpicture}
 \end{subfigure} 
 \begin{subfigure}[t]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[xlabel=$x$,
-                 ylabel=Pressure,
-                 label style={font=\large},
-                 legend pos=south west,
-                 %legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_exact_300.txt};
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_24_300.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_102_300.txt};
-                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_201_300.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_24_300.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_102_300.txt};
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_201_300.txt};
-    \end{axis}% 
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure16.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[xlabel=$x$,
+%                 ylabel=Pressure,
+%                 label style={font=\large},
+%                 legend pos=south west,
+%                 %legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_exact_300.txt};
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_24_300.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_102_300.txt};
+%                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_201_300.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_24_300.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_102_300.txt};
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_201_300.txt};
+%    \end{axis}% 
+%\end{tikzpicture}
 \label{density_reduction}
 \end{subfigure}
 
 \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[xlabel=$x$,
-                 ylabel=Density,
-                 label style={font=\large},
-                 legend pos=north east,
-                 legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_exact_1000.txt};
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_24_1000.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_102_1000.txt};
-                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_201_1000.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_24_1000.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_102_1000.txt};
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_201_1000.txt};
-    \end{axis}% 
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure17.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[xlabel=$x$,
+%                 ylabel=Density,
+%                 label style={font=\large},
+%                 legend pos=north east,
+%                 legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_exact_1000.txt};
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_24_1000.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_102_1000.txt};
+%                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_201_1000.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_24_1000.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_102_1000.txt};
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_201_1000.txt};
+%    \end{axis}% 
+%\end{tikzpicture}
 \end{subfigure} 
 \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[xlabel=$x$,
-                 ylabel=Pressure,
-                 label style={font=\large},
-                 legend pos=south west,
-                 %legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_exact_1000.txt};
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_24_1000.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_102_1000.txt};
-                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_201_1000.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_24_1000.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_102_1000.txt};
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_201_1000.txt};
-    \end{axis}% 
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure18.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[xlabel=$x$,
+%                 ylabel=Pressure,
+%                 label style={font=\large},
+%                 legend pos=south west,
+%                 %legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_exact_1000.txt};
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_24_1000.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_102_1000.txt};
+%                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_201_1000.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_24_1000.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_102_1000.txt};
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_201_1000.txt};
+%    \end{axis}% 
+%\end{tikzpicture}
 \end{subfigure}
 
 \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[xlabel=$x$,
-                 ylabel=Density,
-                 label style={font=\large},
-                 legend pos=north east,
-                 legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_exact_3000.txt};
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_24_3000.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_102_3000.txt};
-                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_201_3000.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_24_3000.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_102_3000.txt};
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_201_3000.txt};
-    \end{axis}% 
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure19.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[xlabel=$x$,
+%                 ylabel=Density,
+%                 label style={font=\large},
+%                 legend pos=north east,
+%                 legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_exact_3000.txt};
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_24_3000.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_102_3000.txt};
+%                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_unstable_201_3000.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_24_3000.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_102_3000.txt};
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/density_approx_201_3000.txt};
+%    \end{axis}% 
+%\end{tikzpicture}
 \caption{}
 \label{density_reduction_1D}
 \end{subfigure} 
 \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[xlabel=$x$,
-                 ylabel=Pressure,
-                 label style={font=\large},
-                 legend pos=south west,
-                 %legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_exact_3000.txt};
-                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_24_3000.txt};
-                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_102_3000.txt};
-                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_201_3000.txt};
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_24_3000.txt};
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_102_3000.txt};
-                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_201_3000.txt};
-    \end{axis}% 
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure20.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[xlabel=$x$,
+%                 ylabel=Pressure,
+%                 label style={font=\large},
+%                 legend pos=south west,
+%                 %legend entries={HF,$k=24$ Div,$k=102$ Div,$k=201$ Div,$k=24$ Skew,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_exact_3000.txt};
+%                 \addplot[color=red,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_24_3000.txt};
+%                 \addplot[color=blue,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_102_3000.txt};
+%                 \addplot[color=black!50!green,style=dashed,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_unstable_201_3000.txt};
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_24_3000.txt};
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_102_3000.txt};
+%                 \addplot[color=black!50!green,style=solid,style=ultra thick]  table[x = time, y = energy] {./data/Compressible_Euler/1D/Snapshots/pressure_approx_201_3000.txt};
+%    \end{axis}% 
+%\end{tikzpicture}
 \caption{}
 \label{pressure_reduction_1D}
 \end{subfigure}
@@ -812,28 +833,29 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\begin{tikzpicture}[scale=0.5452]
-    \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
-                 xlabel=Basis,
-                 label style={font=\Large},
-                 legend style={font=\large},
-                 legend entries = {POD,DEIM},
-                 grid=both,
-                 ticks=both,
-                 width=0.7\linewidth, 
-                 height=0.5\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 samples = 100,
-                 xtick = {400, 800, 1200, 1600}]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = n, y = sing_values] {./data/Compressible_Euler/1D/Singular_values/sv.txt};
-                 \addplot[color=black,style=dashed,style=ultra thick]  table[x = n, y = sv] {./data/Compressible_Euler/1D/Singular_values/sv_DEIM.txt};
-    \end{semilogyaxis}
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure21.pdf}
+%\begin{tikzpicture}[scale=0.5452]
+%    \begin{semilogyaxis}[ylabel = $\frac{\sigma_j}{\sum_i \sigma_i}$,
+%                 xlabel=Basis,
+%                 label style={font=\Large},
+%                 legend style={font=\large},
+%                 legend entries = {POD,DEIM},
+%                 grid=both,
+%                 ticks=both,
+%                 width=0.7\linewidth, 
+%                 height=0.5\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 samples = 100,
+%                 xtick = {400, 800, 1200, 1600}]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = n, y = sing_values] {./data/Compressible_Euler/1D/Singular_values/sv.txt};
+%                 \addplot[color=black,style=dashed,style=ultra thick]  table[x = n, y = sv] {./data/Compressible_Euler/1D/Singular_values/sv_DEIM.txt};
+%    \end{semilogyaxis}
+%\end{tikzpicture}
 \caption{Decay of the singular values of the snapshot matrix related to POD and DEIM algorithms for the 1D compressible Euler problem.}
 \label{fig:singular_values_decay_1D}
 \end{figure}
@@ -841,53 +863,55 @@ In this numerical experiment, evaluation of the nonlinear terms in \eqref{eq:3.1
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[ylabel = e(T),
-                 xlabel=Basis DEIM,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 legend entries={POD+DEIM,POD},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1\linewidth,
-%                 minor x tick num=1,
-                 minor y tick num=2,	
-                 xticklabel style={font = \large},
-%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error_DEIM/error_DEIM.txt};      
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error_DEIM/error_POD.txt};
-    \end{axis}
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure22.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[ylabel = e(T),
+%                 xlabel=Basis DEIM,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 legend entries={POD+DEIM,POD},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1\linewidth,
+%%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 xticklabel style={font = \large},
+%%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error_DEIM/error_DEIM.txt};      
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error_DEIM/error_POD.txt};
+%    \end{axis}
+%\end{tikzpicture}
 \caption{}
 \label{error_DEIM}
 \end{subfigure}
 \begin{subfigure}[]{0.47\linewidth}
-\begin{tikzpicture}[scale=0.58]
-    \begin{axis}[ylabel = Energy(T),
-                 xlabel=Basis DEIM,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 legend entries={POD+DEIM,POD},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis]
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error_DEIM/error_energy_DEIM.txt};      
-                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error_DEIM/error_energy_POD.txt};
-    \end{axis}
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure23.pdf}
+%\begin{tikzpicture}[scale=0.58]
+%    \begin{axis}[ylabel = Energy(T),
+%                 xlabel=Basis DEIM,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 legend entries={POD+DEIM,POD},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%%                 yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis]
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error_DEIM/error_energy_DEIM.txt};      
+%                 \addplot[color=red,style=solid,style=ultra thick]  table[x = time, y = quantity] {./data/Compressible_Euler/1D/error_DEIM/error_energy_POD.txt};
+%    \end{axis}
+%\end{tikzpicture}
 \caption{}
 \label{energy_DEIM}
 \end{subfigure}

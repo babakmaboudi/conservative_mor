@@ -12,38 +12,39 @@ The geometry parameters of the quasi-1D CVRC with a oxidizer post length  $L_{op
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\begin{tikzpicture}[]
-    \begin{axis}[width=12cm,
-                 height=4cm,
-                 ylabel = $r(m)$,
-                 xlabel=$x(m)$,
-                 yticklabel style={
-                  /pgf/number format/fixed,
-                  /pgf/number format/precision=5,
-                  style = {font=\normalsize}
-                  },
-                 xticklabel style={
-                  style = {font=\normalsize}
-                  },
-%                 label style={font=\large},
-%                 legend style={font=\large},
-%                 grid=both,
-%                 ticks=both,
-%                 width=0.7\linewidth, 
-%                 height=0.5\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 scaled y ticks = false,
-%                 enlargelimits=false,
-%                 samples = 100,
-                 ymax = 0.04]
-                 \addplot[color=black,style=solid,style=ultra thick]  table[x = x, y = radius] {./data/Combustor/radius_combustor.txt};
-                \node[pin=100:{injector}] at (-0.05,0.01) {};
-                \node[pin=93:{back-step}] at (0.001,0.015) {};
-                \node[pin=90:{chamber}] at (0.2,0.023) {};
-                \node[pin=80:{nozzle}] at (0.4,0.015) {};
-    \end{axis}
-\end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure24.pdf}
+%\begin{tikzpicture}[]
+%    \begin{axis}[width=12cm,
+%                 height=4cm,
+%                 ylabel = $r(m)$,
+%                 xlabel=$x(m)$,
+%                 yticklabel style={
+%                  /pgf/number format/fixed,
+%                  /pgf/number format/precision=5,
+%                  style = {font=\normalsize}
+%                  },
+%                 xticklabel style={
+%                  style = {font=\normalsize}
+%                  },
+%%                 label style={font=\large},
+%%                 legend style={font=\large},
+%%                 grid=both,
+%%                 ticks=both,
+%%                 width=0.7\linewidth, 
+%%                 height=0.5\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 scaled y ticks = false,
+%%                 enlargelimits=false,
+%%                 samples = 100,
+%                 ymax = 0.04]
+%                 \addplot[color=black,style=solid,style=ultra thick]  table[x = x, y = radius] {./data/Combustor/radius_combustor.txt};
+%                \node[pin=100:{injector}] at (-0.05,0.01) {};
+%                \node[pin=93:{back-step}] at (0.001,0.015) {};
+%                \node[pin=90:{chamber}] at (0.2,0.023) {};
+%                \node[pin=80:{nozzle}] at (0.4,0.015) {};
+%    \end{axis}
+%\end{tikzpicture}
 \caption{Geometry of quasi-1D CVRC model.}
 \label{fig:radius}
 \end{figure}
@@ -240,124 +241,128 @@ The pressure profile for the steady state, with $q'=0$, and the pressure oscilla
   \centering
   % Pressure steady
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[ylabel = pressure $p$,
-                 xlabel=$x$,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 %legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-%                 ymin=0,
-                 ymax = 1500000,
-                 samples = 100]
-                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = x, y = pressure] {./data/Combustor/pressure_steady_state.txt};
-    \end{axis}%  
-  \end{tikzpicture}
+          \includegraphics[scale=1]{Figures/paper-figure25.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[ylabel = pressure $p$,
+%                 xlabel=$x$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 %legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%%                 ymin=0,
+%                 ymax = 1500000,
+%                 samples = 100]
+%                 \addplot[color=blue,style=solid,style=ultra thick]  table[x = x, y = pressure] {./data/Combustor/pressure_steady_state.txt};
+%    \end{axis}%  
+%  \end{tikzpicture}
   \caption{} \label{fig:5p2.2a}
   \label{steady_state}
   \end{subfigure}\hfill% 
   % Pressure oscilaltions
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[ylabel = pressure $p$,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 %legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 scaled y ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 ymin=0,
-%                 samples = 100,
-                 xmax = 0.06,
-                 ymin = 1360000,
-                 ymax = 1460000,
-                 tick label style={/pgf/number format/fixed} ]
-                 \addplot[color=blue,style=solid,style=thick]  table[x = t, y = pressure] {./data/Combustor/ciao.txt};
-    \end{axis}%  
-  \end{tikzpicture}
+        \includegraphics[scale=1]{Figures/paper-figure26.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[ylabel = pressure $p$,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 %legend entries={$k=102$ Adv,$k=201$ Adv,$k=102$ Div,$k=201$ Div,$k=102$ Skew,$k=201$ Skew},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 scaled y ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 ymin=0,
+%%                 samples = 100,
+%                 xmax = 0.06,
+%                 ymin = 1360000,
+%                 ymax = 1460000,
+%                 tick label style={/pgf/number format/fixed} ]
+%                 \addplot[color=blue,style=solid,style=thick]  table[x = t, y = pressure] {./data/Combustor/ciao.txt};
+%    \end{axis}%  
+%  \end{tikzpicture}
   \caption{} \label{fig:5p2.2b}
   \label{oscill_pressure}
   \end{subfigure}
   
 % Total momentum
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{semilogyaxis}[ylabel = $\| p-\tilde{p}\|_2$,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=south east,
-                 legend entries={$k=200$,$k=300$,$k=300$},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 scaled y ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 samples = 300,
-                 ymin = 0.000001,
-                 ymax = 0.0001]
-                 \addplot[color=red,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_200.txt};
-                 \addplot[color=blue,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_300.txt};
-                 \addplot[color=black!50!green,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_400.txt};
-    \end{semilogyaxis}%  
-  \end{tikzpicture}
+      \includegraphics[scale=1]{Figures/paper-figure27.pdf}
+%  \begin{tikzpicture}[scale=0.55]
+%    \begin{semilogyaxis}[ylabel = $\| p-\tilde{p}\|_2$,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=south east,
+%                 legend entries={$k=200$,$k=300$,$k=300$},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 scaled y ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 samples = 300,
+%                 ymin = 0.000001,
+%                 ymax = 0.0001]
+%                 \addplot[color=red,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_200.txt};
+%                 \addplot[color=blue,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_300.txt};
+%                 \addplot[color=black!50!green,style=solid,style=thick]  table[x = t, y = error] {./data/Combustor/error_400.txt};
+%    \end{semilogyaxis}%  
+%  \end{tikzpicture}
   \caption{} \label{fig:5p2.2c}
   \label{error_growth_comb}
   \end{subfigure}\hfill% 
   % Pressure reduction  
   \begin{subfigure}[]{0.48\linewidth}
-  \begin{tikzpicture}[scale=0.55]
-    \begin{axis}[ylabel = pressure $p$,
-                 xlabel=$t$,
-                 label style={font=\Large},
-                 legend pos=north east,
-                 legend entries={High fidelity,  POD with $k=200$},
-                 legend style={font=\large},
-                 grid=both,
-                 ticks=both,
-                 width=1.4\linewidth, 
-                 height=1.0\linewidth,
-                 minor x tick num=1,
-                 minor y tick num=2,	
-                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
-                 scaled x ticks = true,
-                 enlargelimits=false,
-                 scale only axis,
-                 xmin = 0.9,
-                 xmax = 0.98,
-                 ymin = 1390000,
-                 ymax = 1450000,
-                 tick label style={/pgf/number format/fixed} ]
-                 \addplot[color=green,style=solid,style=ultra thick]  table[x = t, y = pressure] {./data/Combustor/full.txt};
-                 \addplot[color=black,style=dashed,style=thick]  table[x = t, y = pressure] {./data/Combustor/red.txt};
-    \end{axis}%  
-  \end{tikzpicture}
+    \includegraphics[scale=1]{Figures/paper-figure28.pdf}
+ % \begin{tikzpicture}[scale=0.55]
+%    \begin{axis}[ylabel = pressure $p$,
+%                 xlabel=$t$,
+%                 label style={font=\Large},
+%                 legend pos=north east,
+%                 legend entries={High fidelity,  POD with $k=200$},
+%                 legend style={font=\large},
+%                 grid=both,
+%                 ticks=both,
+%                 width=1.4\linewidth, 
+%                 height=1.0\linewidth,
+%                 minor x tick num=1,
+%                 minor y tick num=2,	
+%                 %yticklabel style={/pgf/number format/.cd,fixed,precision=9},
+%                 scaled x ticks = true,
+%                 enlargelimits=false,
+%                 scale only axis,
+%                 xmin = 0.9,
+%                 xmax = 0.98,
+%                 ymin = 1390000,
+%                 ymax = 1450000,
+%                 tick label style={/pgf/number format/fixed} ]
+%                 \addplot[color=green,style=solid,style=ultra thick]  table[x = t, y = pressure] {./data/Combustor/full.txt};
+%                 \addplot[color=black,style=dashed,style=thick]  table[x = t, y = pressure] {./data/Combustor/red.txt};
+%    \end{axis}%  
+%  \end{tikzpicture}
   \caption{} \label{fig:5p2.2d}
   \label{oscill_focus}
   \end{subfigure}
