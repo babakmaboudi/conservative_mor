@@ -1,0 +1,277 @@
+\begin{thebibliography}{10}
+
+\bibitem{ballarin2015supremizer}
+Francesco Ballarin, Andrea Manzoni, Alfio Quarteroni, and Gianluigi Rozza.
+\newblock Supremizer stabilization of {POD}--{Galerkin} approximation of
+  parametrized steady incompressible navier--stokes equations.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  102(5):1136--1161, 2015.
+
+\bibitem{barone2009stable}
+Matthew~F Barone, Irina Kalashnikova, Daniel~J Segalman, and Heidi~K
+  Thornquist.
+\newblock Stable {Galerkin} reduced order models for linearized compressible
+  flow.
+\newblock {\em Journal of Computational Physics}, 228(6):1932--1946, 2009.
+
+\bibitem{beattie2011structure}
+Christopher Beattie and Serkan Gugercin.
+\newblock Structure-preserving model reduction for nonlinear port-{Hamiltonian}
+  systems.
+\newblock In {\em Decision and Control and European Control Conference
+  (CDC-ECC), 2011 50th IEEE Conference on}, pages 6564--6569. IEEE, 2011.
+
+\bibitem{doi:10.1137/110836742}
+Peter Benner and Tobias Breiten.
+\newblock Interpolation-based {$\mathcal H_2$}-model reduction of bilinear
+  control systems.
+\newblock {\em SIAM Journal on Matrix Analysis and Applications},
+  33(3):859--885, 2012.
+
+\bibitem{Benner2018}
+Peter Benner and Pawan Goyal.
+\newblock {\em An Iterative Model Reduction Scheme forÂ Quadratic-Bilinear
+  Descriptor Systems with an Application to Navier--Stokes Equations}, pages
+  1--19.
+\newblock Springer International Publishing, Cham, 2018.
+
+\bibitem{blaisdell1991numerical}
+Gregory~Allan Blaisdell.
+\newblock {\em Numerical Simulations of Compressible Homogeneous Turbulence}.
+\newblock PhD thesis, Stanford University, 1991.
+
+\bibitem{carlberg2018conservative}
+K~Carlberg, Y~Choi, and S~Sargsyan.
+\newblock Conservative model reduction for finite-volume models.
+\newblock {\em Journal of Computational Physics}, 371:280--314, 2018.
+
+\bibitem{Carlberg:2014ky}
+K~Carlberg, R~Tuminaro, and P~Boggs.
+\newblock {Preserving Lagrangian structure in nonlinear model reduction with
+  application to structural dynamics}.
+\newblock {\em SIAM Journal on Scientific Computing}, 2015.
+
+\bibitem{doi:10.1137/140959602}
+K.~Carlberg, R.~Tuminaro, and P.~Boggs.
+\newblock Preserving lagrangian structure in nonlinear model reduction with
+  application to structural dynamics.
+\newblock {\em SIAM Journal on Scientific Computing}, 37(2):B153--B184, 2015.
+
+\bibitem{HHS}
+Subrahmanyan Chandrasekhar.
+\newblock Hydrodynamic and hydromagnetic stability.
+\newblock 2013.
+
+\bibitem{chaturantabut2016structure}
+Saifon Chaturantabut, Chris Beattie, and Serkan Gugercin.
+\newblock Structure-preserving model reduction for nonlinear port-{Hamiltonian}
+  systems.
+\newblock {\em SIAM Journal on Scientific Computing}, 38(5):B837--B865, 2016.
+
+\bibitem{desjardins2008high}
+Olivier Desjardins, Guillaume Blanquart, Guillaume Balarac, and Heinz Pitsch.
+\newblock High order conservative finite difference scheme for variable density
+  low mach number turbulent flows.
+\newblock {\em Journal of Computational Physics}, 227(15):7125--7159, 2008.
+
+\bibitem{filaments_vort2}
+David~G. Dritschel and Norman~J. Zabusky.
+\newblock On the nature of vortex interactions and models in unforced nearly
+  inviscid two dimensional turbulence.
+\newblock {\em Physics of Fluids}, 8(5):1252--1256, 1996.
+
+\bibitem{Edsberg:2008:ICM:1477735}
+L.~Edsberg.
+\newblock {\em Introduction to Computation and Modeling for Differential
+  Equations}.
+\newblock Wiley-Interscience, New York, NY, USA, 2008.
+
+\bibitem{farhat2015structure}
+Charbel Farhat, Todd Chapman, and Philip Avery.
+\newblock Structure-preserving, stability, and accuracy properties of the
+  energy-conserving sampling and weighting method for the hyper reduction of
+  nonlinear finite element dynamic models.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  102(5):1077--1110, 2015.
+
+\bibitem{frezzotti2018quasi}
+Maria~L Frezzotti, Francesco Nasuti, Cheng Huang, Charles~L Merkle, and
+  William~E Anderson.
+\newblock Quasi-{1D} modeling of heat release for the study of longitudinal
+  combustion instability.
+\newblock {\em Aerospace Science and Technology}, 75:261--270, 2018.
+
+\bibitem{frezzotti2017numerical}
+Maria~Luisa Frezzotti, Simone D{'}Alessandro, Bernardo Favini, and Francesco
+  Nasuti.
+\newblock Numerical issues in modeling combustion instability by quasi-1{D}
+  euler equations.
+\newblock {\em International Journal of Spray and Combustion Dynamics},
+  9(4):349--366, 2017.
+
+\bibitem{frezzotti2015determination}
+Maria~Luisa Frezzotti, Francesco Nasuti, Cheng Huang, Charles Merkle, and
+  William~E Anderson.
+\newblock Determination of heat release response function from {2D} hybrid
+  {RANS-LES} data for the {CVRC} combustor.
+\newblock In {\em 51st AIAA/SAE/ASEE Joint Propulsion Conference}, page 3841,
+  2015.
+
+\bibitem{garby2013simulations}
+Romain Garby.
+\newblock {\em Simulations of flame stabilization and stability in
+  high-pressure propulsion systems}.
+\newblock PhD thesis, INPT, 2013.
+
+\bibitem{gugercin2012structure}
+Serkan Gugercin, Rostyslav~V Polyuga, Christopher Beattie, and Arjan Van
+  Der~Schaft.
+\newblock Structure-preserving tangential interpolation for model reduction of
+  port-{Hamiltonian} systems.
+\newblock {\em Automatica}, 48(9):1963--1974, 2012.
+
+\bibitem{haasdonk2013convergence}
+Bernard Haasdonk.
+\newblock Convergence rates of the pod--greedy method.
+\newblock {\em ESAIM: Mathematical Modelling and Numerical Analysis},
+  47(3):859--873, 2013.
+
+\bibitem{hairer2006geometric}
+Ernst Hairer, Christian Lubich, and Gerhard Wanner.
+\newblock {\em Geometric numerical integration: structure-preserving algorithms
+  for ordinary differential equations}, volume~31.
+\newblock Springer, 2006.
+
+\bibitem{hesthaven2015certified}
+Jan~S. Hesthaven, G.~Rozza, and B.~Stamm.
+\newblock {\em Certified Reduced Basis Methods for Parametrized Partial
+  Differential Equations}.
+\newblock SpringerBriefs in Mathematics. Springer International Publishing,
+  2015.
+
+\bibitem{honein2004higher}
+Albert~E Honein and Parviz Moin.
+\newblock Higher entropy conservation and numerical stability of compressible
+  turbulence simulations.
+\newblock {\em Journal of Computational Physics}, 201(2):531--545, 2004.
+
+\bibitem{honein2005numerical}
+Albert~Edward Honein.
+\newblock {\em Numerical aspects of compressible turbulence simulations}.
+\newblock 2005.
+
+\bibitem{jiang1996efficient}
+Guang-Shan Jiang and Chi-Wang Shu.
+\newblock Efficient implementation of weighted {ENO} schemes.
+\newblock {\em Journal of Computational Physics}, 126(1):202--228, 1996.
+
+\bibitem{kalashnikova2014stabilization}
+Irina Kalashnikova, Bart van Bloemen~Waanders, Srinivasan Arunajatesan, and
+  Matthew Barone.
+\newblock Stabilization of projection-based reduced order models for linear
+  time-invariant systems via optimization-based eigenvalue reassignment.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering},
+  272:251--270, 2014.
+
+\bibitem{filaments_vort}
+NK-R Kevlahan and Marie Farge.
+\newblock Vorticity filaments in two-dimensional turbulence: creation,
+  stability and effect.
+\newblock {\em Journal of Fluid Mechanics}, 346:49--76, 1997.
+
+\bibitem{doi:10.1137/17M1111991}
+B.~Maboudi~Afkham and Jan~S. Hesthaven.
+\newblock Structure preserving model reduction of parametric hamiltonian
+  systems.
+\newblock {\em SIAM Journal on Scientific Computing}, 39(6):A2616--A2644, 2017.
+
+\bibitem{MaboudiAfkham2018}
+B.~Maboudi~Afkham and Jan~S. Hesthaven.
+\newblock Structure-preserving model-reduction of dissipative hamiltonian
+  systems.
+\newblock {\em Journal of Scientific Computing}, Feb 2018.
+
+\bibitem{morinishi2010skew}
+Yohei Morinishi.
+\newblock Skew-symmetric form of convective terms and fully conservative finite
+  difference schemes for variable density low-mach number flows.
+\newblock {\em Journal of Computational Physics}, 229(2):276--300, 2010.
+
+\bibitem{morinishi1998fully}
+Yohei Morinishi, Thomas~S Lund, Oleg~V Vasilyev, and Parviz Moin.
+\newblock Fully conservative higher order finite difference schemes for
+  incompressible flow.
+\newblock {\em Journal of computational physics}, 143(1):90--124, 1998.
+
+\bibitem{morinishi2003dns}
+Youhei Morinishi, Shinji Tamano, and Koichi Nakabayashi.
+\newblock A dns algorithm using b-spline collocation method for compressible
+  turbulent channel flow.
+\newblock {\em Computers \& fluids}, 32(5):751--776, 2003.
+
+\bibitem{doi:10.1137/140978922}
+L.~Peng and K.~Mohseni.
+\newblock Symplectic model reduction of hamiltonian systems.
+\newblock {\em SIAM Journal on Scientific Computing}, 38(1):A1--A27, 2016.
+
+\bibitem{quarteroni2015reduced}
+A.~Quarteroni, A.~Manzoni, and F.~Negri.
+\newblock {\em Reduced Basis Methods for Partial Differential Equations: An
+  Introduction}.
+\newblock UNITEXT. Springer International Publishing, 2015.
+
+\bibitem{reiss2014conservative}
+Julius Reiss and J{\"o}rn Sesterhenn.
+\newblock A conservative, skew-symmetric finite difference scheme for the
+  compressible navier--stokes equations.
+\newblock {\em Computers \& Fluids}, 101:208--219, 2014.
+
+\bibitem{sjogreen2010skew}
+Bj{\"o}rn Sj{\"o}green and HC~Yee.
+\newblock On skew-symmetric splitting and entropy conservation schemes for the
+  euler equations.
+\newblock In {\em Numerical Mathematics and Advanced Applications 2009}, pages
+  817--827. Springer, 2010.
+
+\bibitem{smith2008computational}
+R~Smith, M~Ellis, G~Xia, V~Sankaran, W~Anderson, and CL~Merkle.
+\newblock Computational investigation of acoustics and instabilities in a
+  longitudinal-mode rocket combustor.
+\newblock {\em AIAA Journal}, 46(11):2659--2673, 2008.
+
+\bibitem{tadmor1984skew}
+Eitan Tadmor.
+\newblock Skew-selfadjoint form for systems of conservation laws.
+\newblock {\em Journal of Mathematical Analysis and Applications},
+  103(2):428--442, 1984.
+
+\bibitem{thompson1992fourier}
+William~J Thompson.
+\newblock Fourier series and the gibbs phenomenon.
+\newblock {\em American journal of physics}, 60(5):425--429, 1992.
+
+\bibitem{trefethen97}
+Lloyd~N. Trefethen and David Bau.
+\newblock {\em Numerical Linear Algebra}.
+\newblock SIAM, 1997.
+
+\bibitem{Wang:255719}
+Qian Wang, Jan~S Hesthaven, and Deep Ray.
+\newblock Non-intrusive reduced order modeling of unsteady flows using
+  artificial neural networks with application to a combustion problem.
+\newblock {\em Journal of computational physics}, 2018.
+
+\bibitem{artificial_dissipation}
+Jian Yu and Jan~S Hesthaven.
+\newblock A comparative study of shock capturing models for the discontinuous
+  galerkin method.
+\newblock {\em No. EPFL-ARTICLE-231188.}, 2017.
+
+\bibitem{yu2008combustion}
+Yen Yu, Stefan Koeglmeier, James Sisco, and William Anderson.
+\newblock Combustion instability of gaseous fuels in a continuously variable
+  resonance chamber ({CVRC}).
+\newblock In {\em 44th AIAA/ASME/SAE/ASEE Joint Propulsion Conference \&
+  Exhibit}, page 4657, 2008.
+
+\end{thebibliography}
